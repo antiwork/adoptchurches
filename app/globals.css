@@ -477,7 +477,7 @@ p { margin: 0 0 1em; }
   hyphens: auto;
   -webkit-hyphens: auto;
 }
-.prose.justified p:first-of-type::first-letter {
+.prose.justified.dropcap p:first-of-type::first-letter {
   float: left;
   font-family: var(--serif-display);
   font-size: 2.9em;

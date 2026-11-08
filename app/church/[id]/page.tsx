@@ -62,7 +62,7 @@ export default async function ChurchPage({ params }: Props) {
           <span className="ornament" aria-hidden="true" />
 
           <h2>The building</h2>
-          <div className="prose justified">
+          <div className={`prose justified${l.description.length >= 200 ? " dropcap" : ""}`}>
             {l.description.split(/\n+/).map((para, i) => (
               <p key={i}>{para}</p>
             ))}

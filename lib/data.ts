@@ -118,6 +118,13 @@ const BUILDING_TYPE =
 // Seller headlines ("Au coeur d'un village ... une ancienne chapelle ...") are long.
 // An entry in a printed register is titled plainly: type and place.
 export function displayName(l: Pick<Listing, "name" | "city" | "region" | "state" | "country">): string {
+  // Broker shorthand ("5,240 sq. ft. Church Building with Versatile Spaces",
+  // "Restaurant, Food Prep, Church, Storage or Duplex") belongs in the description.
+  const place = [l.city, l.state].filter(Boolean).join(", ");
+  const brokered =
+    /(\bsf\b|sq\.?\s*ft|\bacres\b|±|\||\bmls\b)/i.test(l.name) ||
+    (l.name.split(",").length - 1 >= 3 && /church/i.test(l.name));
+  if (brokered) return `Church, ${place}`;
   if (l.name.length <= 58) return l.name;
   const qualified = l.name.match(
     new RegExp(`\\b(ancienne?|former|ex-)\\s+([^,.;]{0,26}?)\\b(${BUILDING_TYPE.source.slice(2, -2)})\\b`, "i"),
@@ -128,7 +135,9 @@ export function displayName(l: Pick<Listing, "name" | "city" | "region" | "state
     const t = qualified[3].toLowerCase();
     return `${q[0].toUpperCase()}${q.slice(1)} ${t}, ${l.city}`;
   }
-  if (typeMatch) return `${titleCase(typeMatch[1].toLowerCase())}, ${l.city}`;
+  if (typeMatch) {
+    return `${titleCase(typeMatch[1].toLowerCase())}, ${l.city}`;
+  }
   return `${l.city}, ${titleCase(l.region ?? l.state ?? countryName(l.country))}`;
 }
 
