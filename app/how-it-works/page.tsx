@@ -86,6 +86,27 @@ export default function HowItWorks() {
         Street, and parcels of land with no building on them are excluded.
       </p>
 
+      <h2>Where this came from</h2>
+      <blockquote className="provenance-quote">
+        <p>
+          You should perhaps make a website that highlights opportunities. &ldquo;Adopt a
+          church.&rdquo; I&apos;ll adopt one if you do this.
+        </p>
+        <cite>Patrick Collison, replying to Riva Tez on X, 8 November 2026</cite>
+      </blockquote>
+      <p>
+        The exchange that started it is at{" "}
+        <a
+          href="https://x.com/rivatez/status/2119514722894770572"
+          rel="noopener noreferrer"
+          target="_blank"
+        >
+          x.com/rivatez
+        </a>
+        . The list of English buildings comes from the Church of England&apos;s own disposal
+        register.
+      </p>
+
       <h2>Build it yourself</h2>
       <p>
         This is a prototype, and the whole of it is open: a Next.js application, a JSON file of

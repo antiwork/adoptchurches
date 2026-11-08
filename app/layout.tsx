@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { Cormorant_Garamond, EB_Garamond } from "next/font/google";
 import { listings } from "@/lib/data";
+import BasketDock from "@/components/BasketDock";
+import "leaflet/dist/leaflet.css";
 import "./globals.css";
 
 const display = Cormorant_Garamond({
@@ -57,7 +59,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <html lang="en" className={`${display.variable} ${text.variable}`}>
       <body>
         <header className="site-header">
-          <div className="shell masthead">
+          <div className="masthead">
             <Link href="/" className="wordmark">
               adopt<em>churches</em>
             </Link>
@@ -69,10 +71,10 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
               <Link href="/how-it-works">How it works</Link>
               <Link href="/how-it-works#pledge">The pledge book</Link>
             </nav>
-            <hr className="rule-double masthead-rules" />
           </div>
         </header>
         {children}
+        <BasketDock />
         <footer className="site-footer">
           <div className="shell">
             <hr className="rule-double" />

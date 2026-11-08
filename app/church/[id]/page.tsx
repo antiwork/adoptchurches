@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
+import DetailActions from "@/components/DetailActions";
 import MiniMap from "@/components/MiniMap";
 import PledgePanel from "@/components/PledgePanel";
 import {
@@ -58,6 +59,8 @@ export default async function ChurchPage({ params }: Props) {
               {approx ? ` · ${approx} at the recorded rate` : ""} · {l.source}
             </div>
           </div>
+
+          <DetailActions id={l.id} name={displayName(l)} />
 
           <span className="ornament" aria-hidden="true" />
 
