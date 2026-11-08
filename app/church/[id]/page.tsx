@@ -3,7 +3,17 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import MiniMap from "@/components/MiniMap";
 import PledgePanel from "@/components/PledgePanel";
-import { countryName, getListing, listings, priceLabel, usdApprox, whereLabel } from "@/lib/data";
+import {
+  countryName,
+  displayAddress,
+  displayName,
+  getListing,
+  listings,
+  priceLabel,
+  titleCase,
+  usdApprox,
+  whereLabel,
+} from "@/lib/data";
 
 type Props = { params: Promise<{ id: string }> };
 
@@ -14,9 +24,9 @@ export function generateStaticParams() {
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { id } = await params;
   const l = getListing(id);
-  if (!l) return { title: "Not found — adoptchurches" };
+  if (!l) return { title: "Not found · Adopt Churches" };
   return {
-    title: `${l.name} — ${priceLabel(l)} in ${l.city}, ${l.region ?? l.state ?? countryName(l.country)}`,
+    title: `${displayName(l)} · ${priceLabel(l)} · ${l.city}, ${titleCase(l.region ?? l.state ?? countryName(l.country))}`,
     description: l.description.slice(0, 180),
   };
 }
@@ -27,78 +37,118 @@ export default async function ChurchPage({ params }: Props) {
   if (!l) notFound();
 
   const approx = usdApprox(l);
+  const regionLabel =
+    l.country === "US" ? "State" : l.country === "GB" ? "Diocese" : "Region";
 
   return (
     <main className="detail">
       <div className="shell detail-grid">
         <div>
           <Link href="/#atlas" className="back">
-            ← Back to the atlas
+            Return to the atlas
           </Link>
 
-          <div className="eyebrow" style={{ marginTop: 22 }}>
-            For sale · {whereLabel(l)}
-            {l.grade ? ` · ${l.grade}` : ""}
-            {l.status === "Under offer" ? " · under offer" : ""}
-          </div>
-          <h1>{l.name}</h1>
-          <div className="addr">{l.address}</div>
+          <h1>{displayName(l)}</h1>
+          <div className="addr">{displayAddress(l)}</div>
 
           <div className="price-line">
             <div className="p">{priceLabel(l)}</div>
             <div className="sub">
               {l.price_local == null ? "guide price on application" : "asking price"}
-              {approx ? ` · ${approx} at today's rate` : ""} · {l.source}
+              {approx ? ` · ${approx} at the recorded rate` : ""} · {l.source}
             </div>
           </div>
 
-          <hr className="section-rule" />
+          <span className="ornament" aria-hidden="true" />
 
-          <div className="prose">
+          <h2>The building</h2>
+          <div className="prose justified">
             {l.description.split(/\n+/).map((para, i) => (
               <p key={i}>{para}</p>
             ))}
           </div>
 
-          <MiniMap lat={l.lat} lng={l.lng} label={l.name} />
-
           <hr className="section-rule" />
 
-          <h2 style={{ fontSize: "1.6rem", marginBottom: 14 }}>How buying it together would work</h2>
-          <ol className="prose" style={{ paddingLeft: 22 }}>
+          <h2>Particulars</h2>
+          <table className="particulars">
+            <tbody>
+              <tr>
+                <th scope="row">Situation</th>
+                <td>{whereLabel(l)}, {countryName(l.country)}</td>
+              </tr>
+              {l.grade ? (
+                <tr>
+                  <th scope="row">Grade</th>
+                  <td>{l.grade}</td>
+                </tr>
+              ) : null}
+              <tr>
+                <th scope="row">{regionLabel}</th>
+                <td>{titleCase(l.region ?? l.state ?? countryName(l.country))}</td>
+              </tr>
+              <tr>
+                <th scope="row">Guide price</th>
+                <td>
+                  {priceLabel(l)}
+                  {approx ? ` (${approx})` : ""}
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">Agent or source</th>
+                <td>
+                  <a
+                    href={l.contact_url ?? l.source_url}
+                    target="_blank"
+                    rel="noopener noreferrer nofollow"
+                  >
+                    {l.contact ?? l.source}
+                  </a>
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">Status</th>
+                <td>{l.status ?? "Available"}</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <div className="plate">
+            <div className="map-frame">
+              <MiniMap lat={l.lat} lng={l.lng} label={l.name} />
+            </div>
+            <div className="plate-caption">Plate II · situation of the building</div>
+          </div>
+
+          <h2>How a group buys it</h2>
+          <ol className="steps">
             <li>
-              <strong>Pledge a number.</strong> Your name and amount go on this page. It is a
-              signal, not a payment — nobody is charged, and you can ask to be removed at any
-              time.
+              A reader enters a pledge: a name and an amount, recorded on this page. It is a
+              declaration of intent, not a payment. Nothing is charged, and a pledge may be
+              withdrawn on request.
             </li>
             <li>
-              <strong>Reach the number.</strong> When pledges cover the asking price (plus a
-              reserve for closing costs, title, survey and the first year of upkeep), the page
-              closes and the group is introduced.
+              When the pledges against the building cover the asking price, together with a
+              reserve for closing costs, title, survey and the first year of upkeep, the page
+              closes and the pledgers are introduced to one another.
             </li>
             <li>
-              <strong>Form the entity.</strong> Neighbors decide the structure — a nonprofit, a
-              co-op, a land trust, or a single buyer with donations. A real-estate attorney drafts
-              it; a title company or solicitor holds funds in escrow.
+              The group settles its legal form: a nonprofit, a co-operative, a land trust, or a
+              single buyer collecting donations. An attorney drafts the instrument, and a title
+              company or solicitor holds the funds in escrow.
             </li>
             <li>
-              <strong>Buy, then decide what it is.</strong> Worship, a community hall, a school,
-              housing, or simply keeping the doors open and the organ playing. The deed records
-              the promise.
+              The purchase completes, and the group decides the building&apos;s use: worship, a
+              hall, a school, housing, or simple preservation. The deed records the arrangement.
             </li>
           </ol>
 
-          <p className="prose" style={{ color: "var(--ink-mute)", fontSize: "0.95rem" }}>
-            Listing via {l.source}.{" "}
-            <a
-              href={l.contact_url ?? l.source_url}
-              target="_blank"
-              rel="noopener noreferrer nofollow"
-              style={{ textDecoration: "underline", textUnderlineOffset: 3 }}
-            >
+          <p className="prose" style={{ color: "var(--ink-2)", fontSize: "0.92rem" }}>
+            Particulars supplied by {l.source}.{" "}
+            <a href={l.contact_url ?? l.source_url} target="_blank" rel="noopener noreferrer nofollow">
               See the original listing
             </a>
-            . Prices and availability change; verify with the agent before acting.
+            . Prices and availability change; verify every particular with the agent before acting.
           </p>
         </div>
 

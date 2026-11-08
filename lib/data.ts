@@ -72,10 +72,89 @@ export function countryName(code: string): string {
 }
 
 /** Where a building is, in the form each country uses. */
+
+const REGION_NAMES: Record<string, string> = {
+  aquitaine: "Aquitaine",
+  auvergne: "Auvergne",
+  "basse-normandie": "Basse-Normandie",
+  "centre-val-de-loire": "Centre-Val de Loire",
+  "franche-comte": "Franche-Comt\u00e9",
+  "haute-normandie": "Haute-Normandie",
+  "ile-de-france": "\u00cele-de-France",
+  lorraine: "Lorraine",
+  "midi-pyrenees": "Midi-Pyr\u00e9n\u00e9es",
+  "nord-pas-de-calais": "Nord-Pas-de-Calais",
+  paca: "Provence-Alpes-C\u00f4te d'Azur",
+  "pays-de-loire": "Pays de la Loire",
+  picardie: "Picardie",
+  "poitou-charentes": "Poitou-Charentes",
+  "rhones-alpes": "Rh\u00f4ne-Alpes",
+};
+
+const SMALL_WORDS = new Set(["de", "du", "des", "la", "le", "les", "et", "sur", "sous", "en", "of"]);
+
+export function titleCase(input: string): string {
+  const known = REGION_NAMES[input.toLowerCase().trim()];
+  if (known) return known;
+  const words = input.split(/(\s+|[-/])/);
+  let first = true;
+  return words
+    .map((w) => {
+      if (/^[\s\-/]$/.test(w)) return w;
+      if (!w) return w;
+      if (/^[A-Z]{2}$/.test(w)) return w; // PA, NY, UK
+      if (/^[A-Z]{3,}$/.test(w)) return w[0] + w.slice(1).toLowerCase(); // CHER -> Cher
+      const lower = w.toLowerCase();
+      if (!first && SMALL_WORDS.has(lower)) return lower;
+      first = false;
+      return w[0].toUpperCase() + w.slice(1);
+    })
+    .join("");
+}
+
+const BUILDING_TYPE =
+  /\b(église|eglise|chapelle|abbaye|prieuré|prieure|monastère|monastere|couvent|temple|church|chapel|meeting house|synagogue|mosque)\b/i;
+
+// Seller headlines ("Au coeur d'un village ... une ancienne chapelle ...") are long.
+// An entry in a printed register is titled plainly: type and place.
+export function displayName(l: Pick<Listing, "name" | "city" | "region" | "state" | "country">): string {
+  if (l.name.length <= 58) return l.name;
+  const qualified = l.name.match(
+    new RegExp(`\\b(ancienne?|former|ex-)\\s+([^,.;]{0,26}?)\\b(${BUILDING_TYPE.source.slice(2, -2)})\\b`, "i"),
+  );
+  const typeMatch = l.name.match(BUILDING_TYPE);
+  if (qualified) {
+    const q = qualified[1].toLowerCase();
+    const t = qualified[3].toLowerCase();
+    return `${q[0].toUpperCase()}${q.slice(1)} ${t}, ${l.city}`;
+  }
+  if (typeMatch) return `${titleCase(typeMatch[1].toLowerCase())}, ${l.city}`;
+  return `${l.city}, ${titleCase(l.region ?? l.state ?? countryName(l.country))}`;
+}
+
+// Harvested addresses arrive in the seller's casing: "Sancerre, CHER, centre-val-de-loire, France".
+export function displayAddress(l: Pick<Listing, "address" | "city" | "country">): string {
+  const parts = l.address
+    .split(",")
+    .map((p) => p.trim())
+    .filter(Boolean)
+    .map((p) => (/^[0-9]/.test(p) ? p : titleCase(p)));
+  const seen = new Set<string>();
+  const out: string[] = [];
+  for (const p of parts) {
+    const key = p.toLowerCase();
+    if (seen.has(key)) continue;
+    seen.add(key);
+    out.push(p);
+  }
+  return out.join(", ");
+}
+
 export function whereLabel(l: Pick<Listing, "city" | "state" | "region" | "country">): string {
   if (l.country === "US") return `${l.city}, ${l.state ?? l.region ?? ""}`.replace(/,\s*$/, "");
   if (l.country === "GB") return `${l.city}, ${l.region ?? "England"}`.replace(/,\s*$/, "");
-  return `${l.city}, ${l.region ?? countryName(l.country)}`.replace(/,\s*$/, "");
+  const region = l.region ? titleCase(l.region) : countryName(l.country);
+  return `${l.city}, ${region}`.replace(/,\s*$/, "");
 }
 
 export function countryCount(): number {

@@ -3,7 +3,7 @@
 import { useEffect, useMemo, useRef, useState } from "react";
 import Link from "next/link";
 import type { Listing } from "@/lib/types";
-import { countryName, distanceLabel, milesFrom, priceLabel, usdApprox, whereLabel } from "@/lib/data";
+import { countryName, displayName, distanceLabel, milesFrom, priceLabel, usdApprox, whereLabel } from "@/lib/data";
 
 type Band = "all" | "under250" | "mid" | "over1m";
 type CountryFilter = "all" | "US" | "GB" | "FR";
@@ -56,7 +56,7 @@ export default function Atlas({ listings }: { listings: Listing[] }) {
       .map(({ l }) => l);
   }, [listings, q, band, country, origin]);
 
-  // load pledges so cards can show progress
+  // load pledge counts so entries can note them
   useEffect(() => {
     let alive = true;
     fetch("/api/pledges")
@@ -174,22 +174,21 @@ export default function Atlas({ listings }: { listings: Listing[] }) {
     <section className="atlas" id="atlas">
       <div className="shell">
         <div className="atlas-head">
-          <div>
-            <div className="eyebrow">The atlas</div>
-            <h2>{rows.length.toLocaleString("en-US")} buildings on the market right now</h2>
+          <div className="eyebrow">The atlas</div>
+          <h2>{rows.length.toLocaleString("en-US")} buildings presently offered</h2>
+          <div className="atlas-tools">
+            <button className="btn" onClick={locate} disabled={locating}>
+              {locating ? "Finding your position" : origin ? "Recentre on me" : "Sort by distance"}
+            </button>
           </div>
-          <button className="btn ghost" onClick={locate} disabled={locating}>
-            {locating ? "Finding you…" : origin ? "Recentre on me" : "Sort by distance"}
-          </button>
         </div>
 
         <div className="controls">
           <label className="field">
-            <SearchIcon />
             <input
               value={q}
               onChange={(e) => setQ(e.target.value)}
-              placeholder="Search a town, county, or a name"
+              placeholder="Search by town, county, or name"
               aria-label="Search listings"
             />
           </label>
@@ -230,22 +229,23 @@ export default function Atlas({ listings }: { listings: Listing[] }) {
 
         <div className="atlas-body">
           <div className="map-wrap">
+            <div className="map-frame">
+              <div className="map" ref={mapEl} />
+            </div>
+            <div className="plate-caption">Plate I · the atlas</div>
             <div className="map-hint">
               {origin
-                ? "Sorted from your location. Click a pin to read about the building."
-                : `Click a pin to open it. ${rows.length > 500 ? `Pins show the first 500 of ${rows.length}.` : ""}`}
+                ? "Entries are ordered from your position. Select a pin to read an entry."
+                : `Select a pin to open its entry.${rows.length > 500 ? ` Pins show the first 500 of ${rows.length}.` : ""}`}
             </div>
-            <div className="map" ref={mapEl} />
           </div>
 
           <div className="list" ref={listRef}>
             {rows.length === 0 && (
-              <div className="empty">Nothing matches that yet. Try a wider price band.</div>
+              <div className="empty">No entry answers that description. Try a wider price band.</div>
             )}
-            {rows.map((l, i) => {
+            {rows.map((l) => {
               const agg = aggs[l.id];
-              const goal = (l.price_usd ?? 0) * 100;
-              const pct = agg && goal > 0 ? Math.min(100, (agg.totalCents / goal) * 100) : 0;
               const approx = usdApprox(l);
               return (
                 <Link
@@ -257,29 +257,23 @@ export default function Atlas({ listings }: { listings: Listing[] }) {
                   onMouseEnter={() => setSelected(l.id)}
                   onFocus={() => setSelected(l.id)}
                 >
-                  <div className="rank">{String(i + 1).padStart(2, "0")}</div>
                   <div>
-                    <div className="name">{l.name}</div>
+                    <div className="name">{displayName(l)}</div>
                     <div className="where">
                       {whereLabel(l)}
                       {l.grade ? ` · ${l.grade}` : ""}
                     </div>
-                    <div className="bar">
-                      <i style={{ width: `${pct}%` }} />
-                    </div>
-                    <div className="bar-meta">
-                      <span>
+                    {(agg?.count ?? 0) > 0 || l.status === "Under offer" ? (
+                      <div className="meta">
                         {agg && agg.count > 0
-                          ? `${agg.count} pledged`
-                          : l.status === "Under offer"
-                            ? "Under offer"
-                            : "No pledges yet"}
-                      </span>
-                      <span>{approx ?? (agg && agg.count > 0 ? `${Math.round(pct)}%` : "")}</span>
-                    </div>
+                          ? `${agg.count} ${agg.count === 1 ? "pledge" : "pledges"} entered`
+                          : "Under offer"}
+                      </div>
+                    ) : null}
                   </div>
                   <div className="right">
                     <div className="price">{priceLabel(l)}</div>
+                    {approx && <div className="meta">{approx}</div>}
                     {origin && <div className="dist">{distanceLabel(milesFrom(origin, l))}</div>}
                   </div>
                 </Link>
@@ -289,15 +283,6 @@ export default function Atlas({ listings }: { listings: Listing[] }) {
         </div>
       </div>
     </section>
-  );
-}
-
-function SearchIcon() {
-  return (
-    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-      <circle cx="11" cy="11" r="7" />
-      <path d="m20 20-3.5-3.5" />
-    </svg>
   );
 }
 

@@ -39,7 +39,6 @@ export default function PledgePanel({
 
   const goal = priceUsd * 100;
   const hasGoal = goal > 0;
-  const pct = hasGoal ? Math.min(100, (agg.totalCents / goal) * 100) : 0;
 
   async function submit(e: React.FormEvent) {
     e.preventDefault();
@@ -53,7 +52,7 @@ export default function PledgePanel({
       });
       const data = await res.json();
       if (!res.ok) {
-        setError(data?.error ?? "That didn't go through.");
+        setError(data?.error ?? "The pledge was not recorded. Try once more.");
         setStatus("idle");
         return;
       }
@@ -63,47 +62,44 @@ export default function PledgePanel({
       setEmail("");
       setNote("");
     } catch {
-      setError("Network trouble. Try again.");
+      setError("The connection failed. Try once more.");
       setStatus("idle");
     }
   }
 
   return (
     <aside className="panel" id="pledge">
-      <h3>Pledge toward this building</h3>
+      <h3>The pledge book</h3>
+      <hr className="panel-rule" />
       <div className="goal">
         {!hasGoal
           ? agg.count === 0
-            ? "No asking price is published — pledge to show the group is forming."
-            : `${agg.count} ${agg.count === 1 ? "pledge" : "pledges"} · ${money(agg.totalCents)} so far` +
-              (priceLabelText ? ` · guide price ${priceLabelText}` : "")
+            ? "No asking price is published. A pledge records that a group is forming." +
+              (priceLabelText ? ` ${priceLabelText}.` : "")
+            : `${agg.count} ${agg.count === 1 ? "pledge" : "pledges"} entered, amounting to ${money(agg.totalCents)}.` +
+              (priceLabelText ? ` Guide price ${priceLabelText.toLowerCase()}.` : "")
           : agg.count === 0
-            ? `Be the first name on it · goal ${money(goal)}`
-            : `${agg.count} ${agg.count === 1 ? "pledge" : "pledges"} · ${money(agg.totalCents)} of ${money(goal)}` +
-              (priceLabelText && !priceLabelText.startsWith("$") ? ` (${priceLabelText})` : "")}
-      </div>
-      <div className="bar">
-        <i style={{ width: `${pct}%` }} />
-      </div>
-      <div className="bar-meta">
-        <span>
-          {!hasGoal ? "Offers invited" : `${pct < 0.1 ? "0%" : `${pct.toFixed(pct < 10 ? 1 : 0)}%`} of asking price`}
-        </span>
-        <span>{hasGoal ? `${money(Math.max(0, goal - agg.totalCents))} to go` : ""}</span>
+            ? `No pledge has yet been entered. The asking price is ${money(goal)}${
+                priceLabelText && !priceLabelText.startsWith("$") ? ` (${priceLabelText})` : ""
+              }.`
+            : `${agg.count} ${agg.count === 1 ? "pledge" : "pledges"} entered, amounting to ${money(
+                agg.totalCents,
+              )} of the ${money(goal)} asked. ${money(Math.max(0, goal - agg.totalCents))} remains.`}
       </div>
 
       {status === "done" ? (
         <div className="msg ok">
-          <p style={{ marginBottom: 8 }}>
-            <strong>You&apos;re on the list.</strong> We&apos;ll email {email || "you"} when this
-            building gets within reach of its number.
+          <p style={{ marginBottom: 10 }}>
+            Your pledge is entered in the book. Word will be sent to {email || "you"} when the
+            pledges against this building approach its price.
           </p>
-          <button className="btn ghost" onClick={() => setStatus("idle")}>
-            Add another pledge
+          <button className="btn" onClick={() => setStatus("idle")}>
+            Enter another pledge
           </button>
         </div>
       ) : (
         <form onSubmit={submit}>
+          <label htmlFor="amt">Amount (USD)</label>
           <div className="amounts">
             {PRESETS.map((p) => (
               <button
@@ -113,12 +109,10 @@ export default function PledgePanel({
                 onClick={() => setAmount(p)}
                 aria-pressed={amount === p}
               >
-                {p < 1000 ? `$${p}` : `$${p / 1000}k`}
+                {p < 1000 ? `$${p}` : `$${(p / 1000).toLocaleString("en-US")},000`}
               </button>
             ))}
           </div>
-
-          <label htmlFor="amt">Your amount (USD)</label>
           <input
             id="amt"
             inputMode="numeric"
@@ -126,7 +120,7 @@ export default function PledgePanel({
             onChange={(e) => setAmount(Math.max(5, Number(e.target.value.replace(/[^\d]/g, "")) || 0))}
           />
 
-          <label htmlFor="name">Name to show</label>
+          <label htmlFor="name">Name, as it will appear</label>
           <input id="name" value={name} onChange={(e) => setName(e.target.value)} placeholder="Dana R." required />
 
           <label htmlFor="email">Email</label>
@@ -139,17 +133,17 @@ export default function PledgePanel({
             required
           />
 
-          <label htmlFor="note">Why this one? (optional)</label>
+          <label htmlFor="note">Reason, if you care to give one</label>
           <textarea
             id="note"
             rows={3}
             value={note}
             onChange={(e) => setNote(e.target.value)}
-            placeholder="Baptized here. Want the organ to stay."
+            placeholder="Baptized here. The organ should stay."
           />
 
           <button className="btn brass" type="submit" disabled={status === "sending"}>
-            {status === "sending" ? "Recording…" : `Pledge ${money(amount * 100)}`}
+            {status === "sending" ? "Recording" : `Pledge ${money(amount * 100)}`}
           </button>
           {error && <div className="msg err">{error}</div>}
           <div className="fine">
