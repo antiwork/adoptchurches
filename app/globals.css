@@ -1511,3 +1511,21 @@ body:has(.checkout) .site-header {
   color: var(--ink-2);
   text-align: center;
 }
+
+/* demand ledger */
+.demand-sums { margin: 26px 0 8px; }
+.demand-sums > div { border-bottom: 1px solid var(--rule-soft); }
+.demand-sums dt { text-transform: none; letter-spacing: 0.02em; }
+.demand-table { margin-top: 12px; }
+.demand-table th {
+  font-size: 10px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--ink-2);
+  text-align: left;
+  padding: 0 0 6px;
+  border-bottom: 1px solid var(--rule);
+  font-weight: 500;
+}
+.demand-table td { padding: 8px 0; border-bottom: 1px solid var(--rule-soft); vertical-align: top; }
+.demand-table td + td, .demand-table th + th { text-align: right; white-space: nowrap; }

@@ -45,6 +45,8 @@ export async function POST(request: Request) {
 
   // Email is best-effort: an order that is written down is still an order.
   let emailError: string | null = null;
+  let receiptId: string | undefined;
+  let notifyId: string | undefined;
   if (mailConfigured()) {
     const receipt = receiptMail(order);
     const buyer = await sendMail({
@@ -68,11 +70,13 @@ export async function POST(request: Request) {
       text: internal.text,
       replyTo: order.email,
     });
+    receiptId = buyer.id;
+    notifyId = alert.id;
     emailError = [buyer.error, alert.error].filter(Boolean).join(" · ") || null;
   } else {
     emailError = "RESEND_API_KEY is not set; no mail sent.";
   }
-  await markOrderEmailed(order.id, emailError);
+  await markOrderEmailed(order.id, emailError, { receiptId, notifyId });
 
   return NextResponse.json({ ok: true, order, emailed: !emailError, emailError }, { status: 201 });
 }

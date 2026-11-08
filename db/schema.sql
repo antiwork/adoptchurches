@@ -69,3 +69,7 @@ create or replace view demand_summary as
     (select coalesce(sum(baskets), 0) from listings_demand)     as baskets,
     (select count(distinct listing_id) from listings_demand
        where collects > 0 or baskets > 0)                      as listings_with_interest;
+
+-- ids returned by Resend, so a letter can be traced after it leaves
+alter table orders add column if not exists receipt_email_id text;
+alter table orders add column if not exists notify_email_id text;

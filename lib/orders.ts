@@ -136,13 +136,19 @@ export async function createOrder(input: {
   }
 }
 
-export async function markOrderEmailed(id: number, error: string | null) {
+export async function markOrderEmailed(
+  id: number,
+  error: string | null,
+  ids: { receiptId?: string; notifyId?: string } = {},
+) {
   const { query } = await import("./db");
   await query(
     `update orders set emailed_at = case when $2::text is null then now() else emailed_at end,
-            email_error = $2
+            email_error = $2,
+            receipt_email_id = coalesce($3, receipt_email_id),
+            notify_email_id = coalesce($4, notify_email_id)
       where id = $1`,
-    [id, error],
+    [id, error, ids.receiptId ?? null, ids.notifyId ?? null],
   );
 }
 
