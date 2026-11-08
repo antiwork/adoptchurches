@@ -1,5 +1,5 @@
 import { NextResponse } from "next/server";
-import { getListing } from "@/lib/data";
+import { displayName, getListing } from "@/lib/data";
 import { hasDb } from "@/lib/db";
 import { validatePledge } from "@/lib/pledges";
 import { addPledge, aggregateAll, aggregateFor, recordPledgeMail } from "@/lib/pledges-db";
@@ -40,7 +40,7 @@ export async function POST(request: Request) {
   if (mailConfigured()) {
     const mail = pledgeMail({
       name: parsed.value.name,
-      building: listing.name,
+      building: displayName(listing),
       amountCents: parsed.value.amountCents,
       note: parsed.value.note,
     });
@@ -53,7 +53,7 @@ export async function POST(request: Request) {
     }).catch(() => undefined);
 
     const alert = notifyMail("New pledge", [
-      `${parsed.value.name} pledged $${(parsed.value.amountCents / 100).toLocaleString("en-US")} against ${listing.name}.`,
+      `${parsed.value.name} pledged $${(parsed.value.amountCents / 100).toLocaleString("en-US")} against ${displayName(listing)}.`,
       parsed.value.email,
       ...(parsed.value.note ? [`Note: ${parsed.value.note}`] : []),
     ]);

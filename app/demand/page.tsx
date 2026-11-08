@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { getListing, whereLabel } from "@/lib/data";
+import { displayName, getListing, whereLabel } from "@/lib/data";
 import { hasDb } from "@/lib/db";
 import { demandSummary, topDemand } from "@/lib/demand";
 
@@ -99,7 +99,7 @@ export default async function DemandPage() {
                     <td>
                       <div className="order-name">
                         {listing ? (
-                          <Link href={`/church/${row.listing_id}`}>{listing.name}</Link>
+                          <Link href={`/church/${row.listing_id}`}>{displayName(listing)}</Link>
                         ) : (
                           row.listing_id
                         )}
