@@ -90,8 +90,8 @@ export default function Atlas({ listings }: { listings: Listing[] }) {
         attributionControl: true,
         worldCopyJump: true,
       });
-      L.tileLayer("https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png", {
-        attribution: '&copy; OpenStreetMap contributors &copy; CARTO',
+      L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", {
+        attribution: '&copy; OpenStreetMap contributors',
         subdomains: "abcd",
         maxZoom: 19,
       }).addTo(map);
