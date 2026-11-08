@@ -7,7 +7,15 @@ const PRESETS = [500, 1_000, 5_000, 25_000];
 
 type Agg = { count: number; totalCents: number; recent: { name: string; amountCents: number; at: string }[] };
 
-export default function PledgePanel({ listingId, priceUsd }: { listingId: string; priceUsd: number }) {
+export default function PledgePanel({
+  listingId,
+  priceUsd,
+  priceLabelText,
+}: {
+  listingId: string;
+  priceUsd: number;
+  priceLabelText?: string;
+}) {
   const [agg, setAgg] = useState<Agg>({ count: 0, totalCents: 0, recent: [] });
   const [amount, setAmount] = useState<number>(1_000);
   const [name, setName] = useState("");
@@ -30,7 +38,8 @@ export default function PledgePanel({ listingId, priceUsd }: { listingId: string
   }, [listingId]);
 
   const goal = priceUsd * 100;
-  const pct = Math.min(100, (agg.totalCents / goal) * 100);
+  const hasGoal = goal > 0;
+  const pct = hasGoal ? Math.min(100, (agg.totalCents / goal) * 100) : 0;
 
   async function submit(e: React.FormEvent) {
     e.preventDefault();
@@ -63,16 +72,24 @@ export default function PledgePanel({ listingId, priceUsd }: { listingId: string
     <aside className="panel" id="pledge">
       <h3>Pledge toward this building</h3>
       <div className="goal">
-        {agg.count === 0
-          ? `Be the first name on it · goal ${money(goal)}`
-          : `${agg.count} ${agg.count === 1 ? "pledge" : "pledges"} · ${money(agg.totalCents)} of ${money(goal)}`}
+        {!hasGoal
+          ? agg.count === 0
+            ? "No asking price is published — pledge to show the group is forming."
+            : `${agg.count} ${agg.count === 1 ? "pledge" : "pledges"} · ${money(agg.totalCents)} so far` +
+              (priceLabelText ? ` · guide price ${priceLabelText}` : "")
+          : agg.count === 0
+            ? `Be the first name on it · goal ${money(goal)}`
+            : `${agg.count} ${agg.count === 1 ? "pledge" : "pledges"} · ${money(agg.totalCents)} of ${money(goal)}` +
+              (priceLabelText && !priceLabelText.startsWith("$") ? ` (${priceLabelText})` : "")}
       </div>
       <div className="bar">
         <i style={{ width: `${pct}%` }} />
       </div>
       <div className="bar-meta">
-        <span>{pct < 0.1 ? "0%" : `${pct.toFixed(pct < 10 ? 1 : 0)}%`} of asking price</span>
-        <span>{money(Math.max(0, goal - agg.totalCents))} to go</span>
+        <span>
+          {!hasGoal ? "Offers invited" : `${pct < 0.1 ? "0%" : `${pct.toFixed(pct < 10 ? 1 : 0)}%`} of asking price`}
+        </span>
+        <span>{hasGoal ? `${money(Math.max(0, goal - agg.totalCents))} to go` : ""}</span>
       </div>
 
       {status === "done" ? (

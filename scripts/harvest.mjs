@@ -36,7 +36,7 @@ async function search(body) {
       "Content-Type": "application/json",
       Origin: "https://www.crexi.com",
       Referer: "https://www.crexi.com/",
-      "User-Agent": "adoptachurch/0.1 (+https://github.com/antiwork/adoptachurch)",
+      "User-Agent": "adoptchurches/0.1 (+https://github.com/antiwork/adoptchurches)",
     },
     body: JSON.stringify(body),
   });

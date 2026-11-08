@@ -1,5 +1,26 @@
 [
  {
+  "id": "pb-716301",
+  "name": "Au cœur d'un village, et proche de celui préféré des Francais, une ancienne chapelle aménageable, non loin du canal ...",
+  "address": "Sancerre, CHER, centre-val-de-loire, France",
+  "city": "Sancerre",
+  "region": "centre-val-de-loire",
+  "country": "FR",
+  "lat": 47.3306906,
+  "lng": 2.8390454,
+  "price_local": 30000,
+  "currency": "EUR",
+  "description": "Au cœur d'un village, et proche de celui préféré des Francais, une ancienne chapelle aménageable, non loin du canal ...",
+  "grade": null,
+  "status": "Available",
+  "source": "Patrice Besse",
+  "source_url": "https://patrice-besse.com/chateaux-demeures-manoirs-appartements-a-vendre/edifices-religieux-a-vendre/",
+  "source_id": "pb716301",
+  "contact_url": null,
+  "price_usd": 33490,
+  "rank": 1
+ },
+ {
   "id": "crexi-2012510",
   "name": "Former church in Jeannette, PA",
   "address": "112 13th St, Jeannette, Westmoreland County, PA 15644",
@@ -15,7 +36,13 @@
   "source_id": "2012510",
   "images": [],
   "contact": "Keller Williams Realty",
-  "rank": 1
+  "rank": 2,
+  "country": "US",
+  "currency": "USD",
+  "price_local": 50000,
+  "region": "PA",
+  "status": "Available",
+  "contact_url": null
  },
  {
   "id": "crexi-1930895",
@@ -33,7 +60,13 @@
   "source_id": "1930895",
   "images": [],
   "contact": null,
-  "rank": 2
+  "rank": 3,
+  "country": "US",
+  "currency": "USD",
+  "price_local": 59900,
+  "region": "AL",
+  "status": "Available",
+  "contact_url": null
  },
  {
   "id": "crexi-2196313",
@@ -51,7 +84,13 @@
   "source_id": "2196313",
   "images": [],
   "contact": "Recckio Real Estate and Development",
-  "rank": 3
+  "rank": 4,
+  "country": "US",
+  "currency": "USD",
+  "price_local": 64900,
+  "region": "NY",
+  "status": "Available",
+  "contact_url": null
  },
  {
   "id": "crexi-1692129",
@@ -69,7 +108,13 @@
   "source_id": "1692129",
   "images": [],
   "contact": "Evans Realty",
-  "rank": 4
+  "rank": 5,
+  "country": "US",
+  "currency": "USD",
+  "price_local": 74000,
+  "region": "MO",
+  "status": "Available",
+  "contact_url": null
  },
  {
   "id": "crexi-2168916",
@@ -87,7 +132,13 @@
   "source_id": "2168916",
   "images": [],
   "contact": "Real Estate Professional Services",
-  "rank": 5
+  "rank": 6,
+  "country": "US",
+  "currency": "USD",
+  "price_local": 79900,
+  "region": "MI",
+  "status": "Available",
+  "contact_url": null
  },
  {
   "id": "crexi-2213544",
@@ -105,7 +156,13 @@
   "source_id": "2213544",
   "images": [],
   "contact": "Real Estate Professional Services",
-  "rank": 6
+  "rank": 7,
+  "country": "US",
+  "currency": "USD",
+  "price_local": 80000,
+  "region": "MI",
+  "status": "Available",
+  "contact_url": null
  },
  {
   "id": "crexi-2213328",
@@ -117,13 +174,19 @@
   "lat": 46.354579,
   "lng": -85.514774,
   "price_usd": 80000,
-  "description": "8,200 sq. ft. church seats 125\u2013140 w/ fellowship hall, kitchen, offices, classrooms & 2.5-car garage",
+  "description": "8,200 sq. ft. church seats 125–140 w/ fellowship hall, kitchen, offices, classrooms & 2.5-car garage",
   "source": "Crexi",
   "source_url": "https://www.crexi.com/properties/2213328/michigan-our-redeemer-lutheran-church",
   "source_id": "2213328",
   "images": [],
   "contact": "Real Estate Professional Services",
-  "rank": 7
+  "rank": 8,
+  "country": "US",
+  "currency": "USD",
+  "price_local": 80000,
+  "region": "MI",
+  "status": "Available",
+  "contact_url": null
  },
  {
   "id": "crexi-2418175",
@@ -141,7 +204,13 @@
   "source_id": "2418175",
   "images": [],
   "contact": "CENTURY 21 Premier Group Pittsburg",
-  "rank": 8
+  "rank": 9,
+  "country": "US",
+  "currency": "USD",
+  "price_local": 84999,
+  "region": "TX",
+  "status": "Available",
+  "contact_url": null
  },
  {
   "id": "crexi-2570658",
@@ -159,7 +228,13 @@
   "source_id": "2570658",
   "images": [],
   "contact": "Real Estate Professional Services",
-  "rank": 9
+  "rank": 10,
+  "country": "US",
+  "currency": "USD",
+  "price_local": 89000,
+  "region": "MI",
+  "status": "Available",
+  "contact_url": null
  },
  {
   "id": "crexi-2314684",
@@ -177,7 +252,13 @@
   "source_id": "2314684",
   "images": [],
   "contact": "Berkshire Hathaway HomeServices The Preferred Realty New Castle",
-  "rank": 10
+  "rank": 11,
+  "country": "US",
+  "currency": "USD",
+  "price_local": 99000,
+  "region": "PA",
+  "status": "Available",
+  "contact_url": null
  },
  {
   "id": "crexi-2668642",
@@ -195,7 +276,13 @@
   "source_id": "2668642",
   "images": [],
   "contact": "Signature Associates Toledo",
-  "rank": 11
+  "rank": 12,
+  "country": "US",
+  "currency": "USD",
+  "price_local": 99000,
+  "region": "OH",
+  "status": "Available",
+  "contact_url": null
  },
  {
   "id": "crexi-2560765",
@@ -213,7 +300,13 @@
   "source_id": "2560765",
   "images": [],
   "contact": "Resort Realty",
-  "rank": 12
+  "rank": 13,
+  "country": "US",
+  "currency": "USD",
+  "price_local": 99900,
+  "region": "NY",
+  "status": "Available",
+  "contact_url": null
  },
  {
   "id": "crexi-898608",
@@ -231,7 +324,13 @@
   "source_id": "898608",
   "images": [],
   "contact": "Eric Stamm Team Real Estate",
-  "rank": 13
+  "rank": 14,
+  "country": "US",
+  "currency": "USD",
+  "price_local": 99900,
+  "region": "MI",
+  "status": "Available",
+  "contact_url": null
  },
  {
   "id": "crexi-1545312",
@@ -249,7 +348,34 @@
   "source_id": "1545312",
   "images": [],
   "contact": "NAI Platform",
-  "rank": 14
+  "rank": 15,
+  "country": "US",
+  "currency": "USD",
+  "price_local": 100000,
+  "region": "NY",
+  "status": "Available",
+  "contact_url": null
+ },
+ {
+  "id": "pb-354518",
+  "name": "Dans le département de l'Oise, au centre d'une petite ville, un temple protestant du 19e s., désacralisé, et son terrain ...",
+  "address": "Crèvecœur-le-Grand, OISE, picardie, France",
+  "city": "Crèvecœur-le-Grand",
+  "region": "picardie",
+  "country": "FR",
+  "lat": 49.611,
+  "lng": 2.08184,
+  "price_local": 90000,
+  "currency": "EUR",
+  "description": "Dans le département de l'Oise, au centre d'une petite ville,  un temple protestant du 19e s., désacralisé, et son terrain ...",
+  "grade": null,
+  "status": "Available",
+  "source": "Patrice Besse",
+  "source_url": "https://patrice-besse.com/annonces/edifices-religieux-a-vendre-Dans-le-departement-de-l-Oise--pb354518",
+  "source_id": "pb354518",
+  "contact_url": "https://patrice-besse.com/annonces/edifices-religieux-a-vendre-Dans-le-departement-de-l-Oise--pb354518",
+  "price_usd": 100470,
+  "rank": 16
  },
  {
   "id": "crexi-2313570",
@@ -267,7 +393,55 @@
   "source_id": "2313570",
   "images": [],
   "contact": "Cushman & Wakefield Pyramid Brokerage Company Syracuse",
-  "rank": 15
+  "rank": 17,
+  "country": "US",
+  "currency": "USD",
+  "price_local": 125000,
+  "region": "NY",
+  "status": "Available",
+  "contact_url": null
+ },
+ {
+  "id": "cofe-south-moor-st-george-diocese-durham",
+  "name": "South Moor, St George",
+  "address": "South Moor, St George, Diocese of Durham, England",
+  "city": "South Moor",
+  "region": "Diocese of Durham",
+  "country": "GB",
+  "lat": 54.8578427,
+  "lng": -1.7048117,
+  "price_local": 95000,
+  "currency": "GBP",
+  "description": "St George’s is a Grade II Listed church building with multiple features of architectural importance including a range of stained glass windows and memorials. There is a very well used memorial garden on the northern elevation of the property. The property itself is of a traditional construction as expected of a church building of this age with solid sandstone walls, pitched timber framed roof under a traditional slate surface. Cast iron guttering and downpipes and stone framed single glazed, lead lined windows. The property sits within a large site, with the majority of the land used for burials. Land as defined on the attached plan is offered for sale with the building. The property has a small road which runs all the way around the building which can be used for vehicular access. To the north of the site there is a small rectangular plot of land which would likely be suitable for redevelopment or indeed repurposing as car parking for the church building as part of its future use. From our on site measurements we calculate the property to provide 255 sq m (2,745 sq ft) of gross internal area. The property has a maximum cleared height of 6.47m to the apex of the roof. Key features ",
+  "grade": "Grade II",
+  "status": "Available",
+  "source": "Church of England",
+  "source_url": "https://churchofengland.org/closed-churches/south-moor-st-george-diocese-durham",
+  "source_id": "/closed-churches/south-moor-st-george-diocese-durham",
+  "contact_url": "https://www.sw.co.uk/properties/stanley-st-georges-church-3-east-view-south-moor-stanley/",
+  "price_usd": 127095,
+  "rank": 18
+ },
+ {
+  "id": "cofe-tunstead-holy-trinity-diocese-manchester",
+  "name": "Tunstead, Holy Trinity",
+  "address": "Tunstead, Holy Trinity, Diocese of Manchester, England",
+  "city": "Tunstead",
+  "region": "Diocese of Manchester",
+  "country": "GB",
+  "lat": 53.6916926,
+  "lng": -2.2297844,
+  "price_local": 95000,
+  "currency": "GBP",
+  "description": "The property dates back to around 1840 and was consecrated in 1841 and is an example of plain early English Architecture with chancel and transept, featuring coursed dressed sandstone and a west tower in a Norman style. The church was built to accommodate 600 people originally and later increased to a seating capacity of 1,000. The property is Grade II listed and sits on a banked site and does not have any onsite parking. The accommodation provides 4,507 Sq.ft at ground floor level with 675 Sq.ft at first floor. For further information relating to the Historic England listing please follow this link: https://historicengland.org.uk/listing/the-list/list-entry/1072830 Planning/Future uses: The property benefits from F1 use and similar uses such as education, museum, public hall will not require a change of use. The property may also be suitable for alternative uses or redevelopment which will be subject to Planning and Listed Building consent. Expressions of interest should be made direct to the Agent. Key features",
+  "grade": "Grade II",
+  "status": "Available",
+  "source": "Church of England",
+  "source_url": "https://churchofengland.org/closed-churches/tunstead-holy-trinity-diocese-manchester",
+  "source_id": "/closed-churches/tunstead-holy-trinity-diocese-manchester",
+  "contact_url": "https://mbre.space/property/new-church-road-bacup-bacup/",
+  "price_usd": 127095,
+  "rank": 19
  },
  {
   "id": "crexi-2605435",
@@ -285,11 +459,17 @@
   "source_id": "2605435",
   "images": [],
   "contact": null,
-  "rank": 16
+  "rank": 20,
+  "country": "US",
+  "currency": "USD",
+  "price_local": 129500,
+  "region": "MO",
+  "status": "Available",
+  "contact_url": null
  },
  {
   "id": "crexi-2683423",
-  "name": "1,500\u00b1 SF Church Building on 1.7\u00b1 Acres | Atmore, AL",
+  "name": "1,500± SF Church Building on 1.7± Acres | Atmore, AL",
   "address": "201 Lindberg Avenue, Atmore, Escambia County, AL 36502",
   "city": "Atmore",
   "state": "AL",
@@ -303,7 +483,34 @@
   "source_id": "2683423",
   "images": [],
   "contact": "PHD Realty",
-  "rank": 17
+  "rank": 21,
+  "country": "US",
+  "currency": "USD",
+  "price_local": 130000,
+  "region": "AL",
+  "status": "Available",
+  "contact_url": null
+ },
+ {
+  "id": "cofe-croglin-st-john-diocese-carlisle",
+  "name": "Croglin, St John",
+  "address": "Croglin, St John, Diocese of Carlisle, England",
+  "city": "Croglin",
+  "region": "Diocese of Carlisle",
+  "country": "GB",
+  "lat": 54.8181035,
+  "lng": -2.6635953,
+  "price_local": 100000,
+  "currency": "GBP",
+  "description": "t John the Baptist Church, ready and waiting for cash buyers to discover the potential of this remarkable Grade II Listed Church, where history meets opportunity. A church has stood on this site since Norman times with the current structure built in 1878 , designed by J. Hewison of Edinburgh, now awaiting a new chapter, this historic building presents a canvas for those with vision, though any future change of use will necessitate planning permission and a comprehensive renovation program. This intriguing property is steeped in character and heritage, waiting to be transformed into a cherished home, commercial space or cultural venture. With its peaceful setting and architectural grandeur, this property offers a truly exceptional proposition for those seeking a unique project with endless possibilities. Expressions of interest should be made direct to the Agent. Key features Guide Price £100,000 (May not apply to a community use)",
+  "grade": "Grade II",
+  "status": "Available",
+  "source": "Church of England",
+  "source_url": "https://churchofengland.org/closed-churches/croglin-st-john-diocese-carlisle",
+  "source_id": "/closed-churches/croglin-st-john-diocese-carlisle",
+  "contact_url": "https://www.rightmove.co.uk/properties/167212598#/?channel=RES_BUY",
+  "price_usd": 133784,
+  "rank": 22
  },
  {
   "id": "crexi-2529989",
@@ -321,7 +528,13 @@
   "source_id": "2529989",
   "images": [],
   "contact": "Nicklaus Vance Realty Group",
-  "rank": 18
+  "rank": 23,
+  "country": "US",
+  "currency": "USD",
+  "price_local": 135000,
+  "region": "FL",
+  "status": "Available",
+  "contact_url": null
  },
  {
   "id": "crexi-2556913",
@@ -339,7 +552,13 @@
   "source_id": "2556913",
   "images": [],
   "contact": "Colliers - Cleveland, Ohio",
-  "rank": 19
+  "rank": 24,
+  "country": "US",
+  "currency": "USD",
+  "price_local": 135000,
+  "region": "OH",
+  "status": "Available",
+  "contact_url": null
  },
  {
   "id": "crexi-2511923",
@@ -357,7 +576,13 @@
   "source_id": "2511923",
   "images": [],
   "contact": "Perry Wellington Realty",
-  "rank": 20
+  "rank": 25,
+  "country": "US",
+  "currency": "USD",
+  "price_local": 139000,
+  "region": "PA",
+  "status": "Available",
+  "contact_url": null
  },
  {
   "id": "crexi-2459497",
@@ -375,7 +600,13 @@
   "source_id": "2459497",
   "images": [],
   "contact": "Realty Executives Hometown Living",
-  "rank": 21
+  "rank": 26,
+  "country": "US",
+  "currency": "USD",
+  "price_local": 150000,
+  "region": "TN",
+  "status": "Available",
+  "contact_url": null
  },
  {
   "id": "crexi-1010921",
@@ -393,7 +624,13 @@
   "source_id": "1010921",
   "images": [],
   "contact": "Coldwell Banker Commercial - RGV",
-  "rank": 22
+  "rank": 27,
+  "country": "US",
+  "currency": "USD",
+  "price_local": 150000,
+  "region": "TX",
+  "status": "Available",
+  "contact_url": null
  },
  {
   "id": "crexi-2260253",
@@ -411,7 +648,13 @@
   "source_id": "2260253",
   "images": [],
   "contact": "Keller Williams Realty - Champaign",
-  "rank": 23
+  "rank": 28,
+  "country": "US",
+  "currency": "USD",
+  "price_local": 160900,
+  "region": "IL",
+  "status": "Available",
+  "contact_url": null
  },
  {
   "id": "crexi-2559473",
@@ -429,7 +672,13 @@
   "source_id": "2559473",
   "images": [],
   "contact": "Q4 Real Estate",
-  "rank": 24
+  "rank": 29,
+  "country": "US",
+  "currency": "USD",
+  "price_local": 175000,
+  "region": "IA",
+  "status": "Available",
+  "contact_url": null
  },
  {
   "id": "crexi-2193231",
@@ -447,11 +696,17 @@
   "source_id": "2193231",
   "images": [],
   "contact": "Recckio Real Estate and Development",
-  "rank": 25
+  "rank": 30,
+  "country": "US",
+  "currency": "USD",
+  "price_local": 175000,
+  "region": "NY",
+  "status": "Available",
+  "contact_url": null
  },
  {
   "id": "crexi-2659852",
-  "name": "Fully Furnished Turnkey Church \u2013 Dalton, GA",
+  "name": "Fully Furnished Turnkey Church – Dalton, GA",
   "address": "1005 BONNY OAKS DR DALTON GA 30721-4517, DALTON, WHITFIELD, GA 30721-4517",
   "city": "DALTON",
   "state": "GA",
@@ -465,7 +720,13 @@
   "source_id": "2659852",
   "images": [],
   "contact": "Better Homes and Gardens Real Estate Signature Brokers",
-  "rank": 26
+  "rank": 31,
+  "country": "US",
+  "currency": "USD",
+  "price_local": 185000,
+  "region": "GA",
+  "status": "Available",
+  "contact_url": null
  },
  {
   "id": "crexi-2336731",
@@ -483,7 +744,13 @@
   "source_id": "2336731",
   "images": [],
   "contact": "Carter Realty",
-  "rank": 27
+  "rank": 32,
+  "country": "US",
+  "currency": "USD",
+  "price_local": 195000,
+  "region": "AR",
+  "status": "Available",
+  "contact_url": null
  },
  {
   "id": "crexi-1995872",
@@ -501,7 +768,13 @@
   "source_id": "1995872",
   "images": [],
   "contact": "Steve Dakil Realty",
-  "rank": 28
+  "rank": 33,
+  "country": "US",
+  "currency": "USD",
+  "price_local": 195000,
+  "region": "OK",
+  "status": "Available",
+  "contact_url": null
  },
  {
   "id": "crexi-2772376",
@@ -519,7 +792,13 @@
   "source_id": "2772376",
   "images": [],
   "contact": "Hanna Commercial Real Estate",
-  "rank": 29
+  "rank": 34,
+  "country": "US",
+  "currency": "USD",
+  "price_local": 195000,
+  "region": "PA",
+  "status": "Available",
+  "contact_url": null
  },
  {
   "id": "crexi-1078212",
@@ -537,7 +816,13 @@
   "source_id": "1078212",
   "images": [],
   "contact": "Hanna Commercial Real Estate - Pittsburgh",
-  "rank": 30
+  "rank": 35,
+  "country": "US",
+  "currency": "USD",
+  "price_local": 195000,
+  "region": "PA",
+  "status": "Available",
+  "contact_url": null
  },
  {
   "id": "crexi-2514043",
@@ -555,7 +840,34 @@
   "source_id": "2514043",
   "images": [],
   "contact": "Religious Real Estate",
-  "rank": 31
+  "rank": 36,
+  "country": "US",
+  "currency": "USD",
+  "price_local": 199000,
+  "region": "MI",
+  "status": "Available",
+  "contact_url": null
+ },
+ {
+  "id": "pb-363625",
+  "name": "Au cœur du Jura, dans un bourg chargé d’histoire avec commerces et services, les Annonciades célestes, un ancien couvent ...",
+  "address": "Saint-Amour, JURA, franche-comte, France",
+  "city": "Saint-Amour",
+  "region": "franche-comte",
+  "country": "FR",
+  "lat": 46.4358751,
+  "lng": 5.3421832,
+  "price_local": 180000,
+  "currency": "EUR",
+  "description": "Au cœur du Jura, dans un bourg chargé d’histoire avec commerces et services,  les Annonciades célestes, un ancien couvent ...",
+  "grade": null,
+  "status": "Available",
+  "source": "Patrice Besse",
+  "source_url": "https://patrice-besse.com/annonces/ismh-au-coeur-du-Jura--pb363625",
+  "source_id": "pb363625",
+  "contact_url": "https://patrice-besse.com/annonces/ismh-au-coeur-du-Jura--pb363625",
+  "price_usd": 200939,
+  "rank": 37
  },
  {
   "id": "crexi-1403385",
@@ -573,7 +885,13 @@
   "source_id": "1403385",
   "images": [],
   "contact": "NAI Columbia",
-  "rank": 32
+  "rank": 38,
+  "country": "US",
+  "currency": "USD",
+  "price_local": 215000,
+  "region": "SC",
+  "status": "Available",
+  "contact_url": null
  },
  {
   "id": "crexi-2735694",
@@ -591,7 +909,13 @@
   "source_id": "2735694",
   "images": [],
   "contact": "SVN | The Martin Group Evansville",
-  "rank": 33
+  "rank": 39,
+  "country": "US",
+  "currency": "USD",
+  "price_local": 240000,
+  "region": "IN",
+  "status": "Available",
+  "contact_url": null
  },
  {
   "id": "crexi-2449764",
@@ -609,7 +933,13 @@
   "source_id": "2449764",
   "images": [],
   "contact": "ReeceNichols South Central Kansas",
-  "rank": 34
+  "rank": 40,
+  "country": "US",
+  "currency": "USD",
+  "price_local": 244000,
+  "region": "KS",
+  "status": "Available",
+  "contact_url": null
  },
  {
   "id": "crexi-2649046",
@@ -627,7 +957,13 @@
   "source_id": "2649046",
   "images": [],
   "contact": "Signature Associates Toledo",
-  "rank": 35
+  "rank": 41,
+  "country": "US",
+  "currency": "USD",
+  "price_local": 249000,
+  "region": "OH",
+  "status": "Available",
+  "contact_url": null
  },
  {
   "id": "crexi-2689147",
@@ -645,7 +981,13 @@
   "source_id": "2689147",
   "images": [],
   "contact": "The Miller Group of Saginaw Inc",
-  "rank": 36
+  "rank": 42,
+  "country": "US",
+  "currency": "USD",
+  "price_local": 249900,
+  "region": "MI",
+  "status": "Available",
+  "contact_url": null
  },
  {
   "id": "crexi-1962639",
@@ -663,7 +1005,13 @@
   "source_id": "1962639",
   "images": [],
   "contact": "Barta Bailey",
-  "rank": 37
+  "rank": 43,
+  "country": "US",
+  "currency": "USD",
+  "price_local": 250000,
+  "region": "OK",
+  "status": "Available",
+  "contact_url": null
  },
  {
   "id": "crexi-1513943",
@@ -681,7 +1029,34 @@
   "source_id": "1513943",
   "images": [],
   "contact": "McMullan Realty Inc",
-  "rank": 38
+  "rank": 44,
+  "country": "US",
+  "currency": "USD",
+  "price_local": 250000,
+  "region": "OH",
+  "status": "Available",
+  "contact_url": null
+ },
+ {
+  "id": "pb-992238",
+  "name": "Située au cœur du Parc naturel régional du Vexin français et édifiée au 18e s., une ancienne chapelle à rénover, ...",
+  "address": "Gargenville, YVELINES, ile-de-france, France",
+  "city": "Gargenville",
+  "region": "ile-de-france",
+  "country": "FR",
+  "lat": 48.9901469,
+  "lng": 1.8104637,
+  "price_local": 230000,
+  "currency": "EUR",
+  "description": "Située au cœur du Parc naturel régional du Vexin français et édifiée au 18e s., une ancienne chapelle à rénover, ...",
+  "grade": null,
+  "status": "Available",
+  "source": "Patrice Besse",
+  "source_url": "https://patrice-besse.com/annonces/edifices-religieux-a-vendre-au-coeur-du-Parc-naturel-regional-du-Vexin-francais--pb992238",
+  "source_id": "pb992238",
+  "contact_url": "https://patrice-besse.com/annonces/edifices-religieux-a-vendre-au-coeur-du-Parc-naturel-regional-du-Vexin-francais--pb992238",
+  "price_usd": 256756,
+  "rank": 45
  },
  {
   "id": "crexi-2771818",
@@ -699,7 +1074,13 @@
   "source_id": "2771818",
   "images": [],
   "contact": null,
-  "rank": 39
+  "rank": 46,
+  "country": "US",
+  "currency": "USD",
+  "price_local": 259000,
+  "region": "GA",
+  "status": "Available",
+  "contact_url": null
  },
  {
   "id": "crexi-1692305",
@@ -717,7 +1098,13 @@
   "source_id": "1692305",
   "images": [],
   "contact": "Real Estate Professional Services",
-  "rank": 40
+  "rank": 47,
+  "country": "US",
+  "currency": "USD",
+  "price_local": 259000,
+  "region": "MI",
+  "status": "Available",
+  "contact_url": null
  },
  {
   "id": "crexi-2011572",
@@ -735,7 +1122,13 @@
   "source_id": "2011572",
   "images": [],
   "contact": "Coldwell Banker Real Estate Group",
-  "rank": 41
+  "rank": 48,
+  "country": "US",
+  "currency": "USD",
+  "price_local": 259900,
+  "region": "WI",
+  "status": "Available",
+  "contact_url": null
  },
  {
   "id": "crexi-1703987",
@@ -753,7 +1146,13 @@
   "source_id": "1703987",
   "images": [],
   "contact": "KW Commercial Prairie Village",
-  "rank": 42
+  "rank": 49,
+  "country": "US",
+  "currency": "USD",
+  "price_local": 265000,
+  "region": "MO",
+  "status": "Available",
+  "contact_url": null
  },
  {
   "id": "crexi-2201643",
@@ -771,7 +1170,13 @@
   "source_id": "2201643",
   "images": [],
   "contact": "Drifka Group",
-  "rank": 43
+  "rank": 50,
+  "country": "US",
+  "currency": "USD",
+  "price_local": 274000,
+  "region": "WI",
+  "status": "Available",
+  "contact_url": null
  },
  {
   "id": "crexi-2491183",
@@ -789,7 +1194,13 @@
   "source_id": "2491183",
   "images": [],
   "contact": "simpler.realestate",
-  "rank": 44
+  "rank": 51,
+  "country": "US",
+  "currency": "USD",
+  "price_local": 275000,
+  "region": "KY",
+  "status": "Available",
+  "contact_url": null
  },
  {
   "id": "crexi-1702361",
@@ -807,7 +1218,13 @@
   "source_id": "1702361",
   "images": [],
   "contact": "All City Real Estate",
-  "rank": 45
+  "rank": 52,
+  "country": "US",
+  "currency": "USD",
+  "price_local": 275000,
+  "region": "TX",
+  "status": "Available",
+  "contact_url": null
  },
  {
   "id": "crexi-2527997",
@@ -825,7 +1242,13 @@
   "source_id": "2527997",
   "images": [],
   "contact": "Regional Property Group",
-  "rank": 46
+  "rank": 53,
+  "country": "US",
+  "currency": "USD",
+  "price_local": 275000,
+  "region": "AL",
+  "status": "Available",
+  "contact_url": null
  },
  {
   "id": "crexi-2314687",
@@ -843,7 +1266,13 @@
   "source_id": "2314687",
   "images": [],
   "contact": "Century 21 Olympian Area Specialists",
-  "rank": 47
+  "rank": 54,
+  "country": "US",
+  "currency": "USD",
+  "price_local": 278000,
+  "region": "TX",
+  "status": "Available",
+  "contact_url": null
  },
  {
   "id": "crexi-2330231",
@@ -861,7 +1290,13 @@
   "source_id": "2330231",
   "images": [],
   "contact": "Coldwell Banker Realty - Gundaker",
-  "rank": 48
+  "rank": 55,
+  "country": "US",
+  "currency": "USD",
+  "price_local": 279500,
+  "region": "MO",
+  "status": "Available",
+  "contact_url": null
  },
  {
   "id": "crexi-2614636",
@@ -879,7 +1314,13 @@
   "source_id": "2614636",
   "images": [],
   "contact": "Hanna Commercial Real Estate",
-  "rank": 49
+  "rank": 56,
+  "country": "US",
+  "currency": "USD",
+  "price_local": 282000,
+  "region": "PA",
+  "status": "Available",
+  "contact_url": null
  },
  {
   "id": "crexi-2774797",
@@ -897,7 +1338,13 @@
   "source_id": "2774797",
   "images": [],
   "contact": "Church Realty",
-  "rank": 50
+  "rank": 57,
+  "country": "US",
+  "currency": "USD",
+  "price_local": 295000,
+  "region": "TX",
+  "status": "Available",
+  "contact_url": null
  },
  {
   "id": "crexi-1725199",
@@ -915,7 +1362,13 @@
   "source_id": "1725199",
   "images": [],
   "contact": "Keller Williams-Okemos",
-  "rank": 51
+  "rank": 58,
+  "country": "US",
+  "currency": "USD",
+  "price_local": 299000,
+  "region": "MI",
+  "status": "Available",
+  "contact_url": null
  },
  {
   "id": "crexi-2590868",
@@ -933,7 +1386,55 @@
   "source_id": "2590868",
   "images": [],
   "contact": "Religious Real Estate",
-  "rank": 52
+  "rank": 59,
+  "country": "US",
+  "currency": "USD",
+  "price_local": 299000,
+  "region": "MI",
+  "status": "Available",
+  "contact_url": null
+ },
+ {
+  "id": "pb-901779",
+  "name": "Dans un village au pied des Alpilles, blotti dans une antique abbaye, un logis avec sa cour à consolider et sublimer",
+  "address": "Saint-Rémy-de-Provence, BOUCHES-DU-RHONE, paca, France",
+  "city": "Saint-Rémy-de-Provence",
+  "region": "paca",
+  "country": "FR",
+  "lat": 43.6008636,
+  "lng": 7.0816483,
+  "price_local": 275000,
+  "currency": "EUR",
+  "description": "Dans un village au pied des Alpilles, blotti dans une antique abbaye, un logis avec sa cour à consolider et sublimer",
+  "grade": null,
+  "status": "Available",
+  "source": "Patrice Besse",
+  "source_url": "https://patrice-besse.com/annonces/proprietes-a-vendre-Au-pied-des-Alpilles--pb901779",
+  "source_id": "pb901779",
+  "contact_url": "https://patrice-besse.com/annonces/proprietes-a-vendre-Au-pied-des-Alpilles--pb901779",
+  "price_usd": 306991,
+  "rank": 60
+ },
+ {
+  "id": "pb-284788",
+  "name": "Sur le second plateau jurassien, au sein d’une cité médiévale, le petit séminaire de Nozeroy, ses 3 000 m² de bâtiments ...",
+  "address": "Champagnole, JURA, franche-comte, France",
+  "city": "Champagnole",
+  "region": "franche-comte",
+  "country": "FR",
+  "lat": 46.7456049,
+  "lng": 5.9083581,
+  "price_local": 280000,
+  "currency": "EUR",
+  "description": "Sur le second plateau jurassien, au sein d’une cité médiévale, le petit séminaire de Nozeroy,  ses 3 000 m² de bâtiments ...",
+  "grade": null,
+  "status": "Available",
+  "source": "Patrice Besse",
+  "source_url": "https://patrice-besse.com/annonces/edifices-religieux-a-vendre-Nozeroy--pb284788",
+  "source_id": "pb284788",
+  "contact_url": "https://patrice-besse.com/annonces/edifices-religieux-a-vendre-Nozeroy--pb284788",
+  "price_usd": 312572,
+  "rank": 61
  },
  {
   "id": "crexi-2757152",
@@ -951,7 +1452,13 @@
   "source_id": "2757152",
   "images": [],
   "contact": "Berkshire Hathaway HS | Ambassador Real Estate Commercial Division",
-  "rank": 53
+  "rank": 62,
+  "country": "US",
+  "currency": "USD",
+  "price_local": 325000,
+  "region": "IA",
+  "status": "Available",
+  "contact_url": null
  },
  {
   "id": "crexi-2680979",
@@ -969,7 +1476,13 @@
   "source_id": "2680979",
   "images": [],
   "contact": null,
-  "rank": 54
+  "rank": 63,
+  "country": "US",
+  "currency": "USD",
+  "price_local": 349900,
+  "region": "MO",
+  "status": "Available",
+  "contact_url": null
  },
  {
   "id": "crexi-2628854",
@@ -987,7 +1500,13 @@
   "source_id": "2628854",
   "images": [],
   "contact": "CENTURY 21 Realty Advisors",
-  "rank": 55
+  "rank": 64,
+  "country": "US",
+  "currency": "USD",
+  "price_local": 349900,
+  "region": "GA",
+  "status": "Available",
+  "contact_url": null
  },
  {
   "id": "crexi-2370060",
@@ -1005,7 +1524,13 @@
   "source_id": "2370060",
   "images": [],
   "contact": null,
-  "rank": 56
+  "rank": 65,
+  "country": "US",
+  "currency": "USD",
+  "price_local": 349900,
+  "region": "TX",
+  "status": "Available",
+  "contact_url": null
  },
  {
   "id": "crexi-1928441",
@@ -1023,7 +1548,34 @@
   "source_id": "1928441",
   "images": [],
   "contact": "Lifestyl Real Estate",
-  "rank": 57
+  "rank": 66,
+  "country": "US",
+  "currency": "USD",
+  "price_local": 350000,
+  "region": "KY",
+  "status": "Available",
+  "contact_url": null
+ },
+ {
+  "id": "cofe-bedford-leigh-st-thomas-diocese-manchester",
+  "name": "Bedford Leigh, St Thomas",
+  "address": "Bedford Leigh, St Thomas, Diocese of Manchester, England",
+  "city": "Bedford Leigh",
+  "region": "Diocese of Manchester",
+  "country": "GB",
+  "lat": 53.4946297,
+  "lng": -2.5073196,
+  "price_local": 275000,
+  "currency": "GBP",
+  "description": "St. Thomas Church is located fronting Chapel Street in Leigh with access also available from Robinson Street and provides a large Anglican church of 1902-10 by Richard Bassnett Preston of Preston and Vaughan, in Accrington brick with Runcorn red sandstone dressings, with later fittings designed by Sir Charles Archibald Nicholson and stained glass by J Powell and Archibald Keightley Nicholson. The Church provides open plan accommodation including North Aisle, South Aisle, North East Vestry, Nave, Chancel (rising to 40ft) and Lady Chapel of around 6,560 Sq.ft. The Church also benefits from a large 4,500 Sq.ft basement with ceiling height of 11ft. The Church tower is 20ft square by 78ft to the top of the stone parapet (Historic England). St Thomas Church is listed at Grade II for the following principal reasons: Design quality: Degree of survival: Association: Historic interest. Expressions of interest should be made direct to the Agent. Key features Grade II listed Church with surrounding land Historic England list entry number: 1439679 Built 1902-10 - Grade II listed 20th March 2017",
+  "grade": "Grade II",
+  "status": "Available",
+  "source": "Church of England",
+  "source_url": "https://churchofengland.org/closed-churches/bedford-leigh-st-thomas-diocese-manchester",
+  "source_id": "/closed-churches/bedford-leigh-st-thomas-diocese-manchester",
+  "contact_url": "https://mbre.space/property/st-thomas-church-chapel-street-leigh/",
+  "price_usd": 367906,
+  "rank": 67
  },
  {
   "id": "crexi-1520700",
@@ -1041,7 +1593,34 @@
   "source_id": "1520700",
   "images": [],
   "contact": "EXP Realty, LLC",
-  "rank": 58
+  "rank": 68,
+  "country": "US",
+  "currency": "USD",
+  "price_local": 379000,
+  "region": "IA",
+  "status": "Available",
+  "contact_url": null
+ },
+ {
+  "id": "pb-580984",
+  "name": "Dans la Vienne, à 20 min de Châtellerault et 30 min de Poitiers, une ancienne chapelle agrandie et reconvertie en maison ...",
+  "address": "Naintré, VIENNE, poitou-charentes, France",
+  "city": "Naintré",
+  "region": "poitou-charentes",
+  "country": "FR",
+  "lat": 46.7638945,
+  "lng": 0.4823734,
+  "price_local": 340000,
+  "currency": "EUR",
+  "description": "Dans la Vienne, à 20 min de Châtellerault et 30 min de Poitiers, une ancienne chapelle agrandie et reconvertie en maison ...",
+  "grade": null,
+  "status": "Available",
+  "source": "Patrice Besse",
+  "source_url": "https://patrice-besse.com/annonces/edifices-religieux-a-vendre-Dans-la-Vienne-a-20-min-de-Chatellerault-et-30-min-de-Poitiers--pb580984",
+  "source_id": "pb580984",
+  "contact_url": "https://patrice-besse.com/annonces/edifices-religieux-a-vendre-Dans-la-Vienne-a-20-min-de-Chatellerault-et-30-min-de-Poitiers--pb580984",
+  "price_usd": 379552,
+  "rank": 69
  },
  {
   "id": "crexi-2297743",
@@ -1059,7 +1638,13 @@
   "source_id": "2297743",
   "images": [],
   "contact": "Norton Commercial",
-  "rank": 59
+  "rank": 70,
+  "country": "US",
+  "currency": "USD",
+  "price_local": 389000,
+  "region": "GA",
+  "status": "Available",
+  "contact_url": null
  },
  {
   "id": "crexi-1651336",
@@ -1077,7 +1662,13 @@
   "source_id": "1651336",
   "images": [],
   "contact": "Religious Real Estate",
-  "rank": 60
+  "rank": 71,
+  "country": "US",
+  "currency": "USD",
+  "price_local": 395000,
+  "region": "MI",
+  "status": "Available",
+  "contact_url": null
  },
  {
   "id": "crexi-2453396",
@@ -1095,7 +1686,13 @@
   "source_id": "2453396",
   "images": [],
   "contact": "Religious Real Estate",
-  "rank": 61
+  "rank": 72,
+  "country": "US",
+  "currency": "USD",
+  "price_local": 395000,
+  "region": "MI",
+  "status": "Available",
+  "contact_url": null
  },
  {
   "id": "crexi-1982095",
@@ -1113,7 +1710,13 @@
   "source_id": "1982095",
   "images": [],
   "contact": "Real Estate Professional Services",
-  "rank": 62
+  "rank": 73,
+  "country": "US",
+  "currency": "USD",
+  "price_local": 399000,
+  "region": "MI",
+  "status": "Available",
+  "contact_url": null
  },
  {
   "id": "crexi-1880550",
@@ -1131,7 +1734,13 @@
   "source_id": "1880550",
   "images": [],
   "contact": "RE/MAX Real Estate Center",
-  "rank": 63
+  "rank": 74,
+  "country": "US",
+  "currency": "USD",
+  "price_local": 399000,
+  "region": "GA",
+  "status": "Available",
+  "contact_url": null
  },
  {
   "id": "crexi-1815086",
@@ -1149,7 +1758,13 @@
   "source_id": "1815086",
   "images": [],
   "contact": "Home Place Real Estate",
-  "rank": 64
+  "rank": 75,
+  "country": "US",
+  "currency": "USD",
+  "price_local": 400000,
+  "region": "OK",
+  "status": "Available",
+  "contact_url": null
  },
  {
   "id": "crexi-2684996",
@@ -1167,7 +1782,34 @@
   "source_id": "2684996",
   "images": [],
   "contact": "Berkshire Hathaway HS | Ambassador Real Estate Commercial Division",
-  "rank": 65
+  "rank": 76,
+  "country": "US",
+  "currency": "USD",
+  "price_local": 400000,
+  "region": "NE",
+  "status": "Available",
+  "contact_url": null
+ },
+ {
+  "id": "pb-585804",
+  "name": "En région Auvergne-Rhône-Alpes, un ancien presbytère du 18e s. divisé en appartements, son annexe et son terrain de 2 ...",
+  "address": "Merle-Leignec, LOIRE, rhones-alpes, France",
+  "city": "Merle-Leignec",
+  "region": "rhones-alpes",
+  "country": "FR",
+  "lat": 46.098686,
+  "lng": 4.77646,
+  "price_local": 360000,
+  "currency": "EUR",
+  "description": "En région Auvergne-Rhône-Alpes, un ancien presbytère du 18e s. divisé en appartements, son annexe et son terrain de 2 ...",
+  "grade": null,
+  "status": "Available",
+  "source": "Patrice Besse",
+  "source_url": "https://patrice-besse.com/annonces/edifices-religieux-a-vendre-En-region-Auvergne-Rhone-Alpes--pb585804",
+  "source_id": "pb585804",
+  "contact_url": "https://patrice-besse.com/annonces/edifices-religieux-a-vendre-En-region-Auvergne-Rhone-Alpes--pb585804",
+  "price_usd": 401879,
+  "rank": 77
  },
  {
   "id": "crexi-2634087",
@@ -1185,7 +1827,13 @@
   "source_id": "2634087",
   "images": [],
   "contact": "Mountain lake realty",
-  "rank": 66
+  "rank": 78,
+  "country": "US",
+  "currency": "USD",
+  "price_local": 411000,
+  "region": "NC",
+  "status": "Available",
+  "contact_url": null
  },
  {
   "id": "crexi-2634875",
@@ -1203,7 +1851,13 @@
   "source_id": "2634875",
   "images": [],
   "contact": "Block & Company Inc",
-  "rank": 67
+  "rank": 79,
+  "country": "US",
+  "currency": "USD",
+  "price_local": 425000,
+  "region": "MO",
+  "status": "Available",
+  "contact_url": null
  },
  {
   "id": "crexi-2241853",
@@ -1221,7 +1875,13 @@
   "source_id": "2241853",
   "images": [],
   "contact": "Red Rock Realty Group",
-  "rank": 68
+  "rank": 80,
+  "country": "US",
+  "currency": "USD",
+  "price_local": 425000,
+  "region": "AL",
+  "status": "Available",
+  "contact_url": null
  },
  {
   "id": "crexi-1955452",
@@ -1239,7 +1899,13 @@
   "source_id": "1955452",
   "images": [],
   "contact": "Keller Williams-Okemos",
-  "rank": 69
+  "rank": 81,
+  "country": "US",
+  "currency": "USD",
+  "price_local": 449000,
+  "region": "MI",
+  "status": "Available",
+  "contact_url": null
  },
  {
   "id": "crexi-1918466",
@@ -1257,7 +1923,13 @@
   "source_id": "1918466",
   "images": [],
   "contact": "Acropolis Realty Group",
-  "rank": 70
+  "rank": 82,
+  "country": "US",
+  "currency": "USD",
+  "price_local": 449000,
+  "region": "NY",
+  "status": "Available",
+  "contact_url": null
  },
  {
   "id": "crexi-2023499",
@@ -1275,7 +1947,13 @@
   "source_id": "2023499",
   "images": [],
   "contact": "Coldwell Banker Commercial Kennon, Parker,Duncan & Davis Columbus",
-  "rank": 71
+  "rank": 83,
+  "country": "US",
+  "currency": "USD",
+  "price_local": 450000,
+  "region": "GA",
+  "status": "Available",
+  "contact_url": null
  },
  {
   "id": "crexi-1988416",
@@ -1293,7 +1971,13 @@
   "source_id": "1988416",
   "images": [],
   "contact": "Religious Real Estate",
-  "rank": 72
+  "rank": 84,
+  "country": "US",
+  "currency": "USD",
+  "price_local": 450000,
+  "region": "MI",
+  "status": "Available",
+  "contact_url": null
  },
  {
   "id": "crexi-1110000",
@@ -1311,7 +1995,13 @@
   "source_id": "1110000",
   "images": [],
   "contact": "Reece Commercial",
-  "rank": 73
+  "rank": 85,
+  "country": "US",
+  "currency": "USD",
+  "price_local": 450000,
+  "region": "MO",
+  "status": "Available",
+  "contact_url": null
  },
  {
   "id": "crexi-2664758",
@@ -1329,7 +2019,13 @@
   "source_id": "2664758",
   "images": [],
   "contact": "RE/MAX Dynamic Agents",
-  "rank": 74
+  "rank": 86,
+  "country": "US",
+  "currency": "USD",
+  "price_local": 454800,
+  "region": "MN",
+  "status": "Available",
+  "contact_url": null
  },
  {
   "id": "crexi-2602183",
@@ -1347,7 +2043,13 @@
   "source_id": "2602183",
   "images": [],
   "contact": "Hanna Commercial Real Estate - Pittsburgh",
-  "rank": 75
+  "rank": 87,
+  "country": "US",
+  "currency": "USD",
+  "price_local": 459000,
+  "region": "PA",
+  "status": "Available",
+  "contact_url": null
  },
  {
   "id": "crexi-2309556",
@@ -1365,7 +2067,55 @@
   "source_id": "2309556",
   "images": [],
   "contact": "RE/MAX Lifestyles",
-  "rank": 76
+  "rank": 88,
+  "country": "US",
+  "currency": "USD",
+  "price_local": 475000,
+  "region": "IN",
+  "status": "Available",
+  "contact_url": null
+ },
+ {
+  "id": "pb-459724",
+  "name": "Dans le Quercy blanc, entre Toulouse et Agen, un ensemble immobilier urbain du 19e s., avec sa chapelle et sa cour intérieure",
+  "address": ", TARN-ET-GARONNE, midi-pyrenees, France",
+  "city": "",
+  "region": "midi-pyrenees",
+  "country": "FR",
+  "lat": 43.8099068,
+  "lng": 1.4344926,
+  "price_local": 430000,
+  "currency": "EUR",
+  "description": "Dans le Quercy blanc, entre Toulouse et Agen, un ensemble immobilier urbain  du 19e s., avec sa chapelle et sa cour intérieure",
+  "grade": null,
+  "status": "Available",
+  "source": "Patrice Besse",
+  "source_url": "https://patrice-besse.com/annonces/edifice-religieux-maison-de-caractere-a-vendre-Dans-le-Quercy-blanc-entre-Toulouse-et-Agen--pb459724",
+  "source_id": "pb459724",
+  "contact_url": "https://patrice-besse.com/annonces/edifice-religieux-maison-de-caractere-a-vendre-Dans-le-Quercy-blanc-entre-Toulouse-et-Agen--pb459724",
+  "price_usd": 480022,
+  "rank": 89
+ },
+ {
+  "id": "pb-112590",
+  "name": "Un duplex aménagé dans un temple du 19e s., vaisseau de lumière en plein centre de Bar-le-Duc",
+  "address": "Bar-le-Duc, MEUSE, lorraine, France",
+  "city": "Bar-le-Duc",
+  "region": "lorraine",
+  "country": "FR",
+  "lat": 48.7712673,
+  "lng": 5.1623805,
+  "price_local": 430000,
+  "currency": "EUR",
+  "description": "Un duplex aménagé dans un temple du 19e s., vaisseau de lumière en plein centre de Bar-le-Duc",
+  "grade": null,
+  "status": "Available",
+  "source": "Patrice Besse",
+  "source_url": "https://patrice-besse.com/annonces/edifices-religieux-a-vendre-en-plein-centre-de-Bar-le-Duc--pb112590",
+  "source_id": "pb112590",
+  "contact_url": "https://patrice-besse.com/annonces/edifices-religieux-a-vendre-en-plein-centre-de-Bar-le-Duc--pb112590",
+  "price_usd": 480022,
+  "rank": 90
  },
  {
   "id": "crexi-2415269",
@@ -1383,7 +2133,13 @@
   "source_id": "2415269",
   "images": [],
   "contact": "Dar Commercial",
-  "rank": 77
+  "rank": 91,
+  "country": "US",
+  "currency": "USD",
+  "price_local": 485000,
+  "region": "TX",
+  "status": "Available",
+  "contact_url": null
  },
  {
   "id": "crexi-2239309",
@@ -1401,7 +2157,13 @@
   "source_id": "2239309",
   "images": [],
   "contact": "Crye-Leike Commercial Memphis",
-  "rank": 78
+  "rank": 92,
+  "country": "US",
+  "currency": "USD",
+  "price_local": 489000,
+  "region": "TN",
+  "status": "Available",
+  "contact_url": null
  },
  {
   "id": "crexi-2349921",
@@ -1419,7 +2181,13 @@
   "source_id": "2349921",
   "images": [],
   "contact": "Chasen Commercial Real Estate",
-  "rank": 79
+  "rank": 93,
+  "country": "US",
+  "currency": "USD",
+  "price_local": 490000,
+  "region": "GA",
+  "status": "Available",
+  "contact_url": null
  },
  {
   "id": "crexi-1982283",
@@ -1437,7 +2205,13 @@
   "source_id": "1982283",
   "images": [],
   "contact": "Real Estate Professional Services",
-  "rank": 80
+  "rank": 94,
+  "country": "US",
+  "currency": "USD",
+  "price_local": 495000,
+  "region": "MI",
+  "status": "Available",
+  "contact_url": null
  },
  {
   "id": "crexi-2657303",
@@ -1449,13 +2223,19 @@
   "lat": 34.920187,
   "lng": -85.337822,
   "price_usd": 495000,
-  "description": "TURNKEY CHURCH FACILITY \u2014 EXTENSIVELY RENOVATED & READY FOR MINISTRY FOR SALE or LEASE PURCHASE",
+  "description": "TURNKEY CHURCH FACILITY — EXTENSIVELY RENOVATED & READY FOR MINISTRY FOR SALE or LEASE PURCHASE",
   "source": "Crexi",
   "source_url": "https://www.crexi.com/properties/2657303/georgia-445-w-schmitt-rd-chattanooga-valley-ga-30741",
   "source_id": "2657303",
   "images": [],
   "contact": "KW Commercial",
-  "rank": 81
+  "rank": 95,
+  "country": "US",
+  "currency": "USD",
+  "price_local": 495000,
+  "region": "GA",
+  "status": "Available",
+  "contact_url": null
  },
  {
   "id": "crexi-2147435",
@@ -1473,7 +2253,13 @@
   "source_id": "2147435",
   "images": [],
   "contact": "Kelty Real Estate",
-  "rank": 82
+  "rank": 96,
+  "country": "US",
+  "currency": "USD",
+  "price_local": 495000,
+  "region": "TN",
+  "status": "Available",
+  "contact_url": null
  },
  {
   "id": "crexi-2669324",
@@ -1491,7 +2277,13 @@
   "source_id": "2669324",
   "images": [],
   "contact": "Sheridans LLC",
-  "rank": 83
+  "rank": 97,
+  "country": "US",
+  "currency": "USD",
+  "price_local": 499000,
+  "region": "OH",
+  "status": "Available",
+  "contact_url": null
  },
  {
   "id": "crexi-2687382",
@@ -1509,7 +2301,13 @@
   "source_id": "2687382",
   "images": [],
   "contact": "WATSON REALTY CORP",
-  "rank": 84
+  "rank": 98,
+  "country": "US",
+  "currency": "USD",
+  "price_local": 499900,
+  "region": "FL",
+  "status": "Available",
+  "contact_url": null
  },
  {
   "id": "crexi-2514006",
@@ -1527,7 +2325,13 @@
   "source_id": "2514006",
   "images": [],
   "contact": "Atlantic Commercial Real Estate LLC",
-  "rank": 85
+  "rank": 99,
+  "country": "US",
+  "currency": "USD",
+  "price_local": 499900,
+  "region": "MA",
+  "status": "Available",
+  "contact_url": null
  },
  {
   "id": "crexi-2228633",
@@ -1545,7 +2349,13 @@
   "source_id": "2228633",
   "images": [],
   "contact": "Global Real Estate Advisors Inc",
-  "rank": 86
+  "rank": 100,
+  "country": "US",
+  "currency": "USD",
+  "price_local": 500000,
+  "region": "OH",
+  "status": "Available",
+  "contact_url": null
  },
  {
   "id": "crexi-2446831",
@@ -1563,7 +2373,13 @@
   "source_id": "2446831",
   "images": [],
   "contact": "Berkshire Hathaway HomeServices Indiana Realty",
-  "rank": 87
+  "rank": 101,
+  "country": "US",
+  "currency": "USD",
+  "price_local": 520000,
+  "region": "IN",
+  "status": "Available",
+  "contact_url": null
  },
  {
   "id": "crexi-2669749",
@@ -1581,7 +2397,13 @@
   "source_id": "2669749",
   "images": [],
   "contact": "Friedman Real Estate",
-  "rank": 88
+  "rank": 102,
+  "country": "US",
+  "currency": "USD",
+  "price_local": 525000,
+  "region": "MI",
+  "status": "Available",
+  "contact_url": null
  },
  {
   "id": "crexi-1116400",
@@ -1599,7 +2421,13 @@
   "source_id": "1116400",
   "images": [],
   "contact": "eXp Commercial - Hoover",
-  "rank": 89
+  "rank": 103,
+  "country": "US",
+  "currency": "USD",
+  "price_local": 525000,
+  "region": "AL",
+  "status": "Available",
+  "contact_url": null
  },
  {
   "id": "crexi-2726192",
@@ -1617,7 +2445,13 @@
   "source_id": "2726192",
   "images": [],
   "contact": "Keller Williams Realty Blount",
-  "rank": 90
+  "rank": 104,
+  "country": "US",
+  "currency": "USD",
+  "price_local": 525000,
+  "region": "AL",
+  "status": "Available",
+  "contact_url": null
  },
  {
   "id": "crexi-1692718",
@@ -1629,13 +2463,19 @@
   "lat": 32.322951,
   "lng": -86.308043,
   "price_usd": 549000,
-  "description": "\u00b1 19,000 SF | 2 Buildings | Former Church Campus! Located right of Eastern Blvd",
+  "description": "± 19,000 SF | 2 Buildings | Former Church Campus! Located right of Eastern Blvd",
   "source": "Crexi",
   "source_url": "https://www.crexi.com/properties/1692718/alabama-4544-s-court-st--former-church-campus",
   "source_id": "1692718",
   "images": [],
   "contact": "Moore Company Realty",
-  "rank": 91
+  "rank": 105,
+  "country": "US",
+  "currency": "USD",
+  "price_local": 549000,
+  "region": "AL",
+  "status": "Available",
+  "contact_url": null
  },
  {
   "id": "crexi-1228245",
@@ -1653,7 +2493,13 @@
   "source_id": "1228245",
   "images": [],
   "contact": "SWE Homes",
-  "rank": 92
+  "rank": 106,
+  "country": "US",
+  "currency": "USD",
+  "price_local": 549000,
+  "region": "TX",
+  "status": "Available",
+  "contact_url": null
  },
  {
   "id": "crexi-2730931",
@@ -1671,7 +2517,34 @@
   "source_id": "2730931",
   "images": [],
   "contact": "Future Real Estate",
-  "rank": 93
+  "rank": 107,
+  "country": "US",
+  "currency": "USD",
+  "price_local": 550000,
+  "region": "NM",
+  "status": "Available",
+  "contact_url": null
+ },
+ {
+  "id": "pb-702949",
+  "name": "En Haute-Loire, dans le nord du Brivadois, un prieuré labellisé site clunisien européen, sa tour du 12e s. et son jardin",
+  "address": "Bournoncle-Saint-Pierre, HAUTE-LOIRE, auvergne, France",
+  "city": "Bournoncle-Saint-Pierre",
+  "region": "auvergne",
+  "country": "FR",
+  "lat": 45.3433766,
+  "lng": 3.3182435,
+  "price_local": 495000,
+  "currency": "EUR",
+  "description": "En Haute-Loire, dans le nord du Brivadois,  un prieuré labellisé site clunisien européen, sa tour du 12e s. et son jardin",
+  "grade": null,
+  "status": "Available",
+  "source": "Patrice Besse",
+  "source_url": "https://patrice-besse.com/annonces/edifices-religieux-a-vendre-En-Haute-Loire-dans-le-nord-du-Brivadois--pb702949",
+  "source_id": "pb702949",
+  "contact_url": "https://patrice-besse.com/annonces/edifices-religieux-a-vendre-En-Haute-Loire-dans-le-nord-du-Brivadois--pb702949",
+  "price_usd": 552583,
+  "rank": 108
  },
  {
   "id": "crexi-2776296",
@@ -1689,7 +2562,34 @@
   "source_id": "2776296",
   "images": [],
   "contact": "Latitude Commercial",
-  "rank": 94
+  "rank": 109,
+  "country": "US",
+  "currency": "USD",
+  "price_local": 560000,
+  "region": "IN",
+  "status": "Available",
+  "contact_url": null
+ },
+ {
+  "id": "pb-199325",
+  "name": "À 1 h de Paris, en centre-ville d'Arras, une chapelle du 18e s. classée MH",
+  "address": "Arras, PAS-DE-CALAIS, nord-pas-de-calais, France",
+  "city": "Arras",
+  "region": "nord-pas-de-calais",
+  "country": "FR",
+  "lat": 50.291048,
+  "lng": 2.7772211,
+  "price_local": 532000,
+  "currency": "EUR",
+  "description": "À 1 h de Paris, en centre-ville d'Arras, une chapelle du 18e s. classée MH",
+  "grade": null,
+  "status": "Available",
+  "source": "Patrice Besse",
+  "source_url": "https://patrice-besse.com/annonces/edifices-religieux-a-vendre-a-1-h-de-Paris-en-centre-ville-d-Arras--pb199325",
+  "source_id": "pb199325",
+  "contact_url": "https://patrice-besse.com/annonces/edifices-religieux-a-vendre-a-1-h-de-Paris-en-centre-ville-d-Arras--pb199325",
+  "price_usd": 593887,
+  "rank": 110
  },
  {
   "id": "crexi-2648458",
@@ -1707,7 +2607,13 @@
   "source_id": "2648458",
   "images": [],
   "contact": "Reichle | Klein Group",
-  "rank": 95
+  "rank": 111,
+  "country": "US",
+  "currency": "USD",
+  "price_local": 595000,
+  "region": "OH",
+  "status": "Available",
+  "contact_url": null
  },
  {
   "id": "crexi-1405695",
@@ -1725,7 +2631,13 @@
   "source_id": "1405695",
   "images": [],
   "contact": "AD ADVISORS",
-  "rank": 96
+  "rank": 112,
+  "country": "US",
+  "currency": "USD",
+  "price_local": 595000,
+  "region": "IL",
+  "status": "Available",
+  "contact_url": null
  },
  {
   "id": "crexi-1334176",
@@ -1743,7 +2655,13 @@
   "source_id": "1334176",
   "images": [],
   "contact": "Real Estate Professional Services",
-  "rank": 97
+  "rank": 113,
+  "country": "US",
+  "currency": "USD",
+  "price_local": 595000,
+  "region": "MI",
+  "status": "Available",
+  "contact_url": null
  },
  {
   "id": "crexi-2726092",
@@ -1761,7 +2679,13 @@
   "source_id": "2726092",
   "images": [],
   "contact": "Real Estate Professional Services",
-  "rank": 98
+  "rank": 114,
+  "country": "US",
+  "currency": "USD",
+  "price_local": 595000,
+  "region": "MI",
+  "status": "Available",
+  "contact_url": null
  },
  {
   "id": "crexi-2759727",
@@ -1779,7 +2703,13 @@
   "source_id": "2759727",
   "images": [],
   "contact": "Saunders Real Estate",
-  "rank": 99
+  "rank": 115,
+  "country": "US",
+  "currency": "USD",
+  "price_local": 599000,
+  "region": "FL",
+  "status": "Available",
+  "contact_url": null
  },
  {
   "id": "crexi-2305618",
@@ -1797,7 +2727,13 @@
   "source_id": "2305618",
   "images": [],
   "contact": "Crye-Leike Preferred Realty",
-  "rank": 100
+  "rank": 116,
+  "country": "US",
+  "currency": "USD",
+  "price_local": 599900,
+  "region": "TN",
+  "status": "Available",
+  "contact_url": null
  },
  {
   "id": "crexi-2590735",
@@ -1815,7 +2751,34 @@
   "source_id": "2590735",
   "images": [],
   "contact": "Berkshire Hathaway The Preferred Realty",
-  "rank": 101
+  "rank": 117,
+  "country": "US",
+  "currency": "USD",
+  "price_local": 599900,
+  "region": "PA",
+  "status": "Available",
+  "contact_url": null
+ },
+ {
+  "id": "pb-702282",
+  "name": "Proche du Mans, dans un hameau, un ancien presbytère du 17e s., sa douve et son parc d’1 ha",
+  "address": "Le Mans, SARTHE, pays-de-loire, France",
+  "city": "Le Mans",
+  "region": "pays-de-loire",
+  "country": "FR",
+  "lat": 48.0073849,
+  "lng": 0.1967849,
+  "price_local": 550000,
+  "currency": "EUR",
+  "description": "Proche du Mans, dans un hameau, un ancien presbytère du 17e s., sa douve et son parc d’1 ha",
+  "grade": null,
+  "status": "Available",
+  "source": "Patrice Besse",
+  "source_url": "https://patrice-besse.com/annonces/edifices-religieux-a-vendre-Proche-du-Mans--pb702282",
+  "source_id": "pb702282",
+  "contact_url": "https://patrice-besse.com/annonces/edifices-religieux-a-vendre-Proche-du-Mans--pb702282",
+  "price_usd": 613981,
+  "rank": 118
  },
  {
   "id": "crexi-2308229",
@@ -1833,7 +2796,13 @@
   "source_id": "2308229",
   "images": [],
   "contact": "Trinity Commercial Realty",
-  "rank": 102
+  "rank": 119,
+  "country": "US",
+  "currency": "USD",
+  "price_local": 624900,
+  "region": "OH",
+  "status": "Available",
+  "contact_url": null
  },
  {
   "id": "crexi-2325414",
@@ -1851,7 +2820,13 @@
   "source_id": "2325414",
   "images": [],
   "contact": "High Real Estate Group",
-  "rank": 103
+  "rank": 120,
+  "country": "US",
+  "currency": "USD",
+  "price_local": 625000,
+  "region": "PA",
+  "status": "Available",
+  "contact_url": null
  },
  {
   "id": "crexi-2466695",
@@ -1869,7 +2844,13 @@
   "source_id": "2466695",
   "images": [],
   "contact": "Bessa Properties",
-  "rank": 104
+  "rank": 121,
+  "country": "US",
+  "currency": "USD",
+  "price_local": 649000,
+  "region": "CA",
+  "status": "Available",
+  "contact_url": null
  },
  {
   "id": "crexi-2758059",
@@ -1887,7 +2868,13 @@
   "source_id": "2758059",
   "images": [],
   "contact": "Real Estate Professional Services",
-  "rank": 105
+  "rank": 122,
+  "country": "US",
+  "currency": "USD",
+  "price_local": 649000,
+  "region": "MI",
+  "status": "Available",
+  "contact_url": null
  },
  {
   "id": "crexi-1067023",
@@ -1905,7 +2892,13 @@
   "source_id": "1067023",
   "images": [],
   "contact": "Steve Dakil Realty",
-  "rank": 106
+  "rank": 123,
+  "country": "US",
+  "currency": "USD",
+  "price_local": 649000,
+  "region": "OK",
+  "status": "Available",
+  "contact_url": null
  },
  {
   "id": "crexi-1676512",
@@ -1923,11 +2916,17 @@
   "source_id": "1676512",
   "images": [],
   "contact": "Keller Williams Realty",
-  "rank": 107
+  "rank": 124,
+  "country": "US",
+  "currency": "USD",
+  "price_local": 649500,
+  "region": "TX",
+  "status": "Available",
+  "contact_url": null
  },
  {
   "id": "crexi-2763767",
-  "name": "Church & Commercial Building for Sale \u2013 Texarkana, AR",
+  "name": "Church & Commercial Building for Sale – Texarkana, AR",
   "address": "602 Arkansas Boulevard, Texarkana, AR 71854",
   "city": "Texarkana",
   "state": "AR",
@@ -1935,13 +2934,19 @@
   "lat": 33.459739,
   "lng": -94.03649,
   "price_usd": 650000,
-  "description": "17,014 SF Across Two Buildings on \u00b10.91 Acres | Auditorium, Offices & Garage Space",
+  "description": "17,014 SF Across Two Buildings on ±0.91 Acres | Auditorium, Offices & Garage Space",
   "source": "Crexi",
   "source_url": "https://www.crexi.com/properties/2763767/arkansas-church-commercial-building-for-sale-texarkana-ar",
   "source_id": "2763767",
   "images": [],
   "contact": "NAI American Realty",
-  "rank": 108
+  "rank": 125,
+  "country": "US",
+  "currency": "USD",
+  "price_local": 650000,
+  "region": "AR",
+  "status": "Available",
+  "contact_url": null
  },
  {
   "id": "crexi-1637140",
@@ -1959,7 +2964,13 @@
   "source_id": "1637140",
   "images": [],
   "contact": "KW Mid-Hudson",
-  "rank": 109
+  "rank": 126,
+  "country": "US",
+  "currency": "USD",
+  "price_local": 650000,
+  "region": "NY",
+  "status": "Available",
+  "contact_url": null
  },
  {
   "id": "crexi-1293104",
@@ -1977,7 +2988,13 @@
   "source_id": "1293104",
   "images": [],
   "contact": "The Summit Group",
-  "rank": 110
+  "rank": 127,
+  "country": "US",
+  "currency": "USD",
+  "price_local": 650000,
+  "region": "GA",
+  "status": "Available",
+  "contact_url": null
  },
  {
   "id": "crexi-2772489",
@@ -1995,7 +3012,13 @@
   "source_id": "2772489",
   "images": [],
   "contact": "Hanna Commercial Real Estate",
-  "rank": 111
+  "rank": 128,
+  "country": "US",
+  "currency": "USD",
+  "price_local": 650000,
+  "region": "PA",
+  "status": "Available",
+  "contact_url": null
  },
  {
   "id": "crexi-2625784",
@@ -2013,7 +3036,13 @@
   "source_id": "2625784",
   "images": [],
   "contact": "NAI Rampart",
-  "rank": 112
+  "rank": 129,
+  "country": "US",
+  "currency": "USD",
+  "price_local": 650000,
+  "region": "LA",
+  "status": "Available",
+  "contact_url": null
  },
  {
   "id": "crexi-2350190",
@@ -2031,7 +3060,13 @@
   "source_id": "2350190",
   "images": [],
   "contact": "Religious Real Estate",
-  "rank": 113
+  "rank": 130,
+  "country": "US",
+  "currency": "USD",
+  "price_local": 650000,
+  "region": "MI",
+  "status": "Available",
+  "contact_url": null
  },
  {
   "id": "crexi-2502465",
@@ -2049,7 +3084,13 @@
   "source_id": "2502465",
   "images": [],
   "contact": "Plantation Properties & Land Investments, LLC",
-  "rank": 114
+  "rank": 131,
+  "country": "US",
+  "currency": "USD",
+  "price_local": 650000,
+  "region": "GA",
+  "status": "Available",
+  "contact_url": null
  },
  {
   "id": "crexi-2759423",
@@ -2067,7 +3108,13 @@
   "source_id": "2759423",
   "images": [],
   "contact": "CC Chapman Real Estate",
-  "rank": 115
+  "rank": 132,
+  "country": "US",
+  "currency": "USD",
+  "price_local": 650000,
+  "region": "MT",
+  "status": "Available",
+  "contact_url": null
  },
  {
   "id": "crexi-2566148",
@@ -2085,7 +3132,34 @@
   "source_id": "2566148",
   "images": [],
   "contact": "ReeceNichols",
-  "rank": 116
+  "rank": 133,
+  "country": "US",
+  "currency": "USD",
+  "price_local": 675000,
+  "region": "KS",
+  "status": "Available",
+  "contact_url": null
+ },
+ {
+  "id": "pb-742548",
+  "name": "À Gaillac, tournée vers le Tarn et les jardins de l'abbaye Saint-Michel, une demeure de ville et sa chapelle néogothique, ...",
+  "address": "Gaillac, TARN, midi-pyrenees, France",
+  "city": "Gaillac",
+  "region": "midi-pyrenees",
+  "country": "FR",
+  "lat": 43.8099068,
+  "lng": 1.4344926,
+  "price_local": 618000,
+  "currency": "EUR",
+  "description": "À Gaillac, tournée vers le Tarn et les jardins de l'abbaye Saint-Michel,\n une demeure de ville et sa chapelle néogothique, ...",
+  "grade": null,
+  "status": "Available",
+  "source": "Patrice Besse",
+  "source_url": "https://patrice-besse.com/annonces/edifices-religieux-a-vendre-a-Gaillac--pb742548",
+  "source_id": "pb742548",
+  "contact_url": "https://patrice-besse.com/annonces/edifices-religieux-a-vendre-a-Gaillac--pb742548",
+  "price_usd": 689892,
+  "rank": 134
  },
  {
   "id": "crexi-2454540",
@@ -2103,7 +3177,13 @@
   "source_id": "2454540",
   "images": [],
   "contact": "Coldwell Banker Commercial Read & Co.",
-  "rank": 117
+  "rank": 135,
+  "country": "US",
+  "currency": "USD",
+  "price_local": 695000,
+  "region": "VA",
+  "status": "Available",
+  "contact_url": null
  },
  {
   "id": "crexi-2776486",
@@ -2115,13 +3195,19 @@
   "lat": 39.144985,
   "lng": -94.574582,
   "price_usd": 699000,
-  "description": "\u00b114,000 SF Former Church Building",
+  "description": "±14,000 SF Former Church Building",
   "source": "Crexi",
   "source_url": "https://www.crexi.com/properties/2776486/missouri-former-church-building",
   "source_id": "2776486",
   "images": [],
   "contact": "Shawver Group",
-  "rank": 118
+  "rank": 136,
+  "country": "US",
+  "currency": "USD",
+  "price_local": 699000,
+  "region": "MO",
+  "status": "Available",
+  "contact_url": null
  },
  {
   "id": "crexi-2560672",
@@ -2139,7 +3225,13 @@
   "source_id": "2560672",
   "images": [],
   "contact": null,
-  "rank": 119
+  "rank": 137,
+  "country": "US",
+  "currency": "USD",
+  "price_local": 700000,
+  "region": "CA",
+  "status": "Available",
+  "contact_url": null
  },
  {
   "id": "crexi-2458759",
@@ -2157,7 +3249,34 @@
   "source_id": "2458759",
   "images": [],
   "contact": "SK Real Estate Consulting",
-  "rank": 120
+  "rank": 138,
+  "country": "US",
+  "currency": "USD",
+  "price_local": 715000,
+  "region": "TX",
+  "status": "Available",
+  "contact_url": null
+ },
+ {
+  "id": "pb-601974",
+  "name": "Dans le sud de l’Orne, en lisière d’un bourg, un ancien couvent du 19e s., sur près de 7 ha de terres",
+  "address": "Domfront en Poiraie, ORNE, basse-normandie, France",
+  "city": "Domfront en Poiraie",
+  "region": "basse-normandie",
+  "country": "FR",
+  "lat": 48.9536845,
+  "lng": -0.5733654,
+  "price_local": 650000,
+  "currency": "EUR",
+  "description": "Dans le sud de l’Orne, en lisière d’un bourg, un ancien couvent du 19e s., sur près de 7 ha de terres",
+  "grade": null,
+  "status": "Available",
+  "source": "Patrice Besse",
+  "source_url": "https://patrice-besse.com/annonces/edifices-religieux-a-vendre-Dans-le-sud-de-l-Orne--pb601974",
+  "source_id": "pb601974",
+  "contact_url": "https://patrice-besse.com/annonces/edifices-religieux-a-vendre-Dans-le-sud-de-l-Orne--pb601974",
+  "price_usd": 725614,
+  "rank": 139
  },
  {
   "id": "crexi-2708790",
@@ -2175,7 +3294,13 @@
   "source_id": "2708790",
   "images": [],
   "contact": "Keller Williams Realty",
-  "rank": 121
+  "rank": 140,
+  "country": "US",
+  "currency": "USD",
+  "price_local": 749900,
+  "region": "DE",
+  "status": "Available",
+  "contact_url": null
  },
  {
   "id": "crexi-2624420",
@@ -2193,7 +3318,13 @@
   "source_id": "2624420",
   "images": [],
   "contact": "Hodges Commercial Real Estate",
-  "rank": 122
+  "rank": 141,
+  "country": "US",
+  "currency": "USD",
+  "price_local": 750000,
+  "region": "AL",
+  "status": "Available",
+  "contact_url": null
  },
  {
   "id": "crexi-765508",
@@ -2211,7 +3342,13 @@
   "source_id": "765508",
   "images": [],
   "contact": "WestMark Commercial",
-  "rank": 123
+  "rank": 142,
+  "country": "US",
+  "currency": "USD",
+  "price_local": 750000,
+  "region": "TX",
+  "status": "Available",
+  "contact_url": null
  },
  {
   "id": "crexi-1932245",
@@ -2223,13 +3360,19 @@
   "lat": 29.678784,
   "lng": -95.184799,
   "price_usd": 750000,
-  "description": "Renovated Church Facility in Pasadena \u2013 Strong Location Near School",
+  "description": "Renovated Church Facility in Pasadena – Strong Location Near School",
   "source": "Crexi",
   "source_url": "https://www.crexi.com/properties/1932245/texas-church-facility",
   "source_id": "1932245",
   "images": [],
   "contact": "Riverflow Commercial Properties",
-  "rank": 124
+  "rank": 143,
+  "country": "US",
+  "currency": "USD",
+  "price_local": 750000,
+  "region": "TX",
+  "status": "Available",
+  "contact_url": null
  },
  {
   "id": "crexi-2678872",
@@ -2247,7 +3390,13 @@
   "source_id": "2678872",
   "images": [],
   "contact": "Church Realty",
-  "rank": 125
+  "rank": 144,
+  "country": "US",
+  "currency": "USD",
+  "price_local": 750000,
+  "region": "TX",
+  "status": "Available",
+  "contact_url": null
  },
  {
   "id": "crexi-2011443",
@@ -2265,7 +3414,13 @@
   "source_id": "2011443",
   "images": [],
   "contact": "Byrd Real Estate Group, LLC",
-  "rank": 126
+  "rank": 145,
+  "country": "US",
+  "currency": "USD",
+  "price_local": 775000,
+  "region": "WA",
+  "status": "Available",
+  "contact_url": null
  },
  {
   "id": "crexi-2673731",
@@ -2283,7 +3438,13 @@
   "source_id": "2673731",
   "images": [],
   "contact": "Newmark Mountain West",
-  "rank": 127
+  "rank": 146,
+  "country": "US",
+  "currency": "USD",
+  "price_local": 780000,
+  "region": "UT",
+  "status": "Available",
+  "contact_url": null
  },
  {
   "id": "crexi-2666037",
@@ -2301,7 +3462,13 @@
   "source_id": "2666037",
   "images": [],
   "contact": "RSR Realtors",
-  "rank": 128
+  "rank": 147,
+  "country": "US",
+  "currency": "USD",
+  "price_local": 795000,
+  "region": "PA",
+  "status": "Available",
+  "contact_url": null
  },
  {
   "id": "crexi-2303790",
@@ -2319,7 +3486,13 @@
   "source_id": "2303790",
   "images": [],
   "contact": "Real Estate Professional Services",
-  "rank": 129
+  "rank": 148,
+  "country": "US",
+  "currency": "USD",
+  "price_local": 795000,
+  "region": "MI",
+  "status": "Available",
+  "contact_url": null
  },
  {
   "id": "crexi-2661830",
@@ -2337,7 +3510,13 @@
   "source_id": "2661830",
   "images": [],
   "contact": "Keller Williams Houston Central",
-  "rank": 130
+  "rank": 149,
+  "country": "US",
+  "currency": "USD",
+  "price_local": 799900,
+  "region": "TX",
+  "status": "Available",
+  "contact_url": null
  },
  {
   "id": "crexi-1198816",
@@ -2355,7 +3534,13 @@
   "source_id": "1198816",
   "images": [],
   "contact": "CBRE - Portland",
-  "rank": 131
+  "rank": 150,
+  "country": "US",
+  "currency": "USD",
+  "price_local": 800000,
+  "region": "OR",
+  "status": "Available",
+  "contact_url": null
  },
  {
   "id": "crexi-1654029",
@@ -2373,7 +3558,13 @@
   "source_id": "1654029",
   "images": [],
   "contact": "Myers Commercial Real Estate",
-  "rank": 132
+  "rank": 151,
+  "country": "US",
+  "currency": "USD",
+  "price_local": 800000,
+  "region": "TN",
+  "status": "Available",
+  "contact_url": null
  },
  {
   "id": "crexi-2416596",
@@ -2391,7 +3582,34 @@
   "source_id": "2416596",
   "images": [],
   "contact": "BCB Real Estate",
-  "rank": 133
+  "rank": 152,
+  "country": "US",
+  "currency": "USD",
+  "price_local": 800000,
+  "region": "NC",
+  "status": "Available",
+  "contact_url": null
+ },
+ {
+  "id": "pb-747099",
+  "name": "Dans le Pays de Falaise, aux confins du terroir normand, une ancienne hostellerie du 14e s., classée MH, et son parc de ...",
+  "address": "La Hoguette, CALVADOS, basse-normandie, France",
+  "city": "La Hoguette",
+  "region": "basse-normandie",
+  "country": "FR",
+  "lat": 48.938614,
+  "lng": -1.5371541,
+  "price_local": 750000,
+  "currency": "EUR",
+  "description": "Dans le Pays de Falaise, aux confins du terroir normand, une ancienne hostellerie du 14e s., classée MH, et son parc de ...",
+  "grade": null,
+  "status": "Available",
+  "source": "Patrice Besse",
+  "source_url": "https://patrice-besse.com/annonces/demeure-monument-historique-edifice-religieux-a-vendre-Dans-le-pays-de-Falaise--pb747099",
+  "source_id": "pb747099",
+  "contact_url": "https://patrice-besse.com/annonces/demeure-monument-historique-edifice-religieux-a-vendre-Dans-le-pays-de-Falaise--pb747099",
+  "price_usd": 837247,
+  "rank": 153
  },
  {
   "id": "crexi-2259197",
@@ -2409,7 +3627,13 @@
   "source_id": "2259197",
   "images": [],
   "contact": "The Keyes Company Commercial Sales & Leasing",
-  "rank": 134
+  "rank": 154,
+  "country": "US",
+  "currency": "USD",
+  "price_local": 849000,
+  "region": "FL",
+  "status": "Available",
+  "contact_url": null
  },
  {
   "id": "crexi-2069770",
@@ -2427,7 +3651,13 @@
   "source_id": "2069770",
   "images": [],
   "contact": "CORE",
-  "rank": 135
+  "rank": 155,
+  "country": "US",
+  "currency": "USD",
+  "price_local": 850000,
+  "region": "ME",
+  "status": "Available",
+  "contact_url": null
  },
  {
   "id": "crexi-2742210",
@@ -2445,7 +3675,13 @@
   "source_id": "2742210",
   "images": [],
   "contact": "Moriah Real Estate Company",
-  "rank": 136
+  "rank": 156,
+  "country": "US",
+  "currency": "USD",
+  "price_local": 850000,
+  "region": "OK",
+  "status": "Available",
+  "contact_url": null
  },
  {
   "id": "crexi-1581314",
@@ -2463,7 +3699,13 @@
   "source_id": "1581314",
   "images": [],
   "contact": "NAI Mertz | Wilkes - Barre",
-  "rank": 137
+  "rank": 157,
+  "country": "US",
+  "currency": "USD",
+  "price_local": 850000,
+  "region": "PA",
+  "status": "Available",
+  "contact_url": null
  },
  {
   "id": "crexi-2167033",
@@ -2481,7 +3723,13 @@
   "source_id": "2167033",
   "images": [],
   "contact": "RE/MAX Best Choice",
-  "rank": 138
+  "rank": 158,
+  "country": "US",
+  "currency": "USD",
+  "price_local": 875000,
+  "region": "MO",
+  "status": "Available",
+  "contact_url": null
  },
  {
   "id": "crexi-899068",
@@ -2499,7 +3747,13 @@
   "source_id": "899068",
   "images": [],
   "contact": "Keller Williams Advisors",
-  "rank": 139
+  "rank": 159,
+  "country": "US",
+  "currency": "USD",
+  "price_local": 875000,
+  "region": "OH",
+  "status": "Available",
+  "contact_url": null
  },
  {
   "id": "crexi-2685567",
@@ -2517,7 +3771,13 @@
   "source_id": "2685567",
   "images": [],
   "contact": "Hive Nashville LLC",
-  "rank": 140
+  "rank": 160,
+  "country": "US",
+  "currency": "USD",
+  "price_local": 875000,
+  "region": "TN",
+  "status": "Available",
+  "contact_url": null
  },
  {
   "id": "crexi-2461049",
@@ -2535,7 +3795,13 @@
   "source_id": "2461049",
   "images": [],
   "contact": "Coldwell Banker Commercial Flag City",
-  "rank": 141
+  "rank": 161,
+  "country": "US",
+  "currency": "USD",
+  "price_local": 889000,
+  "region": "OH",
+  "status": "Available",
+  "contact_url": null
  },
  {
   "id": "crexi-2209286",
@@ -2553,7 +3819,13 @@
   "source_id": "2209286",
   "images": [],
   "contact": null,
-  "rank": 142
+  "rank": 162,
+  "country": "US",
+  "currency": "USD",
+  "price_local": 900000,
+  "region": "TN",
+  "status": "Available",
+  "contact_url": null
  },
  {
   "id": "crexi-138176",
@@ -2571,7 +3843,13 @@
   "source_id": "138176",
   "images": [],
   "contact": "ComPro Realty",
-  "rank": 143
+  "rank": 163,
+  "country": "US",
+  "currency": "USD",
+  "price_local": 905000,
+  "region": "KS",
+  "status": "Available",
+  "contact_url": null
  },
  {
   "id": "crexi-2096466",
@@ -2589,7 +3867,13 @@
   "source_id": "2096466",
   "images": [],
   "contact": "Howard Hanna Real Estate Services Inc Tecumseh",
-  "rank": 144
+  "rank": 164,
+  "country": "US",
+  "currency": "USD",
+  "price_local": 949000,
+  "region": "MI",
+  "status": "Available",
+  "contact_url": null
  },
  {
   "id": "crexi-1828318",
@@ -2607,7 +3891,13 @@
   "source_id": "1828318",
   "images": [],
   "contact": "Crimson House Realty Group",
-  "rank": 145
+  "rank": 165,
+  "country": "US",
+  "currency": "USD",
+  "price_local": 949900,
+  "region": "TX",
+  "status": "Available",
+  "contact_url": null
  },
  {
   "id": "crexi-1634966",
@@ -2625,7 +3915,13 @@
   "source_id": "1634966",
   "images": [],
   "contact": "FAST TRACK REALTY",
-  "rank": 146
+  "rank": 166,
+  "country": "US",
+  "currency": "USD",
+  "price_local": 955000,
+  "region": "TN",
+  "status": "Available",
+  "contact_url": null
  },
  {
   "id": "crexi-2678873",
@@ -2643,7 +3939,13 @@
   "source_id": "2678873",
   "images": [],
   "contact": "Church Realty",
-  "rank": 147
+  "rank": 167,
+  "country": "US",
+  "currency": "USD",
+  "price_local": 960000,
+  "region": "TX",
+  "status": "Available",
+  "contact_url": null
  },
  {
   "id": "crexi-2349492",
@@ -2661,7 +3963,13 @@
   "source_id": "2349492",
   "images": [],
   "contact": "Skyline Seven Real Estate",
-  "rank": 148
+  "rank": 168,
+  "country": "US",
+  "currency": "USD",
+  "price_local": 972000,
+  "region": "AL",
+  "status": "Available",
+  "contact_url": null
  },
  {
   "id": "crexi-2598965",
@@ -2679,7 +3987,13 @@
   "source_id": "2598965",
   "images": [],
   "contact": "NAI Farbman",
-  "rank": 149
+  "rank": 169,
+  "country": "US",
+  "currency": "USD",
+  "price_local": 975000,
+  "region": "MI",
+  "status": "Available",
+  "contact_url": null
  },
  {
   "id": "crexi-2598982",
@@ -2697,7 +4011,13 @@
   "source_id": "2598982",
   "images": [],
   "contact": "NAI Farbman",
-  "rank": 150
+  "rank": 170,
+  "country": "US",
+  "currency": "USD",
+  "price_local": 975000,
+  "region": "MI",
+  "status": "Available",
+  "contact_url": null
  },
  {
   "id": "crexi-1750857",
@@ -2715,7 +4035,13 @@
   "source_id": "1750857",
   "images": [],
   "contact": "Pacific Coast Real Estate & Development",
-  "rank": 151
+  "rank": 171,
+  "country": "US",
+  "currency": "USD",
+  "price_local": 995000,
+  "region": "OR",
+  "status": "Available",
+  "contact_url": null
  },
  {
   "id": "crexi-2556987",
@@ -2733,7 +4059,13 @@
   "source_id": "2556987",
   "images": [],
   "contact": "Bob Lewis & Associates Inc",
-  "rank": 152
+  "rank": 172,
+  "country": "US",
+  "currency": "USD",
+  "price_local": 995000,
+  "region": "GA",
+  "status": "Available",
+  "contact_url": null
  },
  {
   "id": "crexi-2558316",
@@ -2751,7 +4083,13 @@
   "source_id": "2558316",
   "images": [],
   "contact": "Hansen Real Estate",
-  "rank": 153
+  "rank": 173,
+  "country": "US",
+  "currency": "USD",
+  "price_local": 995000,
+  "region": "IA",
+  "status": "Available",
+  "contact_url": null
  },
  {
   "id": "crexi-1879694",
@@ -2769,7 +4107,13 @@
   "source_id": "1879694",
   "images": [],
   "contact": "Era Key Realty Services",
-  "rank": 154
+  "rank": 174,
+  "country": "US",
+  "currency": "USD",
+  "price_local": 995000,
+  "region": "RI",
+  "status": "Available",
+  "contact_url": null
  },
  {
   "id": "crexi-2719878",
@@ -2787,7 +4131,34 @@
   "source_id": "2719878",
   "images": [],
   "contact": null,
-  "rank": 155
+  "rank": 175,
+  "country": "US",
+  "currency": "USD",
+  "price_local": 999000,
+  "region": "AZ",
+  "status": "Available",
+  "contact_url": null
+ },
+ {
+  "id": "pb-590092",
+  "name": "Sur la côte d'Albâtre, entre Veules-les-Roses et Varengeville-sur-Mer, une chapelle du 18e s. transformée en logis avec ...",
+  "address": "Saint-Aubin-sur-Mer, SEINE-MARITIME, haute-normandie, France",
+  "city": "Saint-Aubin-sur-Mer",
+  "region": "haute-normandie",
+  "country": "FR",
+  "lat": 49.3693017,
+  "lng": 1.0295505,
+  "price_local": 895000,
+  "currency": "EUR",
+  "description": "Sur la côte d'Albâtre, entre Veules-les-Roses et Varengeville-sur-Mer, une chapelle du 18e s. transformée en logis avec ...",
+  "grade": null,
+  "status": "Available",
+  "source": "Patrice Besse",
+  "source_url": "https://patrice-besse.com/annonces/edifices-religieux-a-vendre-Sur-la-cote-d-Albatre-entre-Veules-les-Roses-et-Varengeville-sur-Mer--pb590092",
+  "source_id": "pb590092",
+  "contact_url": "https://patrice-besse.com/annonces/edifices-religieux-a-vendre-Sur-la-cote-d-Albatre-entre-Veules-les-Roses-et-Varengeville-sur-Mer--pb590092",
+  "price_usd": 999115,
+  "rank": 176
  },
  {
   "id": "crexi-2209485",
@@ -2805,7 +4176,13 @@
   "source_id": "2209485",
   "images": [],
   "contact": "KW Commercial Keller Williams Tuscaloosa",
-  "rank": 156
+  "rank": 177,
+  "country": "US",
+  "currency": "USD",
+  "price_local": 999900,
+  "region": "AL",
+  "status": "Available",
+  "contact_url": null
  },
  {
   "id": "crexi-2186082",
@@ -2823,7 +4200,13 @@
   "source_id": "2186082",
   "images": [],
   "contact": "Valenti Realty Group, LLC",
-  "rank": 157
+  "rank": 178,
+  "country": "US",
+  "currency": "USD",
+  "price_local": 1000000,
+  "region": "NY",
+  "status": "Available",
+  "contact_url": null
  },
  {
   "id": "crexi-2658272",
@@ -2841,7 +4224,13 @@
   "source_id": "2658272",
   "images": [],
   "contact": "Coldwell Banker Commercial Metrobrokers",
-  "rank": 158
+  "rank": 179,
+  "country": "US",
+  "currency": "USD",
+  "price_local": 1000000,
+  "region": "GA",
+  "status": "Available",
+  "contact_url": null
  },
  {
   "id": "crexi-2148154",
@@ -2859,7 +4248,13 @@
   "source_id": "2148154",
   "images": [],
   "contact": "Turlington Real Estate Group",
-  "rank": 159
+  "rank": 180,
+  "country": "US",
+  "currency": "USD",
+  "price_local": 1000000,
+  "region": "NC",
+  "status": "Available",
+  "contact_url": null
  },
  {
   "id": "crexi-2325761",
@@ -2877,7 +4272,13 @@
   "source_id": "2325761",
   "images": [],
   "contact": "TNG Real Estate Consultants",
-  "rank": 160
+  "rank": 181,
+  "country": "US",
+  "currency": "USD",
+  "price_local": 1050000,
+  "region": "CA",
+  "status": "Available",
+  "contact_url": null
  },
  {
   "id": "crexi-1334366",
@@ -2895,7 +4296,34 @@
   "source_id": "1334366",
   "images": [],
   "contact": "Keller Williams Clarksville",
-  "rank": 161
+  "rank": 182,
+  "country": "US",
+  "currency": "USD",
+  "price_local": 1050000,
+  "region": "TN",
+  "status": "Available",
+  "contact_url": null
+ },
+ {
+  "id": "pb-856306",
+  "name": "À 15 min de Poitiers, dans un village, une église inscrite MH rénovée et son jardin de 5 000 m²",
+  "address": "Poitiers, VIENNE, poitou-charentes, France",
+  "city": "Poitiers",
+  "region": "poitou-charentes",
+  "country": "FR",
+  "lat": 46.5802596,
+  "lng": 0.340196,
+  "price_local": 950000,
+  "currency": "EUR",
+  "description": "À 15 min de Poitiers, dans un village, une église inscrite MH rénovée et son jardin de 5 000 m²",
+  "grade": null,
+  "status": "Available",
+  "source": "Patrice Besse",
+  "source_url": "https://patrice-besse.com/annonces/edifice-religieux-a-vendre-a-15-min-de-Poitiers--pb856306",
+  "source_id": "pb856306",
+  "contact_url": "https://patrice-besse.com/annonces/edifice-religieux-a-vendre-a-15-min-de-Poitiers--pb856306",
+  "price_usd": 1060513,
+  "rank": 183
  },
  {
   "id": "crexi-2681908",
@@ -2913,7 +4341,13 @@
   "source_id": "2681908",
   "images": [],
   "contact": "Astonish Commercial Real Estate Services",
-  "rank": 162
+  "rank": 184,
+  "country": "US",
+  "currency": "USD",
+  "price_local": 1100000,
+  "region": "OH",
+  "status": "Available",
+  "contact_url": null
  },
  {
   "id": "crexi-2192947",
@@ -2931,7 +4365,13 @@
   "source_id": "2192947",
   "images": [],
   "contact": "Alderdale Group Inc",
-  "rank": 163
+  "rank": 185,
+  "country": "US",
+  "currency": "USD",
+  "price_local": 1100000,
+  "region": "TX",
+  "status": "Available",
+  "contact_url": null
  },
  {
   "id": "crexi-2767191",
@@ -2949,7 +4389,13 @@
   "source_id": "2767191",
   "images": [],
   "contact": "SVN | Pacific Commercial Advisors",
-  "rank": 164
+  "rank": 186,
+  "country": "US",
+  "currency": "USD",
+  "price_local": 1100000,
+  "region": "CA",
+  "status": "Available",
+  "contact_url": null
  },
  {
   "id": "crexi-2684939",
@@ -2961,13 +4407,19 @@
   "lat": 36.599747,
   "lng": -83.666191,
   "price_usd": 1100000,
-  "description": "Turnkey Historic Wedding, Event & Hospitality Business \u2014 Real Estate Included",
+  "description": "Turnkey Historic Wedding, Event & Hospitality Business — Real Estate Included",
   "source": "Crexi",
   "source_url": "https://www.crexi.com/properties/2684939/tennessee-the-olde-church-and-parsonage-guest-house",
   "source_id": "2684939",
   "images": [],
   "contact": "Coldwell Banker Bisceglia Realty and Auction Co",
-  "rank": 165
+  "rank": 187,
+  "country": "US",
+  "currency": "USD",
+  "price_local": 1100000,
+  "region": "TN",
+  "status": "Available",
+  "contact_url": null
  },
  {
   "id": "crexi-2433271",
@@ -2985,7 +4437,13 @@
   "source_id": "2433271",
   "images": [],
   "contact": "Commercial Realty Advisors",
-  "rank": 166
+  "rank": 188,
+  "country": "US",
+  "currency": "USD",
+  "price_local": 1130000,
+  "region": "NC",
+  "status": "Available",
+  "contact_url": null
  },
  {
   "id": "crexi-2707813",
@@ -3003,7 +4461,13 @@
   "source_id": "2707813",
   "images": [],
   "contact": "Land and Wildlife, LLC",
-  "rank": 167
+  "rank": 189,
+  "country": "US",
+  "currency": "USD",
+  "price_local": 1150000,
+  "region": "WA",
+  "status": "Available",
+  "contact_url": null
  },
  {
   "id": "crexi-2711756",
@@ -3021,7 +4485,13 @@
   "source_id": "2711756",
   "images": [],
   "contact": "Graham Stiles",
-  "rank": 168
+  "rank": 190,
+  "country": "US",
+  "currency": "USD",
+  "price_local": 1175000,
+  "region": "TX",
+  "status": "Available",
+  "contact_url": null
  },
  {
   "id": "crexi-2442750",
@@ -3039,7 +4509,13 @@
   "source_id": "2442750",
   "images": [],
   "contact": null,
-  "rank": 169
+  "rank": 191,
+  "country": "US",
+  "currency": "USD",
+  "price_local": 1200000,
+  "region": "NC",
+  "status": "Available",
+  "contact_url": null
  },
  {
   "id": "crexi-2626148",
@@ -3057,7 +4533,13 @@
   "source_id": "2626148",
   "images": [],
   "contact": "Hoff & Leigh Fairlawn",
-  "rank": 170
+  "rank": 192,
+  "country": "US",
+  "currency": "USD",
+  "price_local": 1200000,
+  "region": "OH",
+  "status": "Available",
+  "contact_url": null
  },
  {
   "id": "crexi-2186370",
@@ -3075,7 +4557,13 @@
   "source_id": "2186370",
   "images": [],
   "contact": null,
-  "rank": 171
+  "rank": 193,
+  "country": "US",
+  "currency": "USD",
+  "price_local": 1200000,
+  "region": "CO",
+  "status": "Available",
+  "contact_url": null
  },
  {
   "id": "crexi-1586282",
@@ -3093,7 +4581,13 @@
   "source_id": "1586282",
   "images": [],
   "contact": "Cushman & Wakefield Pyramid Brokerage Company Syracuse",
-  "rank": 172
+  "rank": 194,
+  "country": "US",
+  "currency": "USD",
+  "price_local": 1200000,
+  "region": "NY",
+  "status": "Available",
+  "contact_url": null
  },
  {
   "id": "crexi-2772598",
@@ -3111,7 +4605,13 @@
   "source_id": "2772598",
   "images": [],
   "contact": "MSC Commercial",
-  "rank": 173
+  "rank": 195,
+  "country": "US",
+  "currency": "USD",
+  "price_local": 1250000,
+  "region": "FL",
+  "status": "Available",
+  "contact_url": null
  },
  {
   "id": "crexi-2287270",
@@ -3129,7 +4629,13 @@
   "source_id": "2287270",
   "images": [],
   "contact": "Friedman Real Estate",
-  "rank": 174
+  "rank": 196,
+  "country": "US",
+  "currency": "USD",
+  "price_local": 1250000,
+  "region": "MI",
+  "status": "Available",
+  "contact_url": null
  },
  {
   "id": "crexi-2519991",
@@ -3147,7 +4653,13 @@
   "source_id": "2519991",
   "images": [],
   "contact": null,
-  "rank": 175
+  "rank": 197,
+  "country": "US",
+  "currency": "USD",
+  "price_local": 1250000,
+  "region": "FL",
+  "status": "Available",
+  "contact_url": null
  },
  {
   "id": "crexi-2637611",
@@ -3165,7 +4677,13 @@
   "source_id": "2637611",
   "images": [],
   "contact": null,
-  "rank": 176
+  "rank": 198,
+  "country": "US",
+  "currency": "USD",
+  "price_local": 1250000,
+  "region": "WI",
+  "status": "Available",
+  "contact_url": null
  },
  {
   "id": "crexi-2766169",
@@ -3183,7 +4701,13 @@
   "source_id": "2766169",
   "images": [],
   "contact": "Century 21 Frick Realtors",
-  "rank": 177
+  "rank": 199,
+  "country": "US",
+  "currency": "USD",
+  "price_local": 1250000,
+  "region": "NJ",
+  "status": "Available",
+  "contact_url": null
  },
  {
   "id": "crexi-2596819",
@@ -3201,7 +4725,13 @@
   "source_id": "2596819",
   "images": [],
   "contact": "Realty One Group Integrity",
-  "rank": 178
+  "rank": 200,
+  "country": "US",
+  "currency": "USD",
+  "price_local": 1275000,
+  "region": "AZ",
+  "status": "Available",
+  "contact_url": null
  },
  {
   "id": "crexi-2234567",
@@ -3219,7 +4749,13 @@
   "source_id": "2234567",
   "images": [],
   "contact": "Apartment Cash Flow Inc.",
-  "rank": 179
+  "rank": 201,
+  "country": "US",
+  "currency": "USD",
+  "price_local": 1290000,
+  "region": "MN",
+  "status": "Available",
+  "contact_url": null
  },
  {
   "id": "crexi-2722450",
@@ -3237,7 +4773,13 @@
   "source_id": "2722450",
   "images": [],
   "contact": "KW Commercial Eastchester / Scarsdale",
-  "rank": 180
+  "rank": 202,
+  "country": "US",
+  "currency": "USD",
+  "price_local": 1295000,
+  "region": "NY",
+  "status": "Available",
+  "contact_url": null
  },
  {
   "id": "crexi-2328609",
@@ -3255,7 +4797,13 @@
   "source_id": "2328609",
   "images": [],
   "contact": "eXp Realty",
-  "rank": 181
+  "rank": 203,
+  "country": "US",
+  "currency": "USD",
+  "price_local": 1300000,
+  "region": "CA",
+  "status": "Available",
+  "contact_url": null
  },
  {
   "id": "crexi-2777489",
@@ -3273,7 +4821,13 @@
   "source_id": "2777489",
   "images": [],
   "contact": "Berkshire Hathaway HS | Ambassador Real Estate Commercial Division",
-  "rank": 182
+  "rank": 204,
+  "country": "US",
+  "currency": "USD",
+  "price_local": 1300000,
+  "region": "NE",
+  "status": "Available",
+  "contact_url": null
  },
  {
   "id": "crexi-2688192",
@@ -3291,7 +4845,13 @@
   "source_id": "2688192",
   "images": [],
   "contact": "California Properties",
-  "rank": 183
+  "rank": 205,
+  "country": "US",
+  "currency": "USD",
+  "price_local": 1300000,
+  "region": "CA",
+  "status": "Available",
+  "contact_url": null
  },
  {
   "id": "crexi-2253217",
@@ -3309,7 +4869,13 @@
   "source_id": "2253217",
   "images": [],
   "contact": "Crosby Consulting and Real Estate Services",
-  "rank": 184
+  "rank": 206,
+  "country": "US",
+  "currency": "USD",
+  "price_local": 1350000,
+  "region": "MI",
+  "status": "Available",
+  "contact_url": null
  },
  {
   "id": "crexi-2325247",
@@ -3327,7 +4893,13 @@
   "source_id": "2325247",
   "images": [],
   "contact": "Bruce Barker",
-  "rank": 185
+  "rank": 207,
+  "country": "US",
+  "currency": "USD",
+  "price_local": 1350000,
+  "region": "WA",
+  "status": "Available",
+  "contact_url": null
  },
  {
   "id": "crexi-2290662",
@@ -3345,7 +4917,13 @@
   "source_id": "2290662",
   "images": [],
   "contact": "Hanmi Realty",
-  "rank": 186
+  "rank": 208,
+  "country": "US",
+  "currency": "USD",
+  "price_local": 1350000,
+  "region": "NY",
+  "status": "Available",
+  "contact_url": null
  },
  {
   "id": "crexi-2452438",
@@ -3363,7 +4941,13 @@
   "source_id": "2452438",
   "images": [],
   "contact": "ATP Realty Inc",
-  "rank": 187
+  "rank": 209,
+  "country": "US",
+  "currency": "USD",
+  "price_local": 1450000,
+  "region": "NJ",
+  "status": "Available",
+  "contact_url": null
  },
  {
   "id": "crexi-1919550",
@@ -3381,7 +4965,13 @@
   "source_id": "1919550",
   "images": [],
   "contact": "Grant-Murray Real Estate",
-  "rank": 188
+  "rank": 210,
+  "country": "US",
+  "currency": "USD",
+  "price_local": 1450000,
+  "region": "NC",
+  "status": "Available",
+  "contact_url": null
  },
  {
   "id": "crexi-1698967",
@@ -3399,7 +4989,13 @@
   "source_id": "1698967",
   "images": [],
   "contact": "Aldar Investment Properties, LLC",
-  "rank": 189
+  "rank": 211,
+  "country": "US",
+  "currency": "USD",
+  "price_local": 1485000,
+  "region": "AL",
+  "status": "Available",
+  "contact_url": null
  },
  {
   "id": "crexi-2375303",
@@ -3417,7 +5013,13 @@
   "source_id": "2375303",
   "images": [],
   "contact": "Ranch Realty",
-  "rank": 190
+  "rank": 212,
+  "country": "US",
+  "currency": "USD",
+  "price_local": 1488888,
+  "region": "CA",
+  "status": "Available",
+  "contact_url": null
  },
  {
   "id": "crexi-1878673",
@@ -3435,7 +5037,13 @@
   "source_id": "1878673",
   "images": [],
   "contact": "NAI Platform",
-  "rank": 191
+  "rank": 213,
+  "country": "US",
+  "currency": "USD",
+  "price_local": 1495000,
+  "region": "NY",
+  "status": "Available",
+  "contact_url": null
  },
  {
   "id": "crexi-2682766",
@@ -3453,7 +5061,13 @@
   "source_id": "2682766",
   "images": [],
   "contact": "Levin Rinke Realty",
-  "rank": 192
+  "rank": 214,
+  "country": "US",
+  "currency": "USD",
+  "price_local": 1500000,
+  "region": "FL",
+  "status": "Available",
+  "contact_url": null
  },
  {
   "id": "crexi-1400460",
@@ -3471,7 +5085,13 @@
   "source_id": "1400460",
   "images": [],
   "contact": "Great Metro Realty",
-  "rank": 193
+  "rank": 215,
+  "country": "US",
+  "currency": "USD",
+  "price_local": 1500000,
+  "region": "TX",
+  "status": "Available",
+  "contact_url": null
  },
  {
   "id": "crexi-2737804",
@@ -3489,7 +5109,13 @@
   "source_id": "2737804",
   "images": [],
   "contact": "Berkshire Hathaway HomeServices Starck Real Estate",
-  "rank": 194
+  "rank": 216,
+  "country": "US",
+  "currency": "USD",
+  "price_local": 1500000,
+  "region": "IL",
+  "status": "Available",
+  "contact_url": null
  },
  {
   "id": "crexi-2373862",
@@ -3507,7 +5133,13 @@
   "source_id": "2373862",
   "images": [],
   "contact": "Exchange Place Brokerage",
-  "rank": 195
+  "rank": 217,
+  "country": "US",
+  "currency": "USD",
+  "price_local": 1500000,
+  "region": "FL",
+  "status": "Available",
+  "contact_url": null
  },
  {
   "id": "crexi-1776839",
@@ -3525,7 +5157,34 @@
   "source_id": "1776839",
   "images": [],
   "contact": "Cushman & Wakefield Pyramid Brokerage Company Syracuse",
-  "rank": 196
+  "rank": 218,
+  "country": "US",
+  "currency": "USD",
+  "price_local": 1500000,
+  "region": "NY",
+  "status": "Available",
+  "contact_url": null
+ },
+ {
+  "id": "pb-844638",
+  "name": "À 20 min de Bergerac, dans la campagne périgourdine, un élégant prieuré du 15e s., ses dépendances cossues, ses truffières ...",
+  "address": "Bergerac, DORDOGNE, aquitaine, France",
+  "city": "Bergerac",
+  "region": "aquitaine",
+  "country": "FR",
+  "lat": 44.8534568,
+  "lng": 0.487531,
+  "price_local": 1390000,
+  "currency": "EUR",
+  "description": "À 20 min de Bergerac, dans la campagne périgourdine,  un élégant prieuré du 15e s., ses dépendances cossues, ses truffières ...",
+  "grade": null,
+  "status": "Available",
+  "source": "Patrice Besse",
+  "source_url": "https://patrice-besse.com/annonces/demeures-et-maisons-a-vendre-france-a-20-min-de-Bergerac--pb844638",
+  "source_id": "pb844638",
+  "contact_url": "https://patrice-besse.com/annonces/demeures-et-maisons-a-vendre-france-a-20-min-de-Bergerac--pb844638",
+  "price_usd": 1551698,
+  "rank": 219
  },
  {
   "id": "crexi-2458866",
@@ -3543,7 +5202,13 @@
   "source_id": "2458866",
   "images": [],
   "contact": "Real Estate Professional Services",
-  "rank": 197
+  "rank": 220,
+  "country": "US",
+  "currency": "USD",
+  "price_local": 1595000,
+  "region": "MI",
+  "status": "Available",
+  "contact_url": null
  },
  {
   "id": "crexi-2670943",
@@ -3561,7 +5226,13 @@
   "source_id": "2670943",
   "images": [],
   "contact": "Garnett Commercial Real Estate, Inc.",
-  "rank": 198
+  "rank": 221,
+  "country": "US",
+  "currency": "USD",
+  "price_local": 1599000,
+  "region": "FL",
+  "status": "Available",
+  "contact_url": null
  },
  {
   "id": "crexi-2686215",
@@ -3579,7 +5250,13 @@
   "source_id": "2686215",
   "images": [],
   "contact": "Van Eaton Partners",
-  "rank": 199
+  "rank": 222,
+  "country": "US",
+  "currency": "USD",
+  "price_local": 1600000,
+  "region": "LA",
+  "status": "Available",
+  "contact_url": null
  },
  {
   "id": "crexi-2735281",
@@ -3597,7 +5274,13 @@
   "source_id": "2735281",
   "images": [],
   "contact": "Southern Storage Advisors",
-  "rank": 200
+  "rank": 223,
+  "country": "US",
+  "currency": "USD",
+  "price_local": 1600000,
+  "region": "TX",
+  "status": "Available",
+  "contact_url": null
  },
  {
   "id": "crexi-2769643",
@@ -3615,7 +5298,13 @@
   "source_id": "2769643",
   "images": [],
   "contact": "REALTY ONE GROUP MVP",
-  "rank": 201
+  "rank": 224,
+  "country": "US",
+  "currency": "USD",
+  "price_local": 1600000,
+  "region": "FL",
+  "status": "Available",
+  "contact_url": null
  },
  {
   "id": "crexi-2600078",
@@ -3633,7 +5322,13 @@
   "source_id": "2600078",
   "images": [],
   "contact": "Sands Investment Group Charleston",
-  "rank": 202
+  "rank": 225,
+  "country": "US",
+  "currency": "USD",
+  "price_local": 1610000,
+  "region": "WA",
+  "status": "Available",
+  "contact_url": null
  },
  {
   "id": "crexi-2724416",
@@ -3651,7 +5346,13 @@
   "source_id": "2724416",
   "images": [],
   "contact": "Marcus & Millichap - Los Angeles",
-  "rank": 203
+  "rank": 226,
+  "country": "US",
+  "currency": "USD",
+  "price_local": 1617000,
+  "region": "AR",
+  "status": "Available",
+  "contact_url": null
  },
  {
   "id": "crexi-2320516",
@@ -3669,7 +5370,13 @@
   "source_id": "2320516",
   "images": [],
   "contact": "First Commercial Real Estate Services",
-  "rank": 204
+  "rank": 227,
+  "country": "US",
+  "currency": "USD",
+  "price_local": 1625000,
+  "region": "OR",
+  "status": "Available",
+  "contact_url": null
  },
  {
   "id": "crexi-2541329",
@@ -3687,7 +5394,13 @@
   "source_id": "2541329",
   "images": [],
   "contact": "Premium Group Real Estate Inc.",
-  "rank": 205
+  "rank": 228,
+  "country": "US",
+  "currency": "USD",
+  "price_local": 1650000,
+  "region": "CA",
+  "status": "Available",
+  "contact_url": null
  },
  {
   "id": "crexi-2258566",
@@ -3705,7 +5418,13 @@
   "source_id": "2258566",
   "images": [],
   "contact": "Oregon Vineyard Properties",
-  "rank": 206
+  "rank": 229,
+  "country": "US",
+  "currency": "USD",
+  "price_local": 1700000,
+  "region": "OR",
+  "status": "Available",
+  "contact_url": null
  },
  {
   "id": "crexi-2740433",
@@ -3723,7 +5442,13 @@
   "source_id": "2740433",
   "images": [],
   "contact": "Church Realty",
-  "rank": 207
+  "rank": 230,
+  "country": "US",
+  "currency": "USD",
+  "price_local": 1700000,
+  "region": "TX",
+  "status": "Available",
+  "contact_url": null
  },
  {
   "id": "crexi-1932361",
@@ -3741,7 +5466,13 @@
   "source_id": "1932361",
   "images": [],
   "contact": "Stream Realty Partners.",
-  "rank": 208
+  "rank": 231,
+  "country": "US",
+  "currency": "USD",
+  "price_local": 1700000,
+  "region": "SC",
+  "status": "Available",
+  "contact_url": null
  },
  {
   "id": "crexi-2620472",
@@ -3759,7 +5490,13 @@
   "source_id": "2620472",
   "images": [],
   "contact": "Commercial Realty Nation",
-  "rank": 209
+  "rank": 232,
+  "country": "US",
+  "currency": "USD",
+  "price_local": 1750000,
+  "region": "NY",
+  "status": "Available",
+  "contact_url": null
  },
  {
   "id": "crexi-2180897",
@@ -3777,7 +5514,13 @@
   "source_id": "2180897",
   "images": [],
   "contact": "KW Commercial First Atlanta",
-  "rank": 210
+  "rank": 233,
+  "country": "US",
+  "currency": "USD",
+  "price_local": 1900000,
+  "region": "GA",
+  "status": "Available",
+  "contact_url": null
  },
  {
   "id": "crexi-2350057",
@@ -3795,7 +5538,13 @@
   "source_id": "2350057",
   "images": [],
   "contact": null,
-  "rank": 211
+  "rank": 234,
+  "country": "US",
+  "currency": "USD",
+  "price_local": 1900000,
+  "region": "CO",
+  "status": "Available",
+  "contact_url": null
  },
  {
   "id": "crexi-2342244",
@@ -3813,7 +5562,13 @@
   "source_id": "2342244",
   "images": [],
   "contact": "Coldwell Banker Commercial NRT Tampa",
-  "rank": 212
+  "rank": 235,
+  "country": "US",
+  "currency": "USD",
+  "price_local": 1900000,
+  "region": "FL",
+  "status": "Available",
+  "contact_url": null
  },
  {
   "id": "crexi-2342260",
@@ -3831,7 +5586,13 @@
   "source_id": "2342260",
   "images": [],
   "contact": "Coldwell Banker Commercial NRT Tampa",
-  "rank": 213
+  "rank": 236,
+  "country": "US",
+  "currency": "USD",
+  "price_local": 1900000,
+  "region": "FL",
+  "status": "Available",
+  "contact_url": null
  },
  {
   "id": "crexi-2462381",
@@ -3849,11 +5610,17 @@
   "source_id": "2462381",
   "images": [],
   "contact": "Coldwell Banker Commercial NRT Tampa",
-  "rank": 214
+  "rank": 237,
+  "country": "US",
+  "currency": "USD",
+  "price_local": 1900000,
+  "region": "FL",
+  "status": "Available",
+  "contact_url": null
  },
  {
   "id": "crexi-2690283",
-  "name": "Retail/Office or Church 3975 Brainerd Rd \u00b124,336 SF",
+  "name": "Retail/Office or Church 3975 Brainerd Rd ±24,336 SF",
   "address": "3975 Brainerd Rd, Chattanooga, TN 37411",
   "city": "Chattanooga",
   "state": "TN",
@@ -3867,7 +5634,13 @@
   "source_id": "2690283",
   "images": [],
   "contact": "EXP Commercial",
-  "rank": 215
+  "rank": 238,
+  "country": "US",
+  "currency": "USD",
+  "price_local": 1900000,
+  "region": "TN",
+  "status": "Available",
+  "contact_url": null
  },
  {
   "id": "crexi-1463834",
@@ -3885,7 +5658,13 @@
   "source_id": "1463834",
   "images": [],
   "contact": "Places & Spaces Realty, Llc",
-  "rank": 216
+  "rank": 239,
+  "country": "US",
+  "currency": "USD",
+  "price_local": 1900000,
+  "region": "RI",
+  "status": "Available",
+  "contact_url": null
  },
  {
   "id": "crexi-2631770",
@@ -3903,7 +5682,13 @@
   "source_id": "2631770",
   "images": [],
   "contact": "Coldwell Banker Commercial McMahan Co. Louisville",
-  "rank": 217
+  "rank": 240,
+  "country": "US",
+  "currency": "USD",
+  "price_local": 1950000,
+  "region": "KY",
+  "status": "Available",
+  "contact_url": null
  },
  {
   "id": "crexi-2467163",
@@ -3921,7 +5706,13 @@
   "source_id": "2467163",
   "images": [],
   "contact": "Coldwell Banker United, REALTORS Champions",
-  "rank": 218
+  "rank": 241,
+  "country": "US",
+  "currency": "USD",
+  "price_local": 1950000,
+  "region": "TX",
+  "status": "Available",
+  "contact_url": null
  },
  {
   "id": "crexi-1991821",
@@ -3939,7 +5730,13 @@
   "source_id": "1991821",
   "images": [],
   "contact": "Commercial Realty Advisors Northwest LLC",
-  "rank": 219
+  "rank": 242,
+  "country": "US",
+  "currency": "USD",
+  "price_local": 1950000,
+  "region": "OR",
+  "status": "Available",
+  "contact_url": null
  },
  {
   "id": "crexi-1938841",
@@ -3957,7 +5754,13 @@
   "source_id": "1938841",
   "images": [],
   "contact": "Coldwell Banker Commercial Real Estate Group",
-  "rank": 220
+  "rank": 243,
+  "country": "US",
+  "currency": "USD",
+  "price_local": 1975000,
+  "region": "WI",
+  "status": "Available",
+  "contact_url": null
  },
  {
   "id": "crexi-2587414",
@@ -3975,7 +5778,13 @@
   "source_id": "2587414",
   "images": [],
   "contact": "Berkshire Hathaway Homeservices Florida Network Realty",
-  "rank": 221
+  "rank": 244,
+  "country": "US",
+  "currency": "USD",
+  "price_local": 1975000,
+  "region": "FL",
+  "status": "Available",
+  "contact_url": null
  },
  {
   "id": "crexi-1696536",
@@ -3993,7 +5802,13 @@
   "source_id": "1696536",
   "images": [],
   "contact": "Coldwell Banker Commercial First Equity",
-  "rank": 222
+  "rank": 245,
+  "country": "US",
+  "currency": "USD",
+  "price_local": 1990000,
+  "region": "TX",
+  "status": "Available",
+  "contact_url": null
  },
  {
   "id": "crexi-2375518",
@@ -4011,7 +5826,13 @@
   "source_id": "2375518",
   "images": [],
   "contact": null,
-  "rank": 223
+  "rank": 246,
+  "country": "US",
+  "currency": "USD",
+  "price_local": 2000000,
+  "region": "TX",
+  "status": "Available",
+  "contact_url": null
  },
  {
   "id": "crexi-1310546",
@@ -4029,7 +5850,13 @@
   "source_id": "1310546",
   "images": [],
   "contact": "Cross Creek Realty",
-  "rank": 224
+  "rank": 247,
+  "country": "US",
+  "currency": "USD",
+  "price_local": 2000000,
+  "region": "GA",
+  "status": "Available",
+  "contact_url": null
  },
  {
   "id": "crexi-1959973",
@@ -4047,7 +5874,13 @@
   "source_id": "1959973",
   "images": [],
   "contact": "Grant and Associates Real Estate INC",
-  "rank": 225
+  "rank": 248,
+  "country": "US",
+  "currency": "USD",
+  "price_local": 2000000,
+  "region": "FL",
+  "status": "Available",
+  "contact_url": null
  },
  {
   "id": "crexi-2678367",
@@ -4065,7 +5898,13 @@
   "source_id": "2678367",
   "images": [],
   "contact": "Troy Companies",
-  "rank": 226
+  "rank": 249,
+  "country": "US",
+  "currency": "USD",
+  "price_local": 2000000,
+  "region": "IL",
+  "status": "Available",
+  "contact_url": null
  },
  {
   "id": "crexi-2568052",
@@ -4083,7 +5922,13 @@
   "source_id": "2568052",
   "images": [],
   "contact": "Realtec Commercial Real Estate Services - Greeley",
-  "rank": 227
+  "rank": 250,
+  "country": "US",
+  "currency": "USD",
+  "price_local": 2200000,
+  "region": "CO",
+  "status": "Available",
+  "contact_url": null
  },
  {
   "id": "crexi-2068707",
@@ -4101,7 +5946,34 @@
   "source_id": "2068707",
   "images": [],
   "contact": "DGNY Commercial",
-  "rank": 228
+  "rank": 251,
+  "country": "US",
+  "currency": "USD",
+  "price_local": 2200000,
+  "region": "NY",
+  "status": "Available",
+  "contact_url": null
+ },
+ {
+  "id": "pb-445285",
+  "name": "Sur les hauteurs de Deauville, dominant la ville et la mer, une ancienne maison de curé devenue demeure familiale, sa ...",
+  "address": "Deauville, CALVADOS, basse-normandie, France",
+  "city": "Deauville",
+  "region": "basse-normandie",
+  "country": "FR",
+  "lat": 49.3049787,
+  "lng": 0.162146,
+  "price_local": 1975000,
+  "currency": "EUR",
+  "description": "Sur les hauteurs de Deauville, dominant la ville et la mer,  une ancienne maison de curé  devenue demeure familiale, sa ...",
+  "grade": null,
+  "status": "Available",
+  "source": "Patrice Besse",
+  "source_url": "https://patrice-besse.com/annonces/biens-en-ville-Sur-les-hauteurs-de-Deauville--pb445285",
+  "source_id": "pb445285",
+  "contact_url": "https://patrice-besse.com/annonces/biens-en-ville-Sur-les-hauteurs-de-Deauville--pb445285",
+  "price_usd": 2204750,
+  "rank": 252
  },
  {
   "id": "crexi-2721313",
@@ -4119,7 +5991,13 @@
   "source_id": "2721313",
   "images": [],
   "contact": "Beverly & Co",
-  "rank": 229
+  "rank": 253,
+  "country": "US",
+  "currency": "USD",
+  "price_local": 2259000,
+  "region": "CA",
+  "status": "Available",
+  "contact_url": null
  },
  {
   "id": "crexi-2446834",
@@ -4131,13 +6009,19 @@
   "lat": 39.357962,
   "lng": -76.594649,
   "price_usd": 2275000,
-  "description": "Rare 12,000 SF Baltimore Church Campus on 1.79 Acres\u2014Use, Expand or Redevelop",
+  "description": "Rare 12,000 SF Baltimore Church Campus on 1.79 Acres—Use, Expand or Redevelop",
   "source": "Crexi",
   "source_url": "https://www.crexi.com/properties/2446834/maryland-greater-church-of-the-risen-savior",
   "source_id": "2446834",
   "images": [],
   "contact": "Coldwell Banker Residential Brokerage",
-  "rank": 230
+  "rank": 254,
+  "country": "US",
+  "currency": "USD",
+  "price_local": 2275000,
+  "region": "MD",
+  "status": "Available",
+  "contact_url": null
  },
  {
   "id": "crexi-2428639",
@@ -4155,7 +6039,13 @@
   "source_id": "2428639",
   "images": [],
   "contact": "Rich Thomas",
-  "rank": 231
+  "rank": 255,
+  "country": "US",
+  "currency": "USD",
+  "price_local": 2300000,
+  "region": "IN",
+  "status": "Available",
+  "contact_url": null
  },
  {
   "id": "crexi-1672490",
@@ -4173,7 +6063,13 @@
   "source_id": "1672490",
   "images": [],
   "contact": "Xera Realty Inc",
-  "rank": 232
+  "rank": 256,
+  "country": "US",
+  "currency": "USD",
+  "price_local": 2400000,
+  "region": "FL",
+  "status": "Available",
+  "contact_url": null
  },
  {
   "id": "crexi-2215842",
@@ -4191,7 +6087,13 @@
   "source_id": "2215842",
   "images": [],
   "contact": "The Platinum Group Realtor",
-  "rank": 233
+  "rank": 257,
+  "country": "US",
+  "currency": "USD",
+  "price_local": 2400000,
+  "region": "CO",
+  "status": "Available",
+  "contact_url": null
  },
  {
   "id": "crexi-615921",
@@ -4209,7 +6111,13 @@
   "source_id": "615921",
   "images": [],
   "contact": "Keller Williams Realty",
-  "rank": 234
+  "rank": 258,
+  "country": "US",
+  "currency": "USD",
+  "price_local": 2470000,
+  "region": "AR",
+  "status": "Available",
+  "contact_url": null
  },
  {
   "id": "crexi-2256407",
@@ -4227,7 +6135,13 @@
   "source_id": "2256407",
   "images": [],
   "contact": "Foundry Commercial",
-  "rank": 235
+  "rank": 259,
+  "country": "US",
+  "currency": "USD",
+  "price_local": 2490000,
+  "region": "TX",
+  "status": "Available",
+  "contact_url": null
  },
  {
   "id": "crexi-2000790",
@@ -4245,7 +6159,13 @@
   "source_id": "2000790",
   "images": [],
   "contact": "CBS Realty",
-  "rank": 236
+  "rank": 260,
+  "country": "US",
+  "currency": "USD",
+  "price_local": 2500000,
+  "region": "TN",
+  "status": "Available",
+  "contact_url": null
  },
  {
   "id": "crexi-2329363",
@@ -4263,7 +6183,13 @@
   "source_id": "2329363",
   "images": [],
   "contact": "Long Realty Company Tucson",
-  "rank": 237
+  "rank": 261,
+  "country": "US",
+  "currency": "USD",
+  "price_local": 2600000,
+  "region": "AZ",
+  "status": "Available",
+  "contact_url": null
  },
  {
   "id": "crexi-2740435",
@@ -4281,11 +6207,17 @@
   "source_id": "2740435",
   "images": [],
   "contact": "Church Realty",
-  "rank": 238
+  "rank": 262,
+  "country": "US",
+  "currency": "USD",
+  "price_local": 2600000,
+  "region": "TX",
+  "status": "Available",
+  "contact_url": null
  },
  {
   "id": "crexi-2375416",
-  "name": "\u00b134,000sf Church on 3.13 Acres | 50th & Utica",
+  "name": "±34,000sf Church on 3.13 Acres | 50th & Utica",
   "address": "4808 Utica Ave, Lubbock, Lubbock County, TX 79414",
   "city": "Lubbock",
   "state": "TX",
@@ -4299,7 +6231,13 @@
   "source_id": "2375416",
   "images": [],
   "contact": "Egenbacher Commercial Properties",
-  "rank": 239
+  "rank": 263,
+  "country": "US",
+  "currency": "USD",
+  "price_local": 2630000,
+  "region": "TX",
+  "status": "Available",
+  "contact_url": null
  },
  {
   "id": "crexi-2735574",
@@ -4317,7 +6255,13 @@
   "source_id": "2735574",
   "images": [],
   "contact": "Beau Box Commercial Real Estate",
-  "rank": 240
+  "rank": 264,
+  "country": "US",
+  "currency": "USD",
+  "price_local": 2650000,
+  "region": "FL",
+  "status": "Available",
+  "contact_url": null
  },
  {
   "id": "crexi-2678866",
@@ -4335,7 +6279,13 @@
   "source_id": "2678866",
   "images": [],
   "contact": "Church Realty",
-  "rank": 241
+  "rank": 265,
+  "country": "US",
+  "currency": "USD",
+  "price_local": 2650000,
+  "region": "TX",
+  "status": "Available",
+  "contact_url": null
  },
  {
   "id": "crexi-2162261",
@@ -4353,7 +6303,34 @@
   "source_id": "2162261",
   "images": [],
   "contact": "Levey Miller Maretz",
-  "rank": 242
+  "rank": 266,
+  "country": "US",
+  "currency": "USD",
+  "price_local": 2750000,
+  "region": "CT",
+  "status": "Available",
+  "contact_url": null
+ },
+ {
+  "id": "pb-325250",
+  "name": "En Pays d’Auge, dans le Calvados sur plus de 5ha un ancien prieuré aux neuf siècles d'histoire, inscrit MH",
+  "address": "Saint-Hymer, CALVADOS, basse-normandie, France",
+  "city": "Saint-Hymer",
+  "region": "basse-normandie",
+  "country": "FR",
+  "lat": 48.9536845,
+  "lng": -0.5733654,
+  "price_local": 2655000,
+  "currency": "EUR",
+  "description": "En Pays d’Auge, dans le Calvados sur plus de 5ha un ancien prieuré aux neuf siècles d'histoire, inscrit MH",
+  "grade": null,
+  "status": "Available",
+  "source": "Patrice Besse",
+  "source_url": "https://patrice-besse.com/annonces/edifices-religieux-a-vendre-En-Pays-d-Auge-dans-le-Calvados--pb325250",
+  "source_id": "pb325250",
+  "contact_url": "https://patrice-besse.com/annonces/edifices-religieux-a-vendre-En-Pays-d-Auge-dans-le-Calvados--pb325250",
+  "price_usd": 2963854,
+  "rank": 267
  },
  {
   "id": "crexi-1581698",
@@ -4371,7 +6348,13 @@
   "source_id": "1581698",
   "images": [],
   "contact": "NAI Rampart",
-  "rank": 243
+  "rank": 268,
+  "country": "US",
+  "currency": "USD",
+  "price_local": 3000000,
+  "region": "LA",
+  "status": "Available",
+  "contact_url": null
  },
  {
   "id": "crexi-2243110",
@@ -4389,7 +6372,13 @@
   "source_id": "2243110",
   "images": [],
   "contact": "Signature Sotheby's International Realty",
-  "rank": 244
+  "rank": 269,
+  "country": "US",
+  "currency": "USD",
+  "price_local": 3000000,
+  "region": "MI",
+  "status": "Available",
+  "contact_url": null
  },
  {
   "id": "crexi-2724507",
@@ -4407,7 +6396,13 @@
   "source_id": "2724507",
   "images": [],
   "contact": null,
-  "rank": 245
+  "rank": 270,
+  "country": "US",
+  "currency": "USD",
+  "price_local": 3000000,
+  "region": "NY",
+  "status": "Available",
+  "contact_url": null
  },
  {
   "id": "crexi-2696758",
@@ -4425,7 +6420,13 @@
   "source_id": "2696758",
   "images": [],
   "contact": "Berkshire Hathaway HomeServices",
-  "rank": 246
+  "rank": 271,
+  "country": "US",
+  "currency": "USD",
+  "price_local": 3100000,
+  "region": "GA",
+  "status": "Available",
+  "contact_url": null
  },
  {
   "id": "crexi-2327041",
@@ -4443,7 +6444,13 @@
   "source_id": "2327041",
   "images": [],
   "contact": "Hanmi Realty",
-  "rank": 247
+  "rank": 272,
+  "country": "US",
+  "currency": "USD",
+  "price_local": 3200000,
+  "region": "NY",
+  "status": "Available",
+  "contact_url": null
  },
  {
   "id": "crexi-2735084",
@@ -4461,7 +6468,13 @@
   "source_id": "2735084",
   "images": [],
   "contact": "Block + Lot",
-  "rank": 248
+  "rank": 273,
+  "country": "US",
+  "currency": "USD",
+  "price_local": 3200000,
+  "region": "KY",
+  "status": "Available",
+  "contact_url": null
  },
  {
   "id": "crexi-2668059",
@@ -4479,7 +6492,13 @@
   "source_id": "2668059",
   "images": [],
   "contact": "Newmark | Los Angeles - South Bay",
-  "rank": 249
+  "rank": 274,
+  "country": "US",
+  "currency": "USD",
+  "price_local": 3250000,
+  "region": "CA",
+  "status": "Available",
+  "contact_url": null
  },
  {
   "id": "crexi-1820395",
@@ -4497,7 +6516,13 @@
   "source_id": "1820395",
   "images": [],
   "contact": "Trevey Commercial Real Estate",
-  "rank": 250
+  "rank": 275,
+  "country": "US",
+  "currency": "USD",
+  "price_local": 3395000,
+  "region": "CO",
+  "status": "Available",
+  "contact_url": null
  },
  {
   "id": "crexi-1902462",
@@ -4515,7 +6540,13 @@
   "source_id": "1902462",
   "images": [],
   "contact": "Legacy 100 Real Estate Partners",
-  "rank": 251
+  "rank": 276,
+  "country": "US",
+  "currency": "USD",
+  "price_local": 3499000,
+  "region": "CO",
+  "status": "Available",
+  "contact_url": null
  },
  {
   "id": "crexi-1575483",
@@ -4533,7 +6564,13 @@
   "source_id": "1575483",
   "images": [],
   "contact": "KW Commercial First Atlanta",
-  "rank": 252
+  "rank": 277,
+  "country": "US",
+  "currency": "USD",
+  "price_local": 3500000,
+  "region": "GA",
+  "status": "Available",
+  "contact_url": null
  },
  {
   "id": "crexi-1932696",
@@ -4551,7 +6588,13 @@
   "source_id": "1932696",
   "images": [],
   "contact": "NAI FMA Realty",
-  "rank": 253
+  "rank": 278,
+  "country": "US",
+  "currency": "USD",
+  "price_local": 3650000,
+  "region": "NE",
+  "status": "Available",
+  "contact_url": null
  },
  {
   "id": "crexi-2416055",
@@ -4569,7 +6612,13 @@
   "source_id": "2416055",
   "images": [],
   "contact": "Van Houten Group LLC",
-  "rank": 254
+  "rank": 279,
+  "country": "US",
+  "currency": "USD",
+  "price_local": 3800000,
+  "region": "NJ",
+  "status": "Available",
+  "contact_url": null
  },
  {
   "id": "crexi-227047",
@@ -4587,7 +6636,13 @@
   "source_id": "227047",
   "images": [],
   "contact": "Creek Price Edwards",
-  "rank": 255
+  "rank": 280,
+  "country": "US",
+  "currency": "USD",
+  "price_local": 3950000,
+  "region": "OK",
+  "status": "Available",
+  "contact_url": null
  },
  {
   "id": "crexi-1705834",
@@ -4605,7 +6660,13 @@
   "source_id": "1705834",
   "images": [],
   "contact": "Landbridge Commercial Properties",
-  "rank": 256
+  "rank": 281,
+  "country": "US",
+  "currency": "USD",
+  "price_local": 3950000,
+  "region": "TX",
+  "status": "Available",
+  "contact_url": null
  },
  {
   "id": "crexi-1877385",
@@ -4623,7 +6684,13 @@
   "source_id": "1877385",
   "images": [],
   "contact": "Knipe Realty ERA Powered",
-  "rank": 257
+  "rank": 282,
+  "country": "US",
+  "currency": "USD",
+  "price_local": 3995000,
+  "region": "OR",
+  "status": "Available",
+  "contact_url": null
  },
  {
   "id": "crexi-2528494",
@@ -4641,7 +6708,13 @@
   "source_id": "2528494",
   "images": [],
   "contact": "Coldwell Banker Commercial NRT Tampa",
-  "rank": 258
+  "rank": 283,
+  "country": "US",
+  "currency": "USD",
+  "price_local": 4000000,
+  "region": "FL",
+  "status": "Available",
+  "contact_url": null
  },
  {
   "id": "crexi-2757772",
@@ -4659,7 +6732,13 @@
   "source_id": "2757772",
   "images": [],
   "contact": "LevRose Commercial Real Estate",
-  "rank": 259
+  "rank": 284,
+  "country": "US",
+  "currency": "USD",
+  "price_local": 4250000,
+  "region": "AZ",
+  "status": "Available",
+  "contact_url": null
  },
  {
   "id": "crexi-2649004",
@@ -4677,7 +6756,13 @@
   "source_id": "2649004",
   "images": [],
   "contact": "KW Commercial Eagan",
-  "rank": 260
+  "rank": 285,
+  "country": "US",
+  "currency": "USD",
+  "price_local": 4390000,
+  "region": "MN",
+  "status": "Available",
+  "contact_url": null
  },
  {
   "id": "crexi-1472978",
@@ -4695,7 +6780,13 @@
   "source_id": "1472978",
   "images": [],
   "contact": "KW Commercial Puyallup",
-  "rank": 261
+  "rank": 286,
+  "country": "US",
+  "currency": "USD",
+  "price_local": 4500000,
+  "region": "WA",
+  "status": "Available",
+  "contact_url": null
  },
  {
   "id": "crexi-2740997",
@@ -4713,7 +6804,13 @@
   "source_id": "2740997",
   "images": [],
   "contact": "Osborne Properties",
-  "rank": 262
+  "rank": 287,
+  "country": "US",
+  "currency": "USD",
+  "price_local": 4500000,
+  "region": "TX",
+  "status": "Available",
+  "contact_url": null
  },
  {
   "id": "crexi-2693527",
@@ -4731,7 +6828,13 @@
   "source_id": "2693527",
   "images": [],
   "contact": "Benitez Royal Realty, LLC",
-  "rank": 263
+  "rank": 288,
+  "country": "US",
+  "currency": "USD",
+  "price_local": 4500000,
+  "region": "FL",
+  "status": "Available",
+  "contact_url": null
  },
  {
   "id": "crexi-2711536",
@@ -4749,7 +6852,13 @@
   "source_id": "2711536",
   "images": [],
   "contact": "Royalty Realty",
-  "rank": 264
+  "rank": 289,
+  "country": "US",
+  "currency": "USD",
+  "price_local": 4900000,
+  "region": "TX",
+  "status": "Available",
+  "contact_url": null
  },
  {
   "id": "crexi-2700842",
@@ -4767,7 +6876,13 @@
   "source_id": "2700842",
   "images": [],
   "contact": "Commercial Realty Nation",
-  "rank": 265
+  "rank": 290,
+  "country": "US",
+  "currency": "USD",
+  "price_local": 4990000,
+  "region": "NY",
+  "status": "Available",
+  "contact_url": null
  },
  {
   "id": "crexi-2608471",
@@ -4785,7 +6900,13 @@
   "source_id": "2608471",
   "images": [],
   "contact": "Suntide Commercial Realty",
-  "rank": 266
+  "rank": 291,
+  "country": "US",
+  "currency": "USD",
+  "price_local": 5450000,
+  "region": "MN",
+  "status": "Available",
+  "contact_url": null
  },
  {
   "id": "crexi-2166007",
@@ -4803,7 +6924,13 @@
   "source_id": "2166007",
   "images": [],
   "contact": "Thrive Commercial Partners",
-  "rank": 267
+  "rank": 292,
+  "country": "US",
+  "currency": "USD",
+  "price_local": 7250000,
+  "region": "CO",
+  "status": "Available",
+  "contact_url": null
  },
  {
   "id": "crexi-2325621",
@@ -4821,11 +6948,17 @@
   "source_id": "2325621",
   "images": [],
   "contact": "Millenia Commercial Real Estate",
-  "rank": 268
+  "rank": 293,
+  "country": "US",
+  "currency": "USD",
+  "price_local": 7500000,
+  "region": "CA",
+  "status": "Available",
+  "contact_url": null
  },
  {
   "id": "crexi-2451418",
-  "name": "MIAMI\u2019S PREMIER AUTOMOTIVE SANCTUARY",
+  "name": "MIAMI’S PREMIER AUTOMOTIVE SANCTUARY",
   "address": "2500 NW 39th St, Miami, Miami-Dade County, FL 33142",
   "city": "Miami",
   "state": "FL",
@@ -4833,13 +6966,19 @@
   "lat": 25.81101,
   "lng": -80.237441,
   "price_usd": 8250000,
-  "description": "MIAMI\u2019S PREMIER AUTOMOTIVE SANCTUARY 23,700 SF Single-Tenant Luxury",
+  "description": "MIAMI’S PREMIER AUTOMOTIVE SANCTUARY 23,700 SF Single-Tenant Luxury",
   "source": "Crexi",
   "source_url": "https://www.crexi.com/properties/2451418/miamis-premier-automotive-sanctuary",
   "source_id": "2451418",
   "images": [],
-  "contact": "Manny Chamizo #1 Sotheby\u2019s Commercial Broker",
-  "rank": 269
+  "contact": "Manny Chamizo #1 Sotheby’s Commercial Broker",
+  "rank": 294,
+  "country": "US",
+  "currency": "USD",
+  "price_local": 8250000,
+  "region": "FL",
+  "status": "Available",
+  "contact_url": null
  },
  {
   "id": "crexi-1984784",
@@ -4857,7 +6996,13 @@
   "source_id": "1984784",
   "images": [],
   "contact": "Gulf States Real Estate",
-  "rank": 270
+  "rank": 295,
+  "country": "US",
+  "currency": "USD",
+  "price_local": 8300000,
+  "region": "LA",
+  "status": "Available",
+  "contact_url": null
  },
  {
   "id": "crexi-2484981",
@@ -4875,7 +7020,13 @@
   "source_id": "2484981",
   "images": [],
   "contact": "The Langert Commercial Group, LLC",
-  "rank": 271
+  "rank": 296,
+  "country": "US",
+  "currency": "USD",
+  "price_local": 9995000,
+  "region": "MD",
+  "status": "Available",
+  "contact_url": null
  },
  {
   "id": "crexi-2296432",
@@ -4893,7 +7044,13 @@
   "source_id": "2296432",
   "images": [],
   "contact": "Colorado Commercial Advisors",
-  "rank": 272
+  "rank": 297,
+  "country": "US",
+  "currency": "USD",
+  "price_local": 10500000,
+  "region": "CO",
+  "status": "Available",
+  "contact_url": null
  },
  {
   "id": "crexi-2563277",
@@ -4911,7 +7068,13 @@
   "source_id": "2563277",
   "images": [],
   "contact": "Buttross Properties",
-  "rank": 273
+  "rank": 298,
+  "country": "US",
+  "currency": "USD",
+  "price_local": 11000000,
+  "region": "TX",
+  "status": "Available",
+  "contact_url": null
  },
  {
   "id": "crexi-1671776",
@@ -4929,7 +7092,13 @@
   "source_id": "1671776",
   "images": [],
   "contact": "SRS Real Estate Partners",
-  "rank": 274
+  "rank": 299,
+  "country": "US",
+  "currency": "USD",
+  "price_local": 11000000,
+  "region": "VA",
+  "status": "Available",
+  "contact_url": null
  },
  {
   "id": "crexi-2598026",
@@ -4947,7 +7116,13 @@
   "source_id": "2598026",
   "images": [],
   "contact": "SVN | Cornerstone",
-  "rank": 275
+  "rank": 300,
+  "country": "US",
+  "currency": "USD",
+  "price_local": 15000000,
+  "region": "WA",
+  "status": "Available",
+  "contact_url": null
  },
  {
   "id": "crexi-557217",
@@ -4965,7 +7140,13 @@
   "source_id": "557217",
   "images": [],
   "contact": "Jordan Trotter Commercial Real Estate",
-  "rank": 276
+  "rank": 301,
+  "country": "US",
+  "currency": "USD",
+  "price_local": 16000000,
+  "region": "GA",
+  "status": "Available",
+  "contact_url": null
  },
  {
   "id": "crexi-2198680",
@@ -4983,6 +7164,642 @@
   "source_id": "2198680",
   "images": [],
   "contact": "CBRE - Columbia",
-  "rank": 277
+  "rank": 302,
+  "country": "US",
+  "currency": "USD",
+  "price_local": 17500000,
+  "region": "SC",
+  "status": "Available",
+  "contact_url": null
+ },
+ {
+  "id": "cofe-altrincham-st-john-diocese-chester",
+  "name": "Altrincham, St John",
+  "address": "Altrincham, St John, Diocese of Chester, England",
+  "city": "Altrincham",
+  "region": "Diocese of Chester",
+  "country": "GB",
+  "lat": 53.3824359,
+  "lng": -2.3526149,
+  "price_local": null,
+  "currency": "GBP",
+  "description": "St John’s Church was constructed in the 1860’s, designed by the Manchester Architect, J Medland Taylor, and opened in 1866. The property is Grade II Listed and is of snecked stone construction under a green and blue decorative slate roof. The Church is predominantly single-storey, having a particularly attractive nave formed by tall chamfered arches, supported by stone columns with attractive capitals. The nave has been shortened during the 1990’s due to the rear gallery being blocked up and in so, creating a Parish Hall and first floor Upper Hall occupying the western end of the Church. The Church features some wonderful geometric tracery windows and some excellent stained glass, some by Abbott & Co. The Church also incorporates a kitchen, a steep clock tower, male and female washrooms and partial cellars and extends to approximately 8,559 sq. ft GIA. Expressions of interest should be made direct to the Agent. Key features For sale by Informal Tender on the instructions of the Chester Diocesan Board of Finance and the Church Commissioners Victorian Grade II Listed church constructed in the 1860's The Church incorporates a kitchen, steep clock tower, male and female washrooms and p",
+  "grade": "Grade II",
+  "status": "Available",
+  "source": "Church of England",
+  "source_url": "https://churchofengland.org/closed-churches/altrincham-st-john-diocese-chester",
+  "source_id": "/closed-churches/altrincham-st-john-diocese-chester",
+  "contact_url": "https://www.fishergerman.co.uk/residential-property-sales/detached-house-for-sale-in-st-johns-road-altrincham-greater-manchester-wa14/12657",
+  "price_usd": null,
+  "rank": 303
+ },
+ {
+  "id": "cofe-barrow-st-francis-diocese-carlisle",
+  "name": "Barrow, St Francis",
+  "address": "Barrow, St Francis, Diocese of Carlisle, England",
+  "city": "Barrow",
+  "region": "Diocese of Carlisle",
+  "country": "GB",
+  "lat": 54.131490143313,
+  "lng": -3.2325929403305,
+  "price_local": null,
+  "currency": "GBP",
+  "description": "The church of St Francis is a postwar church, built 1954-55, in a traditional architectural style. The building provides open-plan accommodation internally, with ancillary kitchen facilities and meeting and reception rooms. The grounds comprise open lawned areas with mature trees adjoining the Church, together with fenced and well-established gardens surrounding the Vicarage. The property benefits from established access via Schneider Road; the site offers ample vehicle parking and turning space. Key features Former church and vicarage All mains services Surrounding gardens Tarmacked access for vehicles Wealth of character",
+  "grade": "Unlisted",
+  "status": "Available",
+  "source": "Church of England",
+  "source_url": "https://churchofengland.org/closed-churches/barrow-st-francis-diocese-carlisle",
+  "source_id": "/closed-churches/barrow-st-francis-diocese-carlisle",
+  "contact_url": "https://corrieandco.co.uk/property/schneider-road-barrow-in-furness-34656644/",
+  "price_usd": null,
+  "rank": 304
+ },
+ {
+  "id": "cofe-billingham-st-mary-magdalene-diocese-durham",
+  "name": "Billingham St Mary Magdalene",
+  "address": "Billingham St Mary Magdalene, Diocese of Durham, England",
+  "city": "Billingham",
+  "region": "Diocese of Durham",
+  "country": "GB",
+  "lat": 54.612083,
+  "lng": -1.3091935,
+  "price_local": null,
+  "currency": "GBP",
+  "description": "The former church of St Mary Magdalene’s is a relatively modern church structure with a double height hall built using a concrete framed structure with brick/block, uPVC and glazed in-fill elevations, under a shallow pitch felt roof. There is a single storey element to the property, which is again of brick and block construction, under a flat felt roof. The property occupies an L-shaped site which would be ideal for redevelopment. Key features Former Church Approximately 2,755 sq ft (255.94 sq m) Site Area: 0.168 ha (0.412 acres) Asking Price: Offers Invited Freehold",
+  "grade": "Unlisted",
+  "status": "Available",
+  "source": "Church of England",
+  "source_url": "https://churchofengland.org/closed-churches/billingham-st-mary-magdalene-diocese-durham",
+  "source_id": "/closed-churches/billingham-st-mary-magdalene-diocese-durham",
+  "contact_url": "https://www.sw.co.uk/properties/redevelopment-opportunity-for-sale-in-billingham-st-mary-magdalene-church-whitehouse-road-billingham/",
+  "price_usd": null,
+  "rank": 305
+ },
+ {
+  "id": "cofe-blackpool-christ-church-diocese-blackburn",
+  "name": "Blackpool, Christ Church",
+  "address": "Blackpool, Christ Church, Diocese of Blackburn, England",
+  "city": "Blackpool",
+  "region": "Diocese of Blackburn",
+  "country": "GB",
+  "lat": 53.8122067,
+  "lng": -3.0480155,
+  "price_local": null,
+  "currency": "GBP",
+  "description": "A substantial detached church building of traditional brick construction, set beneath various pitched slate roofs supported by attractive exposed timber trusses. The building features numerous timber-framed windows, including stained glass to the front and rear elevations. Internally, the property is arranged around a large open-plan worship hall, with several amenity areas including a kitchen, WC’s and storage rooms. The floor is raised and of timber. The main hall benefits from significant ceiling heights of approximately 10.55 metres, rising to 13.07 metres at the apex. Externally, there are concrete surfaced pathways and grassed areas. The property occupies a prominent position fronting Palatine Road in Blackpool, a well-established thoroughfare situated close to its junction with Central Drive. This location offers excellent connectivity providing direct routes toward Blackpool Town Centre and the Promenade, both of which are easily accessible within a few minutes’ drive or a short walk. The surrounding area is predominantly residential in nature, interspersed with a number of independently operated guesthouses and small hotels. Central Drive serves as a key link road, connect",
+  "grade": "Unlisted",
+  "status": "Available",
+  "source": "Church of England",
+  "source_url": "https://churchofengland.org/closed-churches/blackpool-christ-church-diocese-blackburn",
+  "source_id": "/closed-churches/blackpool-christ-church-diocese-blackburn",
+  "contact_url": "https://www.eckersleyproperty.co.uk/properties/christ-church-with-all-saints-15a-palatine-road-blackpool/",
+  "price_usd": null,
+  "rank": 306
+ },
+ {
+  "id": "cofe-boughton-st-paul-diocese-chester",
+  "name": "Boughton, St Paul",
+  "address": "Boughton, St Paul, Diocese of Chester, England",
+  "city": "Boughton",
+  "region": "Diocese of Chester",
+  "country": "GB",
+  "lat": 53.191965168748,
+  "lng": -2.8722840824024,
+  "price_local": null,
+  "currency": "GBP",
+  "description": "St. Paul’s Parish church dates back to 1829-30 and was designed by Architect William Cole the younger. The Church was virtually rebuilt in 1876 to a design by John Douglas, who added the south aisle in 1902, and the spire in 1905 The property is of stone-dressed red brick and timber framing with brick and plaster panels with grey and grey-green slate roof. Its plan consists of a through nave and chancel of four bays plus an apsidal bay, a south aisle, a west porch and a broach spire at the west end. Most of the windows are lancets. The property is built on a steep slope with the rear of the building sitting on Barrel Well Hill. Lower ground floor areas provide store rooms, kitchens, toilet facilities and rear exit points. Off street car parking is available nearby and there is pay & display car parking on Christleton Road (0.1 miles). Expressions of interest should be made direct to the Agent. Key features Grade II* Listed Designed by local Architect John Douglas Original Church dates back to 1829-30 Church extended 1875-76. New porch 1900 South aisle added 1902/Spirelet added 1905",
+  "grade": "Grade II*",
+  "status": "Available",
+  "source": "Church of England",
+  "source_url": "https://churchofengland.org/closed-churches/boughton-st-paul-diocese-chester",
+  "source_id": "/closed-churches/boughton-st-paul-diocese-chester",
+  "contact_url": "https://mbre.space/property/st-pauls-church-chester/",
+  "price_usd": null,
+  "rank": 307
+ },
+ {
+  "id": "cofe-burnley-st-mark-diocese-blackburn",
+  "name": "Burnley, St Mark",
+  "address": "Burnley, St Mark, Diocese of Blackburn, England",
+  "city": "Burnley",
+  "region": "Diocese of Blackburn",
+  "country": "GB",
+  "lat": 53.7850177,
+  "lng": -2.2826553,
+  "price_local": null,
+  "currency": "GBP",
+  "description": "St Mark the Evangelist Church comprises a detached former place of worship of mid to late 20th century construction, set within a self-contained site fronting Rossendale Road. The property is of brick construction, incorporating a steel portal frame beneath a pitched tiled roof, with single glazed metal framed windows. Internally, the accommodation provides a rectangular open plan worship hall with raised altar area, good natural light and an eaves height of approximately 4.36 m, rising to approximately 5.5 m at the apex. Externally, the property sits within its own grounds, comprising hardstanding and grassed areas with established boundary treatments. A detached timber structure is also located within the site. Expressions of interest should be made direct to the Agent. Key features Profile location fronting the A646 Easy access to both the town centre and motorway network Large site extending to 0.81 acres",
+  "grade": "Unlisted",
+  "status": "Available",
+  "source": "Church of England",
+  "source_url": "https://churchofengland.org/closed-churches/burnley-st-mark-diocese-blackburn",
+  "source_id": "/closed-churches/burnley-st-mark-diocese-blackburn",
+  "contact_url": "https://www.eckersleyproperty.co.uk/properties/former-st-mark-the-evangelist-church-62-rossendale-road-burnley/",
+  "price_usd": null,
+  "rank": 308
+ },
+ {
+  "id": "cofe-burrington-st-george-diocese-hereford",
+  "name": "Burrington, St George",
+  "address": "Burrington, St George, Diocese of Hereford, England",
+  "city": "Burrington",
+  "region": "Diocese of Hereford",
+  "country": "GB",
+  "lat": 52.342857,
+  "lng": -2.820081,
+  "price_local": null,
+  "currency": "GBP",
+  "description": "The nearest village is Leintwardine, 2.5 miles distant which has a good range of local facilities. Burrington has good transport links, it is 5 miles to the main A49 giving excellent road links and there is a railway station in Ludlow. St George's is a Grade II Listed former church, its origins dating back to the 13th century and rebuilt in 1864. The church is in the early English style with lancet windows and plate tracery. The south doorway has a Norman-style round arched head (which Buildings of England suggests may have replicated the doorway of the old church). The most significant part of the church lies outside the east wall of the chancel in the form of eight seventeenth century ledger slabs which were inside the church until 1864. They are highly significant for their historic design and interest. The church is suitable for a variety of alternative uses. Expressions of interest should be made direct to the agent. Key features Parish church Historic origins dating from the thirteenth century or earlier Nave rebuilt circa 1855 by S Pountney Smith Chancel rebuilt and shortened in 1864 by George Frederick Bodley",
+  "grade": "Grade II",
+  "status": "Available",
+  "source": "Church of England",
+  "source_url": "https://churchofengland.org/closed-churches/burrington-st-george-diocese-hereford",
+  "source_id": "/closed-churches/burrington-st-george-diocese-hereford",
+  "contact_url": "https://www.mccartneys.co.uk/",
+  "price_usd": null,
+  "rank": 309
+ },
+ {
+  "id": "cofe-carlisle-holy-trinity-diocese-carlisle",
+  "name": "Carlisle, Holy Trinity",
+  "address": "Carlisle, Holy Trinity, Diocese of Carlisle, England",
+  "city": "Carlisle",
+  "region": "Diocese of Carlisle",
+  "country": "GB",
+  "lat": 54.8922208,
+  "lng": -2.9506306,
+  "price_local": null,
+  "currency": "GBP",
+  "description": "The property comprises a former Church of England church with adjoining parish hall, occupying a prominent corner position at the junction of Wigton Road and Stanhope Road, to the south-west of Carlisle city centre. The site extends to approximately 0.36 acres and offers a substantial development opportunity, with a combined gross internal floor area of approximately 8,328 sq ft. The predominantly two-storey parish hall provides accommodation across ground and first-floor levels, including open-plan areas, a large hall with stage, kitchen and ancillary toilet facilities. The adjoining church is arranged over ground-floor level, with separate access from Stanhope Road and internal access to the parish hall via a connecting linkway. The church building also incorporates an elevated organ area accessed from a two-storey lobby. The property occupies an established urban location, with nearby residential properties, local retail amenities and established commercial areas. The buildings could lend themselves to a variety of alternative uses or redevelopment, subject to the necessary planning permissions and other statutory consents. Expressions of interest should be made direct to the Ag",
+  "grade": "Unlisted",
+  "status": "Available",
+  "source": "Church of England",
+  "source_url": "https://churchofengland.org/closed-churches/carlisle-holy-trinity-diocese-carlisle",
+  "source_id": "/closed-churches/carlisle-holy-trinity-diocese-carlisle",
+  "contact_url": "https://www.edwinthompson.co.uk/properties/holy-trinity-church-carlisle-ca2-7bh/",
+  "price_usd": null,
+  "rank": 310
+ },
+ {
+  "id": "cofe-cold-kirby-st-michael-diocese-york",
+  "name": "Cold Kirby, St Michael",
+  "address": "Cold Kirby, St Michael, Diocese of York, England",
+  "city": "Cold Kirby",
+  "region": "Diocese of York",
+  "country": "GB",
+  "lat": 54.2528249,
+  "lng": -1.1806096,
+  "price_local": null,
+  "currency": "GBP",
+  "description": "The former church of St Michael’s is a charming stone building built in the early 1840's. Set in a stunning landscape with in an open churchyard, it is now closed for public worship and the vendors are seeking to settle the future of the building by finding a suitable new use and owner. The building offers lots of potential for creative reuse, including scope to create an outdoor amenity space. Whilst there is currently no off street or allocated parking it may be possible to realign the boundary wall to provide some spaces, subject to secular and ecclesiastical consents. Situation Located in Cold Kirby, a quiet and picturesque village in the beautiful North York Moors National Park between Thirsk and Helmsley off Sutton Bank. The property is 8 miles from Thirsk, 5 from Helmsley and 8 miles from the A19. The area is a haven for tourists and walkers, with the popular Cleveland Way National Walking Trail passing right by the building. Key features Community or commercial use only Charming Stone Building Attractive countryside views Offers Invited Quiet Village Location Business plan required",
+  "grade": "Grade II",
+  "status": "Available",
+  "source": "Church of England",
+  "source_url": "https://churchofengland.org/closed-churches/cold-kirby-st-michael-diocese-york",
+  "source_id": "/closed-churches/cold-kirby-st-michael-diocese-york",
+  "contact_url": "https://media.rightmove.co.uk/property-brochure/9d589cd46/146365094/9d589cd463c067e891a7848f492ed9d9.pdf",
+  "price_usd": null,
+  "rank": 311
+ },
+ {
+  "id": "cofe-cornholme-st-michael-and-all-angels-diocese-leeds",
+  "name": "Cornholme, St Michael and All Angels",
+  "address": "Cornholme, St Michael and All Angels, Diocese of Leeds, England",
+  "city": "Cornholme",
+  "region": "Diocese of Leeds",
+  "country": "GB",
+  "lat": 53.7322997,
+  "lng": -2.138321,
+  "price_local": null,
+  "currency": "GBP",
+  "description": "The property comprises a substantial, Grade II Listed, purpose-built church, dating from the early 1900s. The building is of stone construction with ashlar details, beneath pitched slate roofs, and incorporates a clock tower with spire to the western end. The internal accommodation comprises a nave, two side aisles, chancel, lady chapel, vestry, choir vestry, organ chamber, north porch, community rooms, kitchen, and toilet facilities. We understand all mains services are connected to the property. The church sits on a regular-shaped, relatively flat site, extending to approximately 0.422 acres (0.171 hectares). Key features Church and grounds Located with prominent frontage to A646 Pennine village setting 6,318 ft2 (586.98 m2) Locate 53.7322997, -2.138321",
+  "grade": "Grade II",
+  "status": "Available",
+  "source": "Church of England",
+  "source_url": "https://churchofengland.org/closed-churches/cornholme-st-michael-and-all-angels-diocese-leeds",
+  "source_id": "/closed-churches/cornholme-st-michael-and-all-angels-diocese-leeds",
+  "contact_url": "https://www.walkersingleton.co.uk/property.php?searchtype=commercial-sales&amp;location=Cornholme&amp;ddm_order=0&amp;id=103305",
+  "price_usd": null,
+  "rank": 312
+ },
+ {
+  "id": "cofe-durham-st-mary-le-bow-diocese-durham",
+  "name": "Durham, St Mary Le Bow",
+  "address": "Durham, St Mary Le Bow, Diocese of Durham, England",
+  "city": "Durham",
+  "region": "Diocese of Durham",
+  "country": "GB",
+  "lat": 54.77433877249,
+  "lng": -1.57405395,
+  "price_local": null,
+  "currency": "GBP",
+  "description": "St Mary Le Bow Church is a historic Grade I-listed former place of worship, with origins dating back to the medieval period, with later alterations and additions undertaken over subsequent centuries. The building is of traditional ecclesiastical construction, principally stone-built beneath pitched roofs. It is a building of exceptional heritage value located near Durham University accommodation and the historic tourist attractions of the Durham World Heritage site. Having most recently been used as a museum, the accommodation reflects its historic layout and character, including open internal spaces, original detailing and areas adapted for public access and display purposes. The external areas are predominantly laid to grass with mature boundary treatments, providing a quiet and enclosed environment within the urban context of Durham City Centre. Key features Former church with private gardens Approximately 3,498 sq ft (325 sq m) Asking price: Offers invited Freehold Subject to contract",
+  "grade": "Grade I",
+  "status": "Available",
+  "source": "Church of England",
+  "source_url": "https://churchofengland.org/closed-churches/durham-st-mary-le-bow-diocese-durham",
+  "source_id": "/closed-churches/durham-st-mary-le-bow-diocese-durham",
+  "contact_url": "https://www.sw.co.uk/properties/historic-city-centre-former-church-in-durham-st-mary-le-bow-north-bailey-durham/",
+  "price_usd": null,
+  "rank": 313
+ },
+ {
+  "id": "cofe-fromes-hill-st-matthew-diocese-hereford",
+  "name": "Fromes Hill, St Matthew",
+  "address": "Fromes Hill, St Matthew, Diocese of Hereford, England",
+  "city": "Fromes Hill",
+  "region": "Diocese of Hereford",
+  "country": "GB",
+  "lat": 52.1175015,
+  "lng": -2.4682536,
+  "price_local": null,
+  "currency": "GBP",
+  "description": "A rare opportunity to acquire a Grade II Listed Victorian Village Church believed to date back to the mid 1860's Fromes Hill is a rural hamlet surrounded by rolling Herefordshire countryside with very good access to the cities of Worcester and Hereford (each approximately 10 miles) and the popular towns of Ledbury (8 miles) and Malvern (5 miles). all of which provide a comprehensive range of shops, schools, restaurants and medical facilities. There is a local shop and pub and in Fromes Hill whilst the nearby village of Bishops Frome (2 miles) has two further pubs, a community shop and the Hop Pocket 'Shopping Village'. There are further village facilities in nearby Cradley (3.5 miles) including a doctors surgery and village shop. The property is well placed for commuting with access to the M50 motorway available approximately 4 miles to the south of Ledbury and the M5 is easily accessible at Worcester. There are mainline railway stations at Malvern, Ledbury, Hereford and Worcester. Suitable uses may include place of worship for other Christian bodies, community facilities, arts and crafts, music or drama centre, museum, sports, antiques centre, storage, office or light industrial a",
+  "grade": "Grade II",
+  "status": "Available",
+  "source": "Church of England",
+  "source_url": "https://churchofengland.org/closed-churches/fromes-hill-st-matthew-diocese-hereford",
+  "source_id": "/closed-churches/fromes-hill-st-matthew-diocese-hereford",
+  "contact_url": "https://www.johngoodwin.co.uk/property?for-sale-id=1793897&amp;search=sales&amp;sector=residential",
+  "price_usd": null,
+  "rank": 314
+ },
+ {
+  "id": "cofe-glasshoughton-st-paul-diocese-leeds",
+  "name": "Glasshoughton, St Paul",
+  "address": "Glasshoughton, St Paul, Diocese of Leeds, England",
+  "city": "Glasshoughton",
+  "region": "Diocese of Leeds",
+  "country": "GB",
+  "lat": 53.7184058,
+  "lng": -1.3397559,
+  "price_local": null,
+  "currency": "GBP",
+  "description": "The former church of St Paul is a large brick-built church, set within extensive grounds. Located at the junction of the A656 Pontefract Road with Churchfield Lane, in the Glasshoughton district, approximately 1 kilometre south of Castleford town centre and approximately 1 kilometre north of Junction 326 of the M62 motorway. Expressions of interest should be made direct to the Agent and include details of; the proposed use, financial offer, details of any proposed alterations to the building and proof of funds for the purchase and any necessary works to the building to facilitate the proposed use. The disposal is also subject to the Church Commissioners completing the legal process for disposal through a Pastoral (Church Buildings Disposal) Scheme and restrictive covenants, further details of which are available from the Agent. Key features Substantial, brick-built church Total Floor Area of approximately 5,045 ft2 (468.72 m2 ) High profile location, on busy arterial route, with good motorway connections Total Site Area of 0.54 acres (0.22 hectares or thereabouts Locate",
+  "grade": "Unlisted",
+  "status": "Available",
+  "source": "Church of England",
+  "source_url": "https://churchofengland.org/closed-churches/glasshoughton-st-paul-diocese-leeds",
+  "source_id": "/closed-churches/glasshoughton-st-paul-diocese-leeds",
+  "contact_url": "https://www.kirkham-property.co.uk/commercial-property-details?propertyId=395",
+  "price_usd": null,
+  "rank": 315
+ },
+ {
+  "id": "cofe-hereford-st-nicholas-diocese-hereford",
+  "name": "Hereford, St Nicholas",
+  "address": "Hereford, St Nicholas, Diocese of Hereford, England",
+  "city": "Hereford",
+  "region": "Diocese of Hereford",
+  "country": "GB",
+  "lat": 52.0537605,
+  "lng": -2.7233148,
+  "price_local": null,
+  "currency": "GBP",
+  "description": "Bruton Knowles are delighted to receive kind instructions to offer for sale the former Church of St. Nicholas and St. Nicholas House, Barton Road, Hereford. The former Church of St Nicholas and St Nicholas House comprising a site of 0.54 acres are to be sold for conversion to alternative use. The site is accessed on foot from Barton Road and Friars Street with vehicular access from Friars Street. There is a parking area with circa 10 spaces and Greyfriars public car park is directly opposite the Church for additional parking. The Church was built around 1842 with a flat roofed extension added in the 1960's. Constructed of sandstone under a roof of Welsh slate and loosely follows Early English Gothic design, with a square bell tower. The plan of the Church is a parallelogram with a tower at the West, and chancel and vestry at East, projecting beyond each end. The walls are built of hammer-dressed stone, the buttresses being tooled. In the centre of the tower is the West entrance, forming a vestibule, in which steps lead up to a ringing chamber. There is an undercroft which may be suitable for additional storage and/or running services. The extension to the north side of the Tower in",
+  "grade": "Grade II",
+  "status": "Available",
+  "source": "Church of England",
+  "source_url": "https://churchofengland.org/closed-churches/hereford-st-nicholas-diocese-hereford",
+  "source_id": "/closed-churches/hereford-st-nicholas-diocese-hereford",
+  "contact_url": "https://www.brutonknowles.co.uk/property/barton-road-hereford-herefordshire-hr4-0ay/",
+  "price_usd": null,
+  "rank": 316
+ },
+ {
+  "id": "cofe-highampton-holy-cross-diocese-exeter",
+  "name": "Highampton, Holy Cross",
+  "address": "Highampton, Holy Cross, Diocese of Exeter, England",
+  "city": "Highampton",
+  "region": "Diocese of Exeter",
+  "country": "GB",
+  "lat": 50.821069488475,
+  "lng": -4.1477508,
+  "price_local": null,
+  "currency": "GBP",
+  "description": "An historic Grade II* listed former parish church in Highampton, enjoying an elevated edge-of-village position with far-reaching views towards Dartmoor. Believed to date from the 12th century and substantially rebuilt in the 1830s, the building features a Norman-style arched entrance, lancet windows, and fine stonework. With positive pre-application feedback for a change of use, it offers a rare opportunity for imaginative redevelopment (STP). Set within its own grounds and accessed via a quiet lane, the church combines heritage charm with superb potential to create a unique home, studio, or community space in a peaceful rural setting close to local amenities. An historic village church with positive pre-application feedback for change of use, offering a rare opportunity for redevelopment (STP), set in a peaceful edge-of-village position with views over Dartmoor. Occupying an elevated position on the edge of the popular village of Highampton, this striking former parish church offers a rare and exciting opportunity to acquire a building of significant historical and architectural merit. With a positive pre-application response recently obtained for a proposed change of use, the pro",
+  "grade": "Grade II*",
+  "status": "Available",
+  "source": "Church of England",
+  "source_url": "https://churchofengland.org/closed-churches/highampton-holy-cross-diocese-exeter",
+  "source_id": "/closed-churches/highampton-holy-cross-diocese-exeter",
+  "contact_url": "https://www.bopproperty.com/holy-cross-church-highampton-beaworthy/1044233",
+  "price_usd": null,
+  "rank": 317
+ },
+ {
+  "id": "cofe-honiton-st-michael-diocese-exeter",
+  "name": "Honiton, St Michael",
+  "address": "Honiton, St Michael, Diocese of Exeter, England",
+  "city": "Honiton",
+  "region": "Diocese of Exeter",
+  "country": "GB",
+  "lat": 50.792774438197,
+  "lng": -3.1833904981613,
+  "price_local": null,
+  "currency": "GBP",
+  "description": "Believed to date from the late 15th Century this beautiful Grade II* listed former church was the main parish church of Honiton, before St. Paul's was built in the 1830's along the High Street. With the congregation significantly diminished the church was officially closed. Extending to over 3,600 sqft (340 sqm) the building comprises nave, north and south transepts, north and south aisles, chancel, north and south chapels, west tower and north porch. The building is built of local chert rubble stone with ashlar dressings of Beer Stone under slate roofs which includes four dormers. The church was badly damaged by a fire in 1911 and sympathetically restored, however is now in need of some refurbishment and reuse, subject to consents. The property being sold includes a small area of path around the perimeter of the building as illustrated by the red line. Key features Community use preferred Grade II* listed building Edge of town East Devon National Landscape",
+  "grade": "Grade II*",
+  "status": "Available",
+  "source": "Church of England",
+  "source_url": "https://churchofengland.org/closed-churches/honiton-st-michael-diocese-exeter",
+  "source_id": "/closed-churches/honiton-st-michael-diocese-exeter",
+  "contact_url": "https://www.rightmove.co.uk/properties/172163468#/?channel=COM_BUY",
+  "price_usd": null,
+  "rank": 318
+ },
+ {
+  "id": "cofe-hove-st-patrick-diocese-chichester",
+  "name": "Hove, St Patrick",
+  "address": "Hove, St Patrick, Diocese of Chichester, England",
+  "city": "Hove",
+  "region": "Diocese of Chichester",
+  "country": "GB",
+  "lat": 50.826044344722,
+  "lng": -0.15742287039757,
+  "price_local": null,
+  "currency": "GBP",
+  "description": "Hove St Patrick stands on the west side of Cambridge Road, on the boundary between Brighton and Hove, and is within walking distance of Brighton Train Station and the seafront. The Grade II-listed church was built in 1858 to the designs of H E Kendall Jnr., in an idiosyncratic Gothic style of Victorian Decorated character, with external facades of Kentish ragstone and stone dressings, and slate roofs. The church was part converted into a homeless night shelter with hostel accommodation in the 1980s. The night hostel closed in 2012, and the hostel areas were used and managed by a homeless charity until recent times. Key features Landmark building in Hove Full vacant possession Suitable for a number of uses and possible conversion to residential accommodation, subject to the necessary planning consent Separated as a vacant homeless hostel and a vacant place of worship",
+  "grade": "Grade II",
+  "status": "Available",
+  "source": "Church of England",
+  "source_url": "https://churchofengland.org/closed-churches/hove-st-patrick-diocese-chichester",
+  "source_id": "/closed-churches/hove-st-patrick-diocese-chichester",
+  "contact_url": null,
+  "price_usd": null,
+  "rank": 319
+ },
+ {
+  "id": "cofe-lindale-st-paul-diocese-carlisle",
+  "name": "Lindale, St Paul",
+  "address": "Lindale, St Paul, Diocese of Carlisle, England",
+  "city": "Lindale",
+  "region": "Diocese of Carlisle",
+  "country": "GB",
+  "lat": 54.2156776,
+  "lng": -2.8993249,
+  "price_local": null,
+  "currency": "GBP",
+  "description": "Once the ‘beating heart’ of the village this beautiful, Grade II listed Lake District Church (built in 1828) is very sadly now closed, in need of repair and a new lease of life. This does present a very exciting and unique opportunity for those imaginative buyers looking for a rewarding and unusual project. This historic building boasts a wealth of stunning period features, including beautiful stained glass windows, ornate wooden fretwork (some to be removed) and intricate stonework. There is real potential (subject to relevant consents) that this magnificent and peaceful building could potentially become (with lots of determination and vision) an enviable, charming and unique home. Perhaps some sort of community hub? There are certainly many possibilities. Whatever is decided it is a chance to preserve a very special piece of local history while enhancing its value through thoughtful restoration. Expressions of interest should be made direct to the Agent and include details of; the proposed use, financial offer, details of any proposed alterations to the building and proof of funds for the purchase and any necessary works to the building to facilitate the proposed use. The disposa",
+  "grade": "Grade II",
+  "status": "Available",
+  "source": "Church of England",
+  "source_url": "https://churchofengland.org/closed-churches/lindale-st-paul-diocese-carlisle",
+  "source_id": "/closed-churches/lindale-st-paul-diocese-carlisle",
+  "contact_url": "https://www.hackney-leigh.co.uk/property/sales/grange-over-sands/g3002/",
+  "price_usd": null,
+  "rank": 320
+ },
+ {
+  "id": "cofe-morley-st-paul-diocese-leeds",
+  "name": "Morley, St Paul",
+  "address": "Morley, St Paul, Diocese of Leeds, England",
+  "city": "Morley",
+  "region": "Diocese of Leeds",
+  "country": "GB",
+  "lat": 53.7422753,
+  "lng": -1.5987532,
+  "price_local": null,
+  "currency": "GBP",
+  "description": "St Paul's Church is a stone-built former church occupying a prominent position on King Street, just off Morley town centre in Leeds. The property presents an opportunity to acquire a substantial former place of worship with potential for alternative uses, subject to the necessary planning permissions and any applicable consents. The property occupies a site extending to approximately 0.516 acres and is situated within an established urban setting, with convenient reach of Morley town centre and its local amenities. The building is not statutorily listed, offering prospective purchasers an opportunity to explore its future use and potential redevelopment, subject to the relevant planning and statutory requirements. Key features Substantial stone-built former church Prominent position close to Morley town centre Site extending to approximately 0.516 acres Not a statutorily listed building",
+  "grade": "Unlisted",
+  "status": "Available",
+  "source": "Church of England",
+  "source_url": "https://churchofengland.org/closed-churches/morley-st-paul-diocese-leeds",
+  "source_id": "/closed-churches/morley-st-paul-diocese-leeds",
+  "contact_url": "https://www.walkersingleton.co.uk/",
+  "price_usd": null,
+  "rank": 321
+ },
+ {
+  "id": "cofe-nether-hoyland-st-andrew-diocese-sheffield",
+  "name": "Nether Hoyland, St Andrew",
+  "address": "Nether Hoyland, St Andrew, Diocese of Sheffield, England",
+  "city": "Nether Hoyland",
+  "region": "Diocese of Sheffield",
+  "country": "GB",
+  "lat": 53.5033266,
+  "lng": -1.4412475,
+  "price_local": null,
+  "currency": "GBP",
+  "description": "The marketing for this property is undertaken by White & Co on behalf of the Diocese of Sheffield and the Church Commissioners for England. On receipt of offers the Diocese shall make a proposal to the Church Commissioners, who will determine the appropriate use for the property and will act as a vendor. This process is governed by the Mission and Pastoral Measure 2011. The property comprises a traditional Church constructed around 1890 using traditional methods and materials for the period with two single storey extensions to the rear. Externally, there are both hard and soft landscaped areas to the front, sides and rear. The Church provides open plan accommodation with ancillary kitchen and amenity facilities. The property stands at the junction of Market Street and Vicarage Close, Hoyland, Barnsley. Hoyland provides most local amenities and is located approximately 7.5 miles south of Barnsley Town Centre and 7.8 miles north west of Rotherham Town Centre. Key features Attractive stone-built church dating from 1939 Constructed using traditional methods and materials Set within its own grounds extending to approximately 0.40 acres Predominately grassed external areas",
+  "grade": "Unlisted",
+  "status": "Available",
+  "source": "Church of England",
+  "source_url": "https://churchofengland.org/closed-churches/nether-hoyland-st-andrew-diocese-sheffield",
+  "source_id": "/closed-churches/nether-hoyland-st-andrew-diocese-sheffield",
+  "contact_url": "https://whiteandcosurveyors.com/for-sale-st-hildas-church-hanover-street-thurnscoe-rotherham-s63-0hj-3-3/",
+  "price_usd": null,
+  "rank": 322
+ },
+ {
+  "id": "cofe-norris-green-st-christopher-diocese-liverpool",
+  "name": "Norris Green, St Christopher",
+  "address": "Norris Green, St Christopher, Diocese of Liverpool, England",
+  "city": "Norris Green",
+  "region": "Diocese of Liverpool",
+  "country": "GB",
+  "lat": 53.4413793,
+  "lng": -2.9251199,
+  "price_local": null,
+  "currency": "GBP",
+  "description": "St. Christopher’s is a Grade II* listed church which is in the process of being closed for regular public worship and is located in Norris Green Liverpool. There is a small Garden of Remembrance adjoining the external north-facing wall of the church building. This is to be retained in-situ, with rights of access being granted to persons wishing to visit and tend family plots. This building is listed under the Planning (Listed Buildings and Conservation Areas) Act 1990 as amended for its special architectural or historic interest. For further information relating to the Historic England listing please follow this link: https://historicengland.org.uk/listing/the-list/list entry/1070626. Site Area: The site area for disposal includes both the church itself and the adjoining church halls. The Vicarage is also available for purchase, but by separate negotiation. Planning/Future uses: The property benefits from F1 use and similar uses such as education, museum, public hall will not require a change of use. The property may also be suitable for alternative uses or redevelopment which will be subject to Planning and Listed Building consent. Key features • Vicarage available subject to nego",
+  "grade": "Grade II*",
+  "status": "Available",
+  "source": "Church of England",
+  "source_url": "https://churchofengland.org/closed-churches/norris-green-st-christopher-diocese-liverpool",
+  "source_id": "/closed-churches/norris-green-st-christopher-diocese-liverpool",
+  "contact_url": "https://mbre.space/wp-content/uploads/2025/05/28ae18f10325bf34d8350674307b9a76-1.pdf",
+  "price_usd": null,
+  "rank": 323
+ },
+ {
+  "id": "cofe-petrockstowe-st-petroc-diocese-exeter",
+  "name": "Petrockstowe, St Petroc",
+  "address": "Petrockstowe, St Petroc, Diocese of Exeter, England",
+  "city": "Petrockstowe",
+  "region": "Diocese of Exeter",
+  "country": "GB",
+  "lat": 50.8620401,
+  "lng": -4.1136427,
+  "price_local": null,
+  "currency": "GBP",
+  "description": "St Petroc’s is a Grade II* listed closed church, sitting within a churchyard containing burials, in the north Devon village of Petrockstowe being located some 12 miles south of Bideford and 9 miles north of Okehampton. It occupies a prominent location set back from the road behind a row of cottages and a disused pub. Of the 15th century building only the west tower, north aisle arcade, font and some window and door stonework remains, the rest having been taken down and completely rebuilt to the designs of J F Gould of Barnstaple in 1877-79. It is built of sandstone with Delabole slate roofs and consists of a west tower, 3-bay aisled nave with south porch, 2-bay chancel with north vestry and south chapel. Initial feedback from the local planning authority indicates that non-residential uses are likely to be favoured and potential alternative uses need to be sympathetic to the churchyard and the listed character of the church building. Offers for the freehold are sought, please contact the agent below. Key features Grade II* listed former Church of England parish church Historic origins dating from the 12th century or earlier Largely rebuilt between 1878 and 1880 by architect J. F. G",
+  "grade": "Grade II*",
+  "status": "Available",
+  "source": "Church of England",
+  "source_url": "https://churchofengland.org/closed-churches/petrockstowe-st-petroc-diocese-exeter",
+  "source_id": "/closed-churches/petrockstowe-st-petroc-diocese-exeter",
+  "contact_url": "https://www.bopproperty.com/estate-agents-okehampton",
+  "price_usd": null,
+  "rank": 324
+ },
+ {
+  "id": "cofe-priors-lee-st-peter-diocese-lichfield",
+  "name": "Priors Lee, St Peter",
+  "address": "Priors Lee, St Peter, Diocese of Lichfield, England",
+  "city": "Priors Lee",
+  "region": "Diocese of Lichfield",
+  "country": "GB",
+  "lat": 52.6874937,
+  "lng": -2.4400423,
+  "price_local": null,
+  "currency": "GBP",
+  "description": "A single-storey, detached former Anglican Church, thought likely to have been built circa the mid 1800’s. A single storey extension has been added to the rear in 1907. The accommodation includes an entrance hallway with a cloakroom off the entrance, leading onto to a kitchen and play area. There is also a sanctuary/hall (main meeting room) off the kitchen area with a further room off to the rear right called the vestry. There is a mezzanine balcony over part of the sanctuary and a small room to the tower section which is accessed via a door off the entrance hallway. Windows are mainly ornate stained-glass windows. The external doors are solid wood units set within timber sub frames and wood stained over. The cloakroom is fitted with a wall wash basin and a low level wcs. The kitchen is fitted with base units with a steel sink and drainer. The church is heated by gas fired wall heaters. Expressions of interest should be made direct to the Agent. Key features Grade II listed former church Detached church available with development potential Would suit community use, nursery, business use, residential conversion or redevelopment (STP) Sqm 2,234 sq ft Located on Church Road, Snedshill,",
+  "grade": "Grade II",
+  "status": "Available",
+  "source": "Church of England",
+  "source_url": "https://churchofengland.org/closed-churches/priors-lee-st-peter-diocese-lichfield",
+  "source_id": "/closed-churches/priors-lee-st-peter-diocese-lichfield",
+  "contact_url": "https://1-content-s3-estateweb.s3.amazonaws.com/assets/9426/of/4/pro/KHE12878479/documents/1.pdf",
+  "price_usd": null,
+  "rank": 325
+ },
+ {
+  "id": "cofe-shobnall-st-aidan-diocese-lichfield",
+  "name": "Shobnall, St Aidan",
+  "address": "Shobnall, St Aidan, Diocese of Lichfield, England",
+  "city": "Shobnall",
+  "region": "Diocese of Lichfield",
+  "country": "GB",
+  "lat": 52.809914470929,
+  "lng": -1.66500435,
+  "price_local": null,
+  "currency": "GBP",
+  "description": "A disused church building constructed of solid brick and stone, with a pitched roof, and consisting of a porch, nave and vestry. The property benefits from a high eaves height of circa 9m and may suit redevelopment subject to planning. Building approx 1705 sq ft/158 sq m. Externally, the property has pedestrian access, walkways, and grounds in need of a little maintenance, with a plot size of approx. 625 sq m. Key features Former church and grounds Site area approx 0.15 acre. Building approx 1705 sq ft/158 sq m May suit conversion to offices or a dwelling, subject to planning permission Suitable for Conversion / Development (STC) Locate",
+  "grade": "Unlisted",
+  "status": "Available",
+  "source": "Church of England",
+  "source_url": "https://churchofengland.org/closed-churches/shobnall-st-aidan-diocese-lichfield",
+  "source_id": "/closed-churches/shobnall-st-aidan-diocese-lichfield",
+  "contact_url": "https://www.rightmove.co.uk/properties/167269979#/?channel=RES_BUY",
+  "price_usd": null,
+  "rank": 326
+ },
+ {
+  "id": "cofe-south-crosland-holy-trinity-diocese-leeds",
+  "name": "South Crosland, Holy Trinity",
+  "address": "South Crosland, Holy Trinity, Diocese of Leeds, England",
+  "city": "South Crosland",
+  "region": "Diocese of Leeds",
+  "country": "GB",
+  "lat": 53.611195011866,
+  "lng": -1.8236996233463,
+  "price_local": null,
+  "currency": "GBP",
+  "description": "The property comprises an imposing, stone-built, Grade II Listed church building dating from the early 19th century. Constructed in ashlar stone, beneath a pitched slate roof, the church features architectural detailing, including arched doorways and a prominent tower with large square-section pinnacles. The church is surrounded by a heavily buried churchyard, giving little scope for external amenity space. The building has a single-storey extension to the rear (built c.2000), which could potentially be removed to create external space. The churchyard is closed for burials and will remain in the ownership of the Parochial Church Council (PCC), who will remain responsible for maintaining it. The freehold interest in the property is offered for sale. The final 'red line' is to be agreed, but will include only the footprint of the building and its immediate curtilage, and none of the grave-covered churchyard. Easements relating to access will be granted over the churchyard in favour of the purchaser. Key features Imposing, stone-built church Located within a charming village setting Grade II Listed building Locate 53.611195011866, -1.8236996233463",
+  "grade": "Grade II",
+  "status": "Available",
+  "source": "Church of England",
+  "source_url": "https://churchofengland.org/closed-churches/south-crosland-holy-trinity-diocese-leeds",
+  "source_id": "/closed-churches/south-crosland-holy-trinity-diocese-leeds",
+  "contact_url": "https://www.walkersingleton.co.uk/property.php?ddm_order=0&amp;id=104272&amp;view=map",
+  "price_usd": null,
+  "rank": 327
+ },
+ {
+  "id": "cofe-south-hylton-st-mary-diocese-durham",
+  "name": "South Hylton, St Mary",
+  "address": "South Hylton, St Mary, Diocese of Durham, England",
+  "city": "South Hylton",
+  "region": "Diocese of Durham",
+  "country": "GB",
+  "lat": 54.9063699424,
+  "lng": -1.4501555026503,
+  "price_local": null,
+  "currency": "GBP",
+  "description": "The Grade II Listed former church of St Mary's, South Hylton dates back to the 1820s and stands within a rectangular plot of approximately 0.4 acres The church sits in a prominent position on Church Road and is enclosed by a stone wall. The church itself extends to circa 3,735 sq. Ft (346 sq. M). The accommodation briefly comprises of chancel, nave, aisle, organ chamber and tower. The property benefits from mains electricity, water and gas. There is no mains sewage or WC within the property.  Access is directly off Church Street, parking is available on the adopted highway but there is no designated parking allocated at the church. Key features Grade II Listed Church set in grounds of 0.4 acres Approximately 3,735 sq ft (346 sq m) The Church has formally closed for worship Built in the 1880's Use: F1 Learning and Non-Residential Institutions Redevelopment opportunity available for a variety of new uses",
+  "grade": "Grade II",
+  "status": "Available",
+  "source": "Church of England",
+  "source_url": "https://churchofengland.org/closed-churches/south-hylton-st-mary-diocese-durham",
+  "source_id": "/closed-churches/south-hylton-st-mary-diocese-durham",
+  "contact_url": "https://www.rightmove.co.uk/properties/142090154?utm_campaign=property-details&amp;utm_content=commercial-buying&amp;utm_medium=sharing&amp;utm_source=copytoclipboard#/?channel=COM_BUY",
+  "price_usd": null,
+  "rank": 328
+ },
+ {
+  "id": "cofe-stanley-crook-st-thomas-diocese-durham",
+  "name": "Stanley Crook, St Thomas",
+  "address": "Stanley Crook, St Thomas, Diocese of Durham, England",
+  "city": "Stanley Crook",
+  "region": "Diocese of Durham",
+  "country": "GB",
+  "lat": 54.7365806,
+  "lng": -1.7539626,
+  "price_local": null,
+  "currency": "GBP",
+  "description": "The former church of St Thomas, Stanley Crook is a detached Grade II Listed building of sandstone construction with a slate covered pitched roof incorporating red ridged tiles and stone gable copings. The former church is now closed for worship. Internally, the property comprises a chancel, vestry/organ chamber, nave, west gallery, with kitchen and toilet below as well as a porch and tower with octagonal upper spire. The former church benefits from a vaulted roof of stained pine with painted plastered walls and concrete floor. There are glazed tiles to the chancel with sandstone steps and the pews are set on a raised timber platform. There are many ornate original features, particularly in the stonework and the stained glass windows. The former church sits in a large cemetery which is now closed for burials and which is maintained by Durham County Council. The cemetery is characterised by large mature trees. Key features Exciting Development Opportunity Former church for sale Potential to convert into two, four bedroom dwellings, subject to planning Locate 54.7365806, -1.7539626",
+  "grade": "Grade II",
+  "status": "Available",
+  "source": "Church of England",
+  "source_url": "https://churchofengland.org/closed-churches/stanley-crook-st-thomas-diocese-durham",
+  "source_id": "/closed-churches/stanley-crook-st-thomas-diocese-durham",
+  "contact_url": "https://www.rightmove.co.uk/properties/156084395#/?channel=RES_BUY",
+  "price_usd": null,
+  "rank": 329
+ },
+ {
+  "id": "cofe-stockwell-green-st-andrew-diocese-southwark",
+  "name": "Stockwell Green, St Andrew",
+  "address": "Stockwell Green, St Andrew, Diocese of Southwark, England",
+  "city": "Stockwell Green",
+  "region": "Diocese of Southwark",
+  "country": "GB",
+  "lat": 51.467668969941,
+  "lng": -0.12134334999998,
+  "price_local": null,
+  "currency": "GBP",
+  "description": "Stockwell Green St Andrew occupies a corner site at the junction of Landor Road and Lingham Street. Built as a chapel in the late 18th century, the building was extended at the west end in 1810. It was subsequently remodelled, and a tower and west and side galleries designed in the Romanesque style by Henry Edward Coe were added in 1867. The galleries were taken down in 1924. Vestries and a Lady Chapel to the north were added in 1891-1894, which were designed by A J Pilkington. Key features Freehold for sale Outstanding opportunity to acquire a substantial former church, church hall and cottage Well-connected South London address Approx. 0.365 acres/0.148 hectares 16,282 sq ft (1512.6sqm) across 3 Buildings Suitable for its previous F1, F2 and C3 uses or alternative uses STPP",
+  "grade": "Unlisted",
+  "status": "Available",
+  "source": "Church of England",
+  "source_url": "https://churchofengland.org/closed-churches/stockwell-green-st-andrew-diocese-southwark",
+  "source_id": "/closed-churches/stockwell-green-st-andrew-diocese-southwark",
+  "contact_url": "https://www.trilogy.uk.com/properties/21789671/sales",
+  "price_usd": null,
+  "rank": 330
+ },
+ {
+  "id": "cofe-witton-st-mark-diocese-blackburn",
+  "name": "Witton, St Mark",
+  "address": "Witton, St Mark, Diocese of Blackburn, England",
+  "city": "Witton",
+  "region": "Diocese of Blackburn",
+  "country": "GB",
+  "lat": 53.7438304,
+  "lng": -2.5086081,
+  "price_local": null,
+  "currency": "GBP",
+  "description": "The property comprises the former Church of St Mark, a substantial Grade II* listed stone-built church situated on Buncer Lane in Witton, Blackburn, close to Witton Country Park. Originally constructed between 1836 and 1838 to designs attributed to architect Edmund Sharpe, the church is an important example of early Romanesque Revival architecture, with later extensions undertaken during the late nineteenth century. The building is arranged on a traditional cruciform plan, comprising a broad nave, narrow chancel, north and south transepts, and a distinctive tower rising above the chancel, surmounted by a short spire. The exterior features dressed stonework, slate roofs, decorative pilasters, Lombardic friezes and characteristic round-headed windows. Internally, the church retains a range of historic architectural features, including a west gallery, decorative timber chancel screen, traditional pulpit and font, stained-glass windows and tiled flooring. The building also incorporates a west narthex with a meeting room, kitchen and toilet facilities, together with a crypt beneath the transept area. The church occupies a prominent position within an established residential suburb of Bl",
+  "grade": "Grade II*",
+  "status": "Available",
+  "source": "Church of England",
+  "source_url": "https://churchofengland.org/closed-churches/witton-st-mark-diocese-blackburn",
+  "source_id": "/closed-churches/witton-st-mark-diocese-blackburn",
+  "contact_url": "https://proctorsestateagents.co.uk/for-sale/",
+  "price_usd": null,
+  "rank": 331
+ },
+ {
+  "id": "cofe-wyther-venerable-bede-diocese-leeds",
+  "name": "Wyther, The Venerable Bede",
+  "address": "Wyther, The Venerable Bede, Diocese of Leeds, England",
+  "city": "Wyther",
+  "region": "Diocese of Leeds",
+  "country": "GB",
+  "lat": 53.803756718845,
+  "lng": -1.6142887237247,
+  "price_local": null,
+  "currency": "GBP",
+  "description": "The property comprises a detached two-storey building, which was purpose-built as a Church in 1937-1938. Externally, the building is of brick construction, with the front elevation being surmounted by a pitched roof with clay tiles. The northern and western elevations are topped by flat roofs with asphalt finishes. The windows are reinforced concrete and single glazed. Internally, the ground floor comprises a hall/event space, kitchen, WCs, cellular office & storage rooms. The first floor is predominantly open plan and was most recently used as a place of worship. The property benefits from lift access. The walls are plastered and painted throughout, and the floors are of reinforced concrete with a variety of coverings. Key features Excellent location Lift access Suitable for a variety of uses (STP) 0.55 acres (0.222 hectares) Locate",
+  "grade": "Unlisted",
+  "status": "Available",
+  "source": "Church of England",
+  "source_url": "https://churchofengland.org/closed-churches/wyther-venerable-bede-diocese-leeds",
+  "source_id": "/closed-churches/wyther-venerable-bede-diocese-leeds",
+  "contact_url": "https://www.sw.co.uk/properties/the-venerable-bede-wyther-houghley-lane-leeds/",
+  "price_usd": null,
+  "rank": 332
  }
 ]

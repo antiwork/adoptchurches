@@ -3,15 +3,16 @@
 import { useEffect, useMemo, useRef, useState } from "react";
 import Link from "next/link";
 import type { Listing } from "@/lib/types";
-import { distanceLabel, milesFrom, money } from "@/lib/data";
+import { countryName, distanceLabel, milesFrom, priceLabel, usdApprox, whereLabel } from "@/lib/data";
 
 type Band = "all" | "under250" | "mid" | "over1m";
+type CountryFilter = "all" | "US" | "GB" | "FR";
 
-const BANDS: { id: Band; label: string; test: (p: number) => boolean }[] = [
+const BANDS: { id: Band; label: string; test: (p: number | null) => boolean }[] = [
   { id: "all", label: "Every price", test: () => true },
-  { id: "under250", label: "Under $250k", test: (p) => p < 250_000 },
-  { id: "mid", label: "$250k – $1M", test: (p) => p >= 250_000 && p < 1_000_000 },
-  { id: "over1m", label: "$1M and up", test: (p) => p >= 1_000_000 },
+  { id: "under250", label: "Under $250k", test: (p) => p != null && p < 250_000 },
+  { id: "mid", label: "$250k – $1M", test: (p) => p != null && p >= 250_000 && p < 1_000_000 },
+  { id: "over1m", label: "$1M and up", test: (p) => p != null && p >= 1_000_000 },
 ];
 
 type Agg = { count: number; totalCents: number };
@@ -19,6 +20,7 @@ type Agg = { count: number; totalCents: number };
 export default function Atlas({ listings }: { listings: Listing[] }) {
   const [q, setQ] = useState("");
   const [band, setBand] = useState<Band>("all");
+  const [country, setCountry] = useState<CountryFilter>("all");
   const [origin, setOrigin] = useState<{ lat: number; lng: number } | null>(null);
   const [locating, setLocating] = useState(false);
   const [selected, setSelected] = useState<string | null>(null);
@@ -31,19 +33,28 @@ export default function Atlas({ listings }: { listings: Listing[] }) {
   const pinsRef = useRef<Record<string, any>>({});
   const listRef = useRef<HTMLDivElement | null>(null);
 
+  const countries = useMemo(() => {
+    const counts: Record<string, number> = {};
+    for (const l of listings) counts[l.country] = (counts[l.country] ?? 0) + 1;
+    return Object.entries(counts).sort((a, b) => b[1] - a[1]);
+  }, [listings]);
+
   const rows = useMemo(() => {
     const needle = q.trim().toLowerCase();
     const filtered = listings.filter((l) => {
+      if (country !== "all" && l.country !== country) return false;
       if (!BANDS.find((b) => b.id === band)!.test(l.price_usd)) return false;
       if (!needle) return true;
-      return `${l.name} ${l.city} ${l.state} ${l.address}`.toLowerCase().includes(needle);
+      return `${l.name} ${l.city} ${l.region ?? ""} ${l.state ?? ""} ${l.address} ${countryName(l.country)}`
+        .toLowerCase()
+        .includes(needle);
     });
     if (!origin) return filtered;
     return filtered
       .map((l) => ({ l, d: milesFrom(origin, l) }))
       .sort((a, b) => a.d - b.d)
       .map(({ l }) => l);
-  }, [listings, q, band, origin]);
+  }, [listings, q, band, country, origin]);
 
   // load pledges so cards can show progress
   useEffect(() => {
@@ -72,11 +83,12 @@ export default function Atlas({ listings }: { listings: Listing[] }) {
       const L = (await import("leaflet")).default;
       if (cancelled || !mapEl.current) return;
       const map = L.map(mapEl.current, {
-        center: [39.5, -98.35],
-        zoom: 4,
+        center: [45, -25],
+        zoom: 3,
         scrollWheelZoom: false,
         zoomControl: true,
         attributionControl: true,
+        worldCopyJump: true,
       });
       L.tileLayer("https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png", {
         attribution: '&copy; OpenStreetMap contributors &copy; CARTO',
@@ -101,25 +113,29 @@ export default function Atlas({ listings }: { listings: Listing[] }) {
     layerRef.current.clearLayers();
     pinsRef.current = {};
     const points: [number, number][] = [];
-    for (const l of rows.slice(0, 400)) {
+    for (const l of rows.slice(0, 500)) {
       const icon = L.divIcon({
         className: "",
-        html: `<div class="pin" data-selected="false"></div>`,
+        html: `<div class="pin" data-selected="false" data-country="${l.country}"></div>`,
         iconSize: [14, 14],
         iconAnchor: [7, 7],
       });
       const marker = L.marker([l.lat, l.lng], { icon, title: l.name }).addTo(layerRef.current);
       marker.bindPopup(
         `<div class="popup-name">${escapeHtml(l.name)}</div>
-         <div class="popup-meta">${escapeHtml(l.city)}, ${escapeHtml(l.state)}</div>
-         <div class="popup-price">${money(l.price_usd * 100)}</div>`,
+         <div class="popup-meta">${escapeHtml(whereLabel(l))}</div>
+         <div class="popup-price">${escapeHtml(priceLabel(l))}</div>`,
       );
       marker.on("click", () => setSelected(l.id));
       pinsRef.current[l.id] = marker;
       points.push([l.lat, l.lng]);
     }
-    if (points.length && !origin) map.fitBounds(points as any, { padding: [40, 40], maxZoom: 6 });
-  }, [rows, origin, mapReady]);
+    if (points.length) {
+      const bounds = L.latLngBounds(points);
+      const maxZoom = points.length === 1 ? 11 : country === "all" ? 5 : 8;
+      map.fitBounds(bounds, { padding: [50, 50], maxZoom });
+    }
+  }, [rows, mapReady, country]);
 
   // reflect selection on the map + list
   useEffect(() => {
@@ -173,7 +189,7 @@ export default function Atlas({ listings }: { listings: Listing[] }) {
             <input
               value={q}
               onChange={(e) => setQ(e.target.value)}
-              placeholder="Search a town, state, or a name"
+              placeholder="Search a town, county, or a name"
               aria-label="Search listings"
             />
           </label>
@@ -190,21 +206,47 @@ export default function Atlas({ listings }: { listings: Listing[] }) {
           ))}
         </div>
 
+        <div className="controls countries">
+          <button
+            className="chip small"
+            data-on={country === "all"}
+            onClick={() => setCountry("all")}
+            aria-pressed={country === "all"}
+          >
+            Everywhere · {listings.length}
+          </button>
+          {countries.map(([code, n]) => (
+            <button
+              key={code}
+              className="chip small"
+              data-on={country === code}
+              onClick={() => setCountry(code as CountryFilter)}
+              aria-pressed={country === code}
+            >
+              {countryName(code)} · {n}
+            </button>
+          ))}
+        </div>
+
         <div className="atlas-body">
           <div className="map-wrap">
             <div className="map-hint">
               {origin
                 ? "Sorted from your location. Click a pin to read about the building."
-                : "Scroll to zoom is off so the page still scrolls. Click a pin, or use “Sort by distance”."}
+                : `Click a pin to open it. ${rows.length > 500 ? `Pins show the first 500 of ${rows.length}.` : ""}`}
             </div>
             <div className="map" ref={mapEl} />
           </div>
 
           <div className="list" ref={listRef}>
-            {rows.length === 0 && <div className="empty">Nothing matches that yet. Try a wider price band.</div>}
+            {rows.length === 0 && (
+              <div className="empty">Nothing matches that yet. Try a wider price band.</div>
+            )}
             {rows.map((l, i) => {
               const agg = aggs[l.id];
-              const pct = agg ? Math.min(100, (agg.totalCents / (l.price_usd * 100)) * 100) : 0;
+              const goal = (l.price_usd ?? 0) * 100;
+              const pct = agg && goal > 0 ? Math.min(100, (agg.totalCents / goal) * 100) : 0;
+              const approx = usdApprox(l);
               return (
                 <Link
                   key={l.id}
@@ -219,18 +261,25 @@ export default function Atlas({ listings }: { listings: Listing[] }) {
                   <div>
                     <div className="name">{l.name}</div>
                     <div className="where">
-                      {l.city}, {l.state}
+                      {whereLabel(l)}
+                      {l.grade ? ` · ${l.grade}` : ""}
                     </div>
                     <div className="bar">
                       <i style={{ width: `${pct}%` }} />
                     </div>
                     <div className="bar-meta">
-                      <span>{agg && agg.count > 0 ? `${agg.count} pledged · ${money(agg.totalCents)}` : "No pledges yet"}</span>
-                      <span>{Math.round(pct)}%</span>
+                      <span>
+                        {agg && agg.count > 0
+                          ? `${agg.count} pledged`
+                          : l.status === "Under offer"
+                            ? "Under offer"
+                            : "No pledges yet"}
+                      </span>
+                      <span>{approx ?? (agg && agg.count > 0 ? `${Math.round(pct)}%` : "")}</span>
                     </div>
                   </div>
                   <div className="right">
-                    <div className="price">{money(l.price_usd * 100)}</div>
+                    <div className="price">{priceLabel(l)}</div>
                     {origin && <div className="dist">{distanceLabel(milesFrom(origin, l))}</div>}
                   </div>
                 </Link>

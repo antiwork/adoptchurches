@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "How it works — Adopt a Church",
+  title: "How it works — adoptchurches",
   description:
     "Every church for sale in one atlas, and a pledge registry so a neighborhood can buy one back together.",
 };
@@ -68,12 +68,18 @@ export default function HowItWorks() {
 
       <h2>Where the data comes from</h2>
       <p>
-        Listings are harvested from public commercial real-estate sources and filtered to
-        religious buildings: chapels, churches, cathedrals, temples, parishes, and former
-        sanctuaries now marketed for adaptive reuse. The harvest is reproducible — see{" "}
-        <code>scripts/</code> in the repository — and each listing links back to its source. The
-        dataset is deliberately conservative: a building appears only when its own listing text
-        describes a religious building, not because a street happens to be named Church Street.
+        Every building here is a real, currently-listed property, and every row links back to the
+        source that published it: public commercial real-estate indexes in the United States, the
+        Church of England&apos;s official list of <em>closed church buildings available for
+        disposal</em>, and Patrice Besse&apos;s register of religious edifices for sale in France.
+        The harvest is reproducible — see <code>scripts/</code> in the repository — and prices are
+        shown in the seller&apos;s own currency, with a dollar figure converted at a rate recorded
+        in <code>data/fx.json</code>.
+      </p>
+      <p>
+        The dataset is deliberately conservative: a building appears only when its own listing
+        text describes a religious building, not because a street happens to be named Church
+        Street, and land parcels with no building on them are dropped.
       </p>
 
       <h2>Build it yourself</h2>

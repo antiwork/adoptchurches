@@ -1,16 +1,17 @@
-# Adopt a Church
+# adoptchurches
 
-An atlas of church buildings for sale in the United States, and a pledge registry so a
-neighborhood can buy one back together.
+An atlas of church buildings for sale — in the United States, England and France — and a
+pledge registry so a neighborhood can buy one back together.
 
-**277 buildings · 41 states · $436M of asking price · median $875,000**
+**332 buildings · 39 US states, 34 in England, 21 in France · $453M of asking price · median $800,000**
 
 Every building on the map is a real, currently-listed property. Each row links back to its
 source listing. Nothing here is a mockup of a listing.
 
 ## What it does
 
-- **A map of every church for sale**, nationwide, with price bands and search by town or name.
+- **A map of every church for sale**, across three countries, with country filters, price bands
+  and search by town, county or name.
 - **“Sort by distance”** — uses the browser's location to reorder the list by how far each
   building is from you, with distances shown.
 - **Per-building pages** with the listing's own description, the location, a mini map, and a
@@ -87,6 +88,25 @@ browser — so `scripts/from-loopnet-saved-page.mjs` instead parses pages you sa
 merges them in, geocoding with the free US Census geocoder. The shipped dataset came from
 Crexi's public search index, which covers the same brokers and buildings. Every listing carries
 its `source` and `source_url` so the provenance is explicit.
+
+## England and France
+
+```bash
+node scripts/harvest-heritage.mjs         # both non-US sources
+node scripts/harvest-heritage.mjs cofe    # just the Church of England
+```
+
+- **Church of England** — the official list of *closed church buildings available for disposal*.
+  Every building on it, with the exact coordinates the page publishes for its own map markers,
+  then each building's page for grade, description, guide price and the agent's link. Thirty-four
+  buildings; most are "offers invited" rather than a listed price.
+- **Patrice Besse** — their register of religious edifices for sale in France. schema.org
+  microdata gives price, currency and locality; coordinates come from Nominatim, one request per
+  second with a real User-Agent.
+
+Prices stay in the seller's currency on screen (£95,000, €30,000) and are converted to dollars
+only for sorting and totals. The rate used is written to `data/fx.json` with its date, so any
+figure can be re-derived.
 
 ## Deploy
 

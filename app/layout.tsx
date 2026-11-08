@@ -3,11 +3,11 @@ import Link from "next/link";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Adopt a Church — the atlas of churches for sale",
+  title: "adoptchurches — every church for sale, on one map",
   description:
     "A map of church buildings for sale across the United States, and a way for neighbors to pledge toward buying one together.",
   openGraph: {
-    title: "Adopt a Church",
+    title: "adoptchurches",
     description:
       "A map of church buildings for sale across the United States, and a way for neighbors to pledge toward buying one together.",
     type: "website",
@@ -21,7 +21,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <header className="site-header">
           <div className="shell">
             <Link href="/" className="wordmark">
-              Adopt<em>a</em>Church
+              adopt<em>churches</em>
             </Link>
             <nav className="nav">
               <Link href="/#atlas">The atlas</Link>
