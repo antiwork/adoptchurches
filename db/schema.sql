@@ -73,3 +73,7 @@ create or replace view demand_summary as
 -- ids returned by Resend, so a letter can be traced after it leaves
 alter table orders add column if not exists receipt_email_id text;
 alter table orders add column if not exists notify_email_id text;
+
+-- the same traceability for pledge letters
+alter table pledges add column if not exists pledge_email_id text;
+alter table pledges add column if not exists notify_email_id text;

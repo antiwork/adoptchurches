@@ -23,6 +23,18 @@ export async function addPledge(input: PledgeInput): Promise<{ id: string; at: s
   return { id: row.id, at: row.created_at };
 }
 
+export async function recordPledgeMail(
+  id: string,
+  ids: { pledgeEmailId?: string; notifyEmailId?: string },
+) {
+  await query(
+    `update pledges set pledge_email_id = coalesce($2, pledge_email_id),
+                        notify_email_id = coalesce($3, notify_email_id)
+      where id = $1`,
+    [id, ids.pledgeEmailId ?? null, ids.notifyEmailId ?? null],
+  );
+}
+
 export async function aggregateFor(listingId: string): Promise<PledgeAggregate> {
   const [totals] = await query<{ count: string; total_cents: string }>(
     `select count(*)::text as count, coalesce(sum(amount_cents), 0)::text as total_cents
