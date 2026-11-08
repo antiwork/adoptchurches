@@ -40,8 +40,13 @@ export default function ListingPhoto({
       if (img.naturalWidth === 0) img.src = img.src;
     };
     nudge();
-    window.addEventListener("scroll", nudge, { passive: true });
-    return () => window.removeEventListener("scroll", nudge);
+    // capture, so the register panel's own scrolling counts as well as the page's
+    document.addEventListener("scroll", nudge, { passive: true, capture: true });
+    window.addEventListener("resize", nudge);
+    return () => {
+      document.removeEventListener("scroll", nudge, { capture: true });
+      window.removeEventListener("resize", nudge);
+    };
   }, []);
 
   return (
