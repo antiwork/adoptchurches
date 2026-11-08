@@ -1364,10 +1364,25 @@ body:has(.checkout) .site-header {
 /* ---------- mobile: the bottom sheet ---------- */
 
 @media (max-width: 700px) {
-  .masthead { padding: 8px 14px; gap: 10px; }
-  .nav { gap: 12px; }
-  .nav a { font-size: 10px; letter-spacing: 0.1em; }
-  .wordmark { font-size: 1.1rem; }
+  .masthead { padding: 8px 14px; gap: 8px; flex-wrap: wrap; }
+  .nav {
+    flex: 1 1 100%;
+    justify-content: flex-start;
+    gap: 14px;
+    padding: 0 0 2px;
+    margin-top: 0;
+    border-top: 0;
+  }
+  .nav a { font-size: 9.5px; letter-spacing: 0.09em; }
+  .wordmark { font-size: 1.05rem; }
+
+  /* keep the basket clear of the collapsed sheet */
+  .basket-plate {
+    bottom: calc(47px + 18px + env(safe-area-inset-bottom, 0px));
+    right: 14px;
+    padding: 9px 13px;
+  }
+  .dock[data-open="true"] ~ .basket-plate { bottom: calc(70vh + 12px); }
 
   .dock {
     top: auto;
