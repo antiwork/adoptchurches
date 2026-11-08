@@ -1,15 +1,14 @@
 "use client";
 
-// The order form and the receipt. A stationer's form in two columns;
-// the payment block is a joke by design and says so. Nothing is charged
-// and nothing leaves the browser.
+// The order form and the receipt. A stationer's form in two columns.
+// The order itself is real: it is written into the database and a letter of
+// record goes out by email. The payment block is a joke, and says so.
 
 import { useMemo, useState } from "react";
 import Link from "next/link";
 import { displayName, fmt, getListing, priceLabel, whereLabel } from "@/lib/data";
 import {
   emptyBasket,
-  makeSerial,
   saveReceipt,
   useBasket,
   useReceipts,
@@ -28,6 +27,8 @@ export default function Checkout() {
   const [note, setNote] = useState("");
   const [error, setError] = useState<string | null>(null);
   const [sealed, setSealed] = useState<Receipt | null>(null);
+  const [busy, setBusy] = useState(false);
+  const [notice, setNotice] = useState<string | null>(null);
 
   const lines = useMemo(
     () =>
@@ -42,9 +43,10 @@ export default function Checkout() {
   const total = subtotal + reserve;
   const unpriced = lines.filter((l) => l.price_usd == null).length;
 
-  function seal(e: React.FormEvent) {
+  async function seal(e: React.FormEvent) {
     e.preventDefault();
     setError(null);
+    setNotice(null);
     const trimmedName = name.trim();
     const trimmedEmail = email.trim();
     if (trimmedName.length < 2) {
@@ -59,35 +61,77 @@ export default function Checkout() {
       setError("The basket is empty. Return to the atlas and choose a building.");
       return;
     }
-    const at = new Date();
-    const receipt: Receipt = {
-      serial: makeSerial(lines.map((l) => l.id), at),
-      at: at.toISOString(),
-      name: trimmedName,
-      email: trimmedEmail,
-      town: town.trim() || undefined,
-      note: note.trim() || undefined,
-      lines: lines.map((l) => ({
-        id: l.id,
-        name: displayName(l),
-        where: whereLabel(l),
-        priceUsd: l.price_usd,
-        priceLabel: priceLabel(l),
-      })),
-      subtotalUsd: subtotal,
-      reserveUsd: reserve,
-      totalUsd: total,
-    };
-    saveReceipt(receipt);
-    emptyBasket();
-    setSealed(receipt);
-    window.scrollTo({ top: 0 });
+
+    setBusy(true);
+    try {
+      const response = await fetch("/api/orders", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          name: trimmedName,
+          email: trimmedEmail,
+          town: town.trim() || undefined,
+          note: note.trim() || undefined,
+          items: lines.map((l) => ({ listingId: l.id, qty: 1 })),
+        }),
+      });
+      const payload = (await response.json().catch(() => ({}))) as {
+        error?: string;
+        order?: {
+          reference: string;
+          createdAt: string;
+          subtotalCents: number;
+          reserveCents: number;
+          totalCents: number;
+        };
+        emailError?: string | null;
+      };
+
+      if (!response.ok || !payload.order) {
+        setError(payload.error ?? "The register would not take the order. Try again.");
+        return;
+      }
+
+      const order = payload.order;
+      const receipt: Receipt = {
+        serial: `No. ${order.reference}`,
+        at: order.createdAt,
+        name: trimmedName,
+        email: trimmedEmail,
+        town: town.trim() || undefined,
+        note: note.trim() || undefined,
+        lines: lines.map((l) => ({
+          id: l.id,
+          name: displayName(l),
+          where: whereLabel(l),
+          priceUsd: l.price_usd,
+          priceLabel: priceLabel(l),
+        })),
+        subtotalUsd: order.subtotalCents / 100,
+        reserveUsd: order.reserveCents / 100,
+        totalUsd: order.totalCents / 100,
+      };
+      saveReceipt(receipt);
+      emptyBasket();
+      setSealed(receipt);
+      setNotice(
+        payload.emailError
+          ? "The order is in the register, but the letter could not be sent."
+          : `A letter of record is on its way to ${trimmedEmail}.`,
+      );
+      window.scrollTo({ top: 0 });
+    } catch {
+      setError("The register could not be reached. Nothing was entered; try again in a moment.");
+    } finally {
+      setBusy(false);
+    }
   }
 
   if (sealed) {
     return (
       <main className="checkout">
         <div className="shell">
+          {notice && <p className="receipt-notice no-print">{notice}</p>}
           <ReceiptSheet receipt={sealed} fresh />
           <p className="checkout-return no-print">
             <Link href="/">Return to the atlas</Link>
@@ -215,9 +259,9 @@ export default function Checkout() {
 
                 {error && <div className="msg err">{error}</div>}
 
-                <button type="submit" className="seal-button">
+                <button type="submit" className="seal-button" disabled={busy}>
                   <span className="seal-button-wax" aria-hidden="true" />
-                  Seal the adoption
+                  {busy ? "Sealing…" : "Seal the adoption"}
                 </button>
               </form>
             </section>

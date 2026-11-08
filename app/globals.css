@@ -1501,3 +1501,13 @@ body:has(.checkout) .site-header {
   margin: 10px 0 0;
 }
 .pay-line em { color: var(--ink-2); }
+
+.receipt-notice {
+  max-width: 560px;
+  margin: 24px auto 0;
+  padding: 10px 14px;
+  border: 1px solid var(--rule);
+  font-size: 0.9rem;
+  color: var(--ink-2);
+  text-align: center;
+}

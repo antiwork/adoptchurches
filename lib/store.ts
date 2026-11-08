@@ -2,7 +2,8 @@
 
 // Client-side state for the collection, the basket and past receipts.
 // Everything lives in localStorage; a custom event keeps every component
-// on the page in agreement. No server is consulted.
+// on the page in agreement. The server is told about collections and baskets
+// as anonymous counters, so the register knows what is drawing interest.
 
 import { useSyncExternalStore } from "react";
 
@@ -11,6 +12,36 @@ export const BASKET_KEY = "adoptchurches:basket";
 export const RECEIPTS_KEY = "adoptchurches:receipts";
 
 const CHANGE_EVENT = "adoptchurches:store";
+const SESSION_KEY = "adoptchurches:session";
+
+/** A stable, anonymous id so demand can be counted without cookies or accounts. */
+function sessionId(): string {
+  if (typeof window === "undefined") return "";
+  let id = window.localStorage.getItem(SESSION_KEY);
+  if (!id) {
+    id = Math.random().toString(36).slice(2) + Date.now().toString(36);
+    window.localStorage.setItem(SESSION_KEY, id);
+  }
+  return id;
+}
+
+/**
+ * Tell the register that something was collected or set aside. Fire and forget:
+ * a failed beacon must never interrupt the page.
+ */
+export function trackEvent(kind: "collect" | "uncollect" | "basket" | "remove" | "view", listingId: string) {
+  if (typeof window === "undefined") return;
+  try {
+    void fetch("/api/events", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ kind, listingId, sessionId: sessionId() }),
+      keepalive: true,
+    }).catch(() => undefined);
+  } catch {
+    // nothing to do
+  }
+}
 
 export type BasketLine = { id: string; qty: number };
 
@@ -78,8 +109,10 @@ export function useCollected(): string[] {
 
 export function toggleCollected(id: string) {
   const cur = read<string[]>(COLLECTED_KEY, []);
-  const next = cur.includes(id) ? cur.filter((x) => x !== id) : [...cur, id];
+  const had = cur.includes(id);
+  const next = had ? cur.filter((x) => x !== id) : [...cur, id];
   write(COLLECTED_KEY, next);
+  trackEvent(had ? "uncollect" : "collect", id);
 }
 
 // ---- basket ----
@@ -104,20 +137,24 @@ export function addToBasket(id: string) {
   const cur = read<BasketLine[]>(BASKET_KEY, []);
   if (cur.some((l) => l.id === id)) return;
   write(BASKET_KEY, [...cur, { id, qty: 1 }]);
+  trackEvent("basket", id);
 }
 
 export function removeFromBasket(id: string) {
   const cur = read<BasketLine[]>(BASKET_KEY, []);
   write(BASKET_KEY, cur.filter((l) => l.id !== id));
+  trackEvent("remove", id);
 }
 
 export function toggleBasket(id: string) {
   const cur = read<BasketLine[]>(BASKET_KEY, []);
-  if (cur.some((l) => l.id === id)) {
+  const had = cur.some((l) => l.id === id);
+  if (had) {
     write(BASKET_KEY, cur.filter((l) => l.id !== id));
   } else {
     write(BASKET_KEY, [...cur, { id, qty: 1 }]);
   }
+  trackEvent(had ? "remove" : "basket", id);
 }
 
 export function emptyBasket() {
