@@ -1,0 +1,19 @@
+{
+  "kept": 329,
+  "megabytes": 53.7,
+  "fetchedAt": "2026-11-08T23:44:18.409Z",
+  "failures": [
+    {
+      "id": "crexi-2349921",
+      "error": "no thumbnail"
+    },
+    {
+      "id": "pb-702949",
+      "error": "403 https://medias4b.patrice-besse.com/photo-acquerir/24083/"
+    },
+    {
+      "id": "crexi-2596819",
+      "error": "no thumbnail"
+    }
+  ]
+}

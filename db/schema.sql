@@ -77,3 +77,18 @@ alter table orders add column if not exists notify_email_id text;
 -- the same traceability for pledge letters
 alter table pledges add column if not exists pledge_email_id text;
 alter table pledges add column if not exists notify_email_id text;
+
+-- one photograph per building, fetched once and kept here rather than hotlinked
+create table if not exists listing_images (
+  listing_id  text primary key,
+  hero        bytea,
+  card        bytea,
+  blur        text,
+  width       integer,
+  height      integer,
+  credit      text,
+  source_url  text,
+  sha256      text,
+  bytes       integer,
+  fetched_at  timestamptz not null default now()
+);

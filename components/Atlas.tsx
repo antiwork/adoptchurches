@@ -15,6 +15,7 @@ import {
 import { COLLECTED_KEY, useCollected } from "@/lib/store";
 import { BasketToggle, CollectSeal } from "@/components/Controls";
 import { TILE_ATTRIBUTION, TILE_MAX_ZOOM, TILE_URL } from "@/lib/tiles";
+import ListingPhoto from "@/components/ListingPhoto";
 
 type Band = "all" | "under250" | "mid" | "over1m";
 type CountryFilter = "all" | "US" | "GB" | "FR";
@@ -395,6 +396,7 @@ export default function Atlas({ listings }: { listings: Listing[] }) {
                   data-selected={selected === l.id}
                   onClick={() => setSelected(l.id)}
                 >
+                  <ListingPhoto id={l.id} alt={displayName(l)} size="card" />
                   <div>
                     <div className="name">
                       <Link href={`/church/${l.id}`}>{displayName(l)}</Link>

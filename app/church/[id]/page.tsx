@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import DetailActions from "@/components/DetailActions";
+import ListingPhoto from "@/components/ListingPhoto";
 import MiniMap from "@/components/MiniMap";
 import PledgePanel from "@/components/PledgePanel";
 import {
@@ -51,6 +52,8 @@ export default async function ChurchPage({ params }: Props) {
 
           <h1>{displayName(l)}</h1>
           <div className="addr">{displayAddress(l)}</div>
+
+          <ListingPhoto id={l.id} alt={displayName(l)} size="hero" className="detail-photo" credit={l.source} />
 
           <div className="price-line">
             <div className="p">{priceLabel(l)}</div>
