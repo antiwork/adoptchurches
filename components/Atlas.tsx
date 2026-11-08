@@ -14,6 +14,7 @@ import {
 } from "@/lib/data";
 import { COLLECTED_KEY, useCollected } from "@/lib/store";
 import { BasketToggle, CollectSeal } from "@/components/Controls";
+import { TILE_ATTRIBUTION, TILE_MAX_ZOOM, TILE_URL } from "@/lib/tiles";
 
 type Band = "all" | "under250" | "mid" | "over1m";
 type CountryFilter = "all" | "US" | "GB" | "FR";
@@ -114,9 +115,9 @@ export default function Atlas({ listings }: { listings: Listing[] }) {
         worldCopyJump: true,
       });
       L.control.zoom({ position: "bottomleft" }).addTo(map);
-      L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", {
-        attribution: '&copy; OpenStreetMap contributors',
-        maxZoom: 19,
+      L.tileLayer(TILE_URL, {
+        attribution: TILE_ATTRIBUTION,
+        maxZoom: TILE_MAX_ZOOM,
       }).addTo(map);
       layerRef.current = L.layerGroup().addTo(map);
       mapRef.current = { map, L };

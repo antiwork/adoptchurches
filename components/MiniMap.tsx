@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useRef } from "react";
+import { TILE_ATTRIBUTION, TILE_MAX_ZOOM, TILE_URL } from "@/lib/tiles";
 
 export default function MiniMap({ lat, lng, label }: { lat: number; lng: number; label: string }) {
   const el = useRef<HTMLDivElement | null>(null);
@@ -20,10 +21,9 @@ export default function MiniMap({ lat, lng, label }: { lat: number; lng: number;
         zoomControl: false,
         attributionControl: true,
       });
-      L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", {
-        attribution: '&copy; OpenStreetMap contributors',
-        subdomains: "abcd",
-        maxZoom: 19,
+      L.tileLayer(TILE_URL, {
+        attribution: TILE_ATTRIBUTION,
+        maxZoom: TILE_MAX_ZOOM,
       }).addTo(map);
       L.marker([lat, lng], {
         icon: L.divIcon({ className: "", html: '<div class="pin" data-selected="true"></div>', iconSize: [14, 14], iconAnchor: [7, 7] }),
