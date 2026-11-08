@@ -1477,3 +1477,12 @@ body:has(.checkout) .site-header {
 @media (max-width: 700px) {
   .list { max-height: none; }
 }
+
+.pay-line {
+  font-family: var(--serif-text);
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: var(--ink);
+  margin: 10px 0 0;
+}
+.pay-line em { color: var(--ink-2); }

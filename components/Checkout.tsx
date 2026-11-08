@@ -26,8 +26,6 @@ export default function Checkout() {
   const [email, setEmail] = useState("");
   const [town, setTown] = useState("");
   const [note, setNote] = useState("");
-  const [card, setCard] = useState("");
-  const [expiry, setExpiry] = useState("");
   const [error, setError] = useState<string | null>(null);
   const [sealed, setSealed] = useState<Receipt | null>(null);
 
@@ -205,26 +203,13 @@ export default function Checkout() {
 
                 <fieldset className="mock-pay">
                   <legend className="smallcaps">Terms of payment</legend>
-                  <label htmlFor="co-card">Number of the account (not charged)</label>
-                  <input
-                    id="co-card"
-                    inputMode="numeric"
-                    value={card}
-                    onChange={(e) => setCard(e.target.value)}
-                    placeholder="0000 0000 0000 0000"
-                    autoComplete="off"
-                  />
-                  <label htmlFor="co-expiry">Expiry</label>
-                  <input
-                    id="co-expiry"
-                    value={expiry}
-                    onChange={(e) => setExpiry(e.target.value)}
-                    placeholder="MM / YY"
-                    autoComplete="off"
-                  />
+                  <p className="pay-line">
+                    Settled in pledges and good intentions. <em>No card is asked for, no account
+                    is debited, and nothing is sent anywhere.</em>
+                  </p>
                   <p className="order-fine">
-                    These figures are kept for appearance only. They are not sent anywhere, not
-                    stored, and not charged.
+                    This is a demonstration of the register, not a shop. The order is entered for
+                    posterity only.
                   </p>
                 </fieldset>
 
