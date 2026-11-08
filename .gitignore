@@ -1,0 +1,10 @@
+node_modules/
+.next/
+out/
+.data/
+loopnet-pages/
+*.log
+.DS_Store
+next-env.d.ts
+.env*.local
+tsconfig.tsbuildinfo
