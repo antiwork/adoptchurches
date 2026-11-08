@@ -52,6 +52,9 @@ export async function topDemand(limit = 25) {
             coalesce((select sum(amount_cents) from pledges p where p.listing_id = d.listing_id), 0)::text as pledged_cents,
             d.last_event_at
        from listings_demand d
+      where d.collects > 0
+         or d.baskets > 0
+         or exists (select 1 from pledges p where p.listing_id = d.listing_id)
       order by (d.collects + d.baskets * 2) desc, d.last_event_at desc nulls last
       limit $1`,
     [limit],

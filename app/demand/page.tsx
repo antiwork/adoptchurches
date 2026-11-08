@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { getListing } from "@/lib/data";
+import { getListing, whereLabel } from "@/lib/data";
 import { hasDb } from "@/lib/db";
 import { demandSummary, topDemand } from "@/lib/demand";
 
@@ -104,7 +104,7 @@ export default async function DemandPage() {
                           row.listing_id
                         )}
                       </div>
-                      <div className="order-where">{listing ? `${listing.city}, ${listing.state}` : ""}</div>
+                      <div className="order-where">{listing ? whereLabel(listing) : ""}</div>
                     </td>
                     <td>{row.collects}</td>
                     <td>{row.baskets}</td>
