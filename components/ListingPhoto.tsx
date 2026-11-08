@@ -22,30 +22,26 @@ export default function ListingPhoto({
   className?: string;
   credit?: string;
 }) {
-  const [shown, setShown] = useState(false);
   const [failed, setFailed] = useState(false);
   const ref = useRef<HTMLSpanElement | null>(null);
 
+  // The browser is asked to defer offscreen photographs, but a deferred image
+  // that never arrives is worse than an eager one: once the plate is in the
+  // viewport, make sure the request has actually been made.
   useEffect(() => {
-    const node = ref.current;
-    if (!node) return;
-    if (typeof IntersectionObserver === "undefined") {
-      setShown(true);
-      return;
-    }
-    const observer = new IntersectionObserver(
-      (entries) => {
-        for (const entry of entries) {
-          if (entry.isIntersecting) {
-            setShown(true);
-            observer.disconnect();
-          }
-        }
-      },
-      { rootMargin: "400px 0px" },
-    );
-    observer.observe(node);
-    return () => observer.disconnect();
+    const img = ref.current?.querySelector("img");
+    if (!img) return;
+    const nudge = () => {
+      const box = img.getBoundingClientRect();
+      const visible = box.bottom > 0 && box.top < window.innerHeight && box.width > 0;
+      if (!visible || img.naturalWidth > 0) return;
+      if (img.loading !== "eager") img.loading = "eager";
+      if (!img.complete) return;
+      if (img.naturalWidth === 0) img.src = img.src;
+    };
+    nudge();
+    window.addEventListener("scroll", nudge, { passive: true });
+    return () => window.removeEventListener("scroll", nudge);
   }, []);
 
   return (
@@ -54,14 +50,15 @@ export default function ListingPhoto({
         <span className="photo-blank-mark" aria-hidden="true">
           ✠
         </span>
-      ) : shown ? (
+      ) : (
         <img
           src={`/api/img/${id}?s=${size}`}
           alt={alt}
+          loading="lazy"
           decoding="async"
           onError={() => setFailed(true)}
         />
-      ) : null}
+      )}
       {size === "hero" && credit ? <span className="photo-credit">Photograph: {credit}</span> : null}
     </span>
   );
