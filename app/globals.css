@@ -1613,3 +1613,177 @@ body:has(.checkout) .site-header {
   .card { grid-template-columns: 62px minmax(0, 1fr) auto; }
   .photo-card { width: 62px; height: 50px; }
 }
+
+/* ---------- the map, with less on it ---------- */
+
+body:has(.map-home) .dateline { display: none; }
+body:has(.map-home) .site-footer { display: none; }
+
+.map-search {
+  position: fixed;
+  top: 66px;
+  right: 24px;
+  z-index: 1300;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.map-search-toggle {
+  font-family: var(--serif-text);
+  font-size: 11px;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--ink);
+  background: var(--paper);
+  border: 1px solid var(--rule);
+  padding: 7px 12px;
+  cursor: pointer;
+}
+.map-search input {
+  font-family: var(--serif-text);
+  font-size: 0.95rem;
+  width: 240px;
+  padding: 7px 10px;
+  border: 1px solid var(--rule);
+  background: var(--paper);
+  color: var(--ink);
+  border-radius: 0;
+}
+.map-search input:focus { outline: 1px solid var(--gold); outline-offset: -1px; }
+
+/* the strip of photographs along the bottom */
+.filmstrip {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1250;
+  display: flex;
+  gap: 14px;
+  overflow-x: auto;
+  overflow-y: hidden;
+  scroll-snap-type: x proximity;
+  -webkit-overflow-scrolling: touch;
+  padding: 26px 26px 18px;
+  background: linear-gradient(to top, var(--paper) 70%, rgba(243, 239, 230, 0));
+  border-top: 1px solid rgba(25, 23, 19, 0.08);
+  scrollbar-width: thin;
+}
+.filmstrip::-webkit-scrollbar { height: 6px; }
+.filmstrip::-webkit-scrollbar-thumb { background: rgba(25, 23, 19, 0.22); }
+
+.film {
+  flex: 0 0 auto;
+  width: 240px;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  text-align: left;
+  cursor: pointer;
+  scroll-snap-align: center;
+  color: var(--ink);
+}
+.film .photo {
+  width: 240px;
+  aspect-ratio: 3 / 2;
+  border: 1px solid var(--rule);
+}
+.film .photo-blank-mark { font-size: 1rem; }
+.film-caption {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 8px;
+  margin-top: 6px;
+}
+.film-name {
+  font-family: var(--serif-display);
+  font-size: 0.86rem;
+  line-height: 1.2;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+.film-price {
+  font-size: 11.5px;
+  letter-spacing: 0.02em;
+  white-space: nowrap;
+  color: var(--ink-2);
+  font-variant-numeric: oldstyle-nums;
+}
+.film[data-selected="true"] .photo { border-color: var(--oxblood); box-shadow: 0 0 0 1px var(--oxblood); }
+.film[data-selected="true"] .photo img { filter: none; }
+.film:hover .photo img { filter: grayscale(0.25) sepia(0.08); }
+
+/* the one entry you picked, kept small */
+.map-card {
+  position: fixed;
+  left: 22px;
+  bottom: 226px;
+  z-index: 1300;
+  width: 336px;
+  display: grid;
+  grid-template-columns: 104px minmax(0, 1fr);
+  gap: 12px;
+  padding: 12px;
+  background: var(--paper);
+  border: 1px solid var(--rule);
+}
+.map-card-photo .photo { width: 104px; height: 78px; }
+.map-card-text { min-width: 0; }
+.map-card-name {
+  font-family: var(--serif-display);
+  font-size: 1.02rem;
+  line-height: 1.2;
+  color: var(--ink);
+  text-decoration: none;
+  display: block;
+}
+.map-card-where {
+  font-size: 10px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--ink-2);
+  margin-top: 3px;
+}
+.map-card-price { margin-top: 6px; font-size: 0.95rem; font-variant-numeric: oldstyle-nums; }
+.map-card-actions { display: flex; align-items: center; gap: 10px; margin-top: 8px; flex-wrap: wrap; }
+.map-card-close {
+  position: absolute;
+  top: 4px;
+  right: 6px;
+  border: 0;
+  background: transparent;
+  font-size: 16px;
+  line-height: 1;
+  color: var(--ink-2);
+  cursor: pointer;
+}
+
+/* keep the basket clear of the strip */
+body:has(.map-home) .basket-plate { bottom: 176px; }
+
+/* the card that opens on a pin */
+.popup { display: grid; grid-template-columns: 96px minmax(0, 1fr); gap: 10px; text-decoration: none; color: var(--ink); }
+.popup-photo { width: 96px; height: 72px; object-fit: cover; filter: grayscale(0.7) sepia(0.14); border: 1px solid var(--rule); }
+.popup-body { min-width: 0; }
+.popup .popup-name { margin-bottom: 2px; }
+
+@media (max-width: 720px) {
+  .map-search { top: 58px; right: 14px; }
+  .map-search input { width: 190px; }
+  .filmstrip { gap: 10px; padding: 20px 14px 16px; }
+  .film { width: 166px; }
+  .film .photo { width: 166px; }
+  .map-card {
+    left: 10px;
+    right: 10px;
+    width: auto;
+    bottom: 196px;
+    grid-template-columns: 84px minmax(0, 1fr);
+    padding: 10px;
+  }
+  .map-card-photo .photo { width: 84px; height: 64px; }
+  body:has(.map-home) .basket-plate { bottom: 166px; }
+}
