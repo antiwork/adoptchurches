@@ -58,7 +58,7 @@ export default async function ChurchPage({ params }: Props) {
           <div className="price-line">
             <div className="p">{priceLabel(l)}</div>
             <div className="sub">
-              {l.price_local == null ? "guide price on application" : "asking price"}
+              {l.price_local == null ? "guide price on application" : "guide price, as published by the agent"}
               {approx ? ` · ${approx} at the recorded rate` : ""} · {l.source}
             </div>
           </div>
@@ -126,25 +126,25 @@ export default async function ChurchPage({ params }: Props) {
             <div className="plate-caption">Plate II · situation of the building</div>
           </div>
 
-          <h2>How a group buys it</h2>
+          <h2>How a group takes it on</h2>
           <ol className="steps">
             <li>
-              A reader enters a pledge: a name and an amount, recorded on this page. It is a
-              declaration of intent, not a payment. Nothing is charged, and a pledge may be
-              withdrawn on request.
+              A reader enters a pledge: a name, an amount and, if they wish, a reason, recorded on
+              this page. It is a promise of support, not a payment. Nothing is charged, and a pledge
+              may be withdrawn by asking.
             </li>
             <li>
-              When the pledges against the building cover the asking price, together with a
-              reserve for closing costs, title, survey and the first year of upkeep, the page
-              closes and the pledgers are introduced to one another.
+              As the support grows toward the figure asked &mdash; with a reserve for survey, title,
+              closing costs and the first years of upkeep &mdash; the names in the book are put in
+              touch with one another.
             </li>
             <li>
-              The group settles its legal form: a nonprofit, a co-operative, a land trust, or a
-              single buyer collecting donations. An attorney drafts the instrument, and a title
-              company or solicitor holds the funds in escrow.
+              The group settles its own legal form: a nonprofit, a co-operative, a land trust, a
+              friends group, or one neighbour collecting gifts from the others. An attorney drafts
+              the instrument, and a title company or solicitor holds the funds in escrow.
             </li>
             <li>
-              The purchase completes, and the group decides the building&apos;s use: worship, a
+              Only then does money move, and the group decides the building&apos;s use: worship, a
               hall, a school, housing, or simple preservation. The deed records the arrangement.
             </li>
           </ol>

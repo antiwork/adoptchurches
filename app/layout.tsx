@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { Cormorant_Garamond, EB_Garamond } from "next/font/google";
 import { listings } from "@/lib/data";
-import BasketDock from "@/components/BasketDock";
 import "leaflet/dist/leaflet.css";
 import "./globals.css";
 
@@ -23,15 +22,15 @@ const text = EB_Garamond({
 });
 
 const DESCRIPTION =
-  "A register of church buildings offered for sale in the United States, England and France, with a pledge book for groups who mean to buy one.";
+  "A register of church buildings offered for disposal in the United States, England and France, and a pledge book by which neighbours can put their support behind saving one.";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://adoptchurches.com"),
-  title: "adoptchurches · a register of church buildings for sale",
+  title: "adoptchurches · a register of church buildings offered for disposal",
   description: DESCRIPTION,
   alternates: { canonical: "/" },
   openGraph: {
-    title: "adoptchurches · a register of church buildings for sale",
+    title: "adoptchurches · a register of church buildings offered for disposal",
     description: DESCRIPTION,
     siteName: "adoptchurches",
     url: "/",
@@ -42,13 +41,13 @@ export const metadata: Metadata = {
         url: "/og.png",
         width: 1200,
         height: 630,
-        alt: "adoptchurches — 332 church buildings offered for sale, in the United States, England and France.",
+        alt: "adoptchurches — 332 church buildings offered for disposal, in the United States, England and France.",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "adoptchurches · a register of church buildings for sale",
+    title: "adoptchurches · a register of church buildings offered for disposal",
     description: DESCRIPTION,
     images: ["/og.png"],
   },
@@ -69,12 +68,11 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             <nav className="nav">
               <Link href="/#atlas">The atlas</Link>
               <Link href="/how-it-works">How it works</Link>
-              <Link href="/how-it-works#pledge">The pledge book</Link>
+              <Link href="/pledges">The pledge book</Link>
             </nav>
           </div>
         </header>
         {children}
-        <BasketDock />
         <footer className="site-footer">
           <div className="shell">
             <hr className="rule-double" />

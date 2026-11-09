@@ -98,3 +98,47 @@ export async function aggregateAll(): Promise<Record<string, PledgeAggregate>> {
   }
   return out;
 }
+
+/** Site-wide figures for the pledge book: how much support is on the record. */
+export async function bookTotals(): Promise<{ pledges: number; backers: number; totalCents: number }> {
+  const [row] = await query<{ pledges: string; backers: string; total_cents: string }>(
+    `select count(*)::text as pledges,
+            count(distinct lower(email))::text as backers,
+            coalesce(sum(amount_cents), 0)::text as total_cents
+       from pledges`,
+  );
+  return {
+    pledges: Number(row?.pledges ?? 0),
+    backers: Number(row?.backers ?? 0),
+    totalCents: Number(row?.total_cents ?? 0),
+  };
+}
+
+export type BookRow = {
+  listingId: string;
+  count: number;
+  totalCents: number;
+  collects: number;
+};
+
+/** Buildings carrying support, most support first. Interest breaks ties. */
+export async function topPledged(limit = 60): Promise<BookRow[]> {
+  const rows = await query<{ listing_id: string; count: string; total_cents: string; collects: string }>(
+    `select p.listing_id,
+            count(*)::text as count,
+            coalesce(sum(p.amount_cents), 0)::text as total_cents,
+            coalesce(max(d.collects), 0)::text as collects
+       from pledges p
+       left join listings_demand d on d.listing_id = p.listing_id
+      group by p.listing_id
+      order by sum(p.amount_cents) desc, count(*) desc
+      limit $1`,
+    [limit],
+  );
+  return rows.map((r) => ({
+    listingId: r.listing_id,
+    count: Number(r.count),
+    totalCents: Number(r.total_cents),
+    collects: Number(r.collects),
+  }));
+}

@@ -719,7 +719,7 @@ p { margin: 0 0 1em; }
 }
 
 /* ======================================================================
-   The interaction layer: full-screen atlas, the collection, the basket,
+   The interaction layer: full-screen atlas, the collection, the pledge book,
    and the order form. Same hand: paper, hairlines, brass, wax.
    ====================================================================== */
 
@@ -815,46 +815,6 @@ body:has(.map-home) { overflow: hidden; }
   transform: rotate(45deg) scale(1.45);
 }
 
-/* ---------- the dock (desktop: left panel; mobile: bottom sheet) ---------- */
-
-.dock {
-  position: absolute;
-  top: 80px;
-  left: 24px;
-  bottom: 24px;
-  width: 400px;
-  max-width: calc(100vw - 48px);
-  z-index: 1000;
-  display: flex;
-  flex-direction: column;
-  background: var(--paper);
-  border: 1px solid var(--rule);
-  /* a paper edge, not a drop shadow: a hairline and a darkened sliver */
-  box-shadow: inset 0 0 0 1px rgba(243, 239, 230, 0.6), 1px 1px 0 rgba(25, 23, 19, 0.18);
-}
-
-.dock-handle { display: none; }
-
-.dock-body {
-  display: flex;
-  flex-direction: column;
-  min-height: 0;
-  padding: 18px 18px 0;
-  flex: 1;
-}
-
-.dock-head { text-align: left; margin-bottom: 10px; }
-.dock-head h2 { font-size: 1.45rem; margin-top: 2px; }
-
-.dock .controls {
-  justify-content: flex-start;
-  gap: 0 14px;
-  margin-bottom: 6px;
-}
-.dock .field { flex: 1 1 auto; min-width: 0; }
-.dock .controls.countries { margin-bottom: 6px; }
-.dock .controls.tools { margin: 2px 0 10px; }
-
 .collected-chip[data-on="true"] { color: var(--oxblood); }
 
 .footnote-link {
@@ -870,19 +830,6 @@ body:has(.map-home) { overflow: hidden; }
 }
 .footnote-link:hover { border-bottom-color: var(--oxblood); }
 .footnote-link:disabled { color: var(--ink-2); cursor: default; }
-
-.dock .list {
-  flex: 1;
-  min-height: 0;
-  max-height: none;
-  margin: 0 -18px;
-  padding: 0 18px;
-}
-
-.dock .card { cursor: pointer; padding: 10px 8px; }
-.dock .card .name { font-size: 0.98rem; }
-.dock .card .name a { color: var(--ink); }
-.dock .card .name a:hover { text-decoration: underline; }
 
 .row-actions {
   display: flex;
@@ -916,31 +863,6 @@ body:has(.map-home) { overflow: hidden; }
   box-shadow: inset 1px 1px 1px rgba(255, 255, 255, 0.25), inset -1px -1px 1px rgba(0, 0, 0, 0.35);
 }
 .seal.large { width: 34px; height: 34px; font-size: 15px; }
-
-/* ---------- add to basket (embossed paper button) ---------- */
-
-.basket-add {
-  border: 1px solid var(--rule);
-  border-radius: 0;
-  background: var(--paper);
-  box-shadow: inset 1px 1px 0 rgba(255, 255, 255, 0.7), inset -1px -1px 0 rgba(25, 23, 19, 0.12);
-  padding: 3px 10px;
-  font: inherit;
-  font-size: 10px;
-  letter-spacing: 0.14em;
-  text-transform: uppercase;
-  color: var(--ink);
-  cursor: pointer;
-  white-space: nowrap;
-}
-.basket-add:hover { border-color: var(--ink); }
-.basket-add[data-on="true"] {
-  background: var(--paper-shade);
-  color: var(--oxblood);
-  border-color: var(--oxblood);
-  box-shadow: inset 1px 1px 2px rgba(25, 23, 19, 0.18);
-}
-.basket-add.wide { padding: 8px 16px; font-size: 11px; }
 
 /* ---------- the raised entry plate (brass) ---------- */
 
@@ -989,168 +911,9 @@ body:has(.map-home) { overflow: hidden; }
   margin-top: 16px;
 }
 .detail-actions-note { font-size: 0.88rem; font-style: italic; color: var(--ink-2); }
-
-/* ---------- the basket plate and drawer ---------- */
-
-.basket-plate {
-  position: fixed;
-  right: 24px;
-  bottom: 24px;
-  z-index: 1200;
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  padding: 10px 16px;
-  border: 1px solid var(--ink);
-  border-bottom: 3px solid var(--gold);
-  background: linear-gradient(180deg, #a2874c 0%, var(--gold) 60%, #6e5728 100%);
-  color: var(--paper);
-  font: inherit;
-  font-size: 12px;
-  letter-spacing: 0.14em;
-  text-transform: uppercase;
-  cursor: pointer;
-  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.35);
-}
-.basket-plate em {
-  font-style: normal;
-  margin-left: 8px;
-  font-variant-numeric: oldstyle-nums;
-  letter-spacing: 0.02em;
-  text-transform: none;
-  font-size: 0.95rem;
-}
-.basket-roundel {
-  width: 26px;
-  height: 26px;
-  border-radius: 50%;
-  border: 1px solid var(--ink);
-  background: radial-gradient(circle at 35% 30%, #c3a65e 0%, var(--gold) 60%, #5d4a22 100%);
-  box-shadow: inset 1px 1px 1px rgba(255, 255, 255, 0.4), inset -1px -1px 1px rgba(0, 0, 0, 0.3);
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  font-family: var(--serif-display);
-  font-size: 14px;
-  color: var(--paper);
-  letter-spacing: 0;
-}
-
-.drawer {
-  position: fixed;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  width: 380px;
-  max-width: 92vw;
-  z-index: 1300;
-  background: var(--paper);
-  border-left: 1px solid var(--rule);
-  /* stitched left edge */
-  background-image: repeating-linear-gradient(
-    to bottom,
-    var(--oxblood) 0 6px,
-    transparent 6px 14px
-  );
-  background-size: 1px 100%;
-  background-position: 8px 0;
-  background-repeat: no-repeat;
-  padding: 22px 24px 24px 24px;
-  overflow-y: auto;
-  transform: translateX(102%);
-  transition: transform 0.22s ease;
-  visibility: hidden;
-}
-.drawer[data-open="true"] { transform: translateX(0); visibility: visible; }
-
-.drawer-head {
-  display: flex;
-  justify-content: space-between;
-  align-items: baseline;
-  margin-left: 10px;
-}
-.drawer-head h3 {
-  font-family: var(--serif-text);
-  font-weight: 400;
-  font-size: 12px;
-  letter-spacing: 0.14em;
-  text-transform: uppercase;
-}
-.drawer-close {
-  border: 0;
-  background: transparent;
-  font: inherit;
-  font-size: 11px;
-  letter-spacing: 0.14em;
-  text-transform: uppercase;
-  color: var(--ink-2);
-  cursor: pointer;
-  padding: 2px;
-}
-.drawer-close:hover { color: var(--oxblood); }
-.drawer .panel-rule { margin: 10px auto 16px; border-top: 1px solid var(--gold); width: 48px; border-bottom: 0; }
-
-.drawer-empty { font-style: italic; color: var(--ink-2); margin-left: 10px; }
-
-.drawer-lines {
-  list-style: none;
-  margin: 0 0 0 10px;
-  padding: 0;
-  border-top: 1px solid var(--rule);
-}
-.drawer-lines li {
-  display: flex;
-  justify-content: space-between;
-  gap: 14px;
-  padding: 10px 0;
-  border-bottom: 1px solid var(--rule-soft);
-}
-.drawer-line-name { font-family: var(--serif-display); color: var(--ink); display: block; line-height: 1.25; }
-.drawer-line-where {
-  display: block;
-  font-size: 10px;
-  letter-spacing: 0.14em;
-  text-transform: uppercase;
-  color: var(--ink-2);
-  margin: 2px 0 4px;
-}
-.drawer-line-price { white-space: nowrap; font-variant-numeric: oldstyle-nums; }
-
-.drawer-total {
-  display: flex;
-  justify-content: space-between;
-  gap: 14px;
-  margin: 14px 0 0 10px;
-  padding: 10px 0;
-  border-bottom: 1px solid var(--rule);
-  font-variant-numeric: oldstyle-nums;
-}
-.drawer-total span { font-size: 11px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--ink-2); }
-
-.drawer-actions {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  margin: 18px 0 0 10px;
-}
 .btn.ghost { border-color: var(--rule); color: var(--ink-2); }
 .btn.ghost:hover { background: transparent; color: var(--oxblood); border-color: var(--oxblood); }
-
-.drawer-fine { font-size: 0.8rem; color: var(--ink-2); margin: 14px 0 0 10px; line-height: 1.5; }
-
-/* ---------- checkout: the order form ---------- */
-
-.checkout { padding: 110px 0 80px; }
-body:has(.checkout) .site-header {
-  position: fixed;
-  top: 0; left: 0; right: 0;
-  z-index: 1100;
-}
-.checkout h1 { font-size: clamp(1.7rem, 4vw, 2.5rem); margin: 14px 0 16px; }
-.checkout .title-rule { border: 0; border-top: 1px solid var(--gold); width: 120px; margin: 0 0 30px; }
 .back-line { margin: 0; }
-.checkout-empty { max-width: 56ch; font-size: 1.02rem; }
-.checkout-return { margin-top: 24px; }
 
 .order-grid {
   display: grid;
@@ -1161,27 +924,7 @@ body:has(.checkout) .site-header {
 @media (max-width: 860px) {
   .order-grid { grid-template-columns: 1fr; gap: 36px; }
 }
-
-.order-table, .receipt-table {
-  width: 100%;
-  border-collapse: collapse;
-  border-top: 1px solid var(--rule);
-  margin-top: 12px;
-}
-.order-table td, .receipt-table td {
-  border-bottom: 1px solid var(--rule-soft);
-  padding: 10px 2px;
-  vertical-align: baseline;
-}
 .order-no { width: 28px; color: var(--ink-2); font-variant-numeric: oldstyle-nums; }
-.order-name { font-family: var(--serif-display); font-size: 1.02rem; line-height: 1.3; }
-.order-where {
-  font-size: 10px;
-  letter-spacing: 0.14em;
-  text-transform: uppercase;
-  color: var(--ink-2);
-  margin-top: 2px;
-}
 .order-price { text-align: right; white-space: nowrap; font-variant-numeric: oldstyle-nums; }
 
 .dashed-rule {
@@ -1189,28 +932,6 @@ body:has(.checkout) .site-header {
   border-top: 1px dashed var(--rule);
   margin: 14px 0;
 }
-
-.order-sums { margin: 0; }
-.order-sums > div {
-  display: flex;
-  justify-content: space-between;
-  gap: 18px;
-  padding: 5px 0;
-}
-.order-sums dt { font-size: 0.9rem; color: var(--ink-2); }
-.order-sums dd { margin: 0; font-variant-numeric: oldstyle-nums; white-space: nowrap; }
-.order-sums .order-total {
-  border-top: 1px solid var(--rule);
-  margin-top: 6px;
-  padding-top: 10px;
-}
-.order-sums .order-total dt {
-  color: var(--ink);
-  font-size: 11px;
-  letter-spacing: 0.14em;
-  text-transform: uppercase;
-}
-.order-sums .order-total dd { font-family: var(--serif-display); font-size: 1.25rem; }
 
 .order-fine { font-size: 0.8rem; color: var(--ink-2); line-height: 1.5; margin-top: 14px; }
 
@@ -1280,99 +1001,21 @@ body:has(.checkout) .site-header {
   box-shadow: inset 1px 1px 1px rgba(255, 255, 255, 0.25), inset -1px -1px 1px rgba(0, 0, 0, 0.35);
   flex: 0 0 auto;
 }
-
-/* ---------- the receipt ---------- */
-
-.receipt-wrap { max-width: 560px; margin: 0 auto; }
 #receipt { margin-top: 10px; }
-.past-receipts .receipt-wrap { margin: 28px 0 0; }
-.past-receipts h2 { margin-top: 24px; }
 
-.receipt {
-  position: relative;
-  background: var(--paper);
-  border: 1px solid var(--rule);
-  padding: 32px 34px 26px;
-  overflow: hidden;
-  /* perforated top edge */
-  --perf: radial-gradient(circle at 8px 0, transparent 0 4px, var(--paper) 4.5px);
-}
-.receipt::before {
-  content: "";
-  position: absolute;
-  top: -1px;
-  left: 0;
-  right: 0;
-  height: 9px;
-  background: radial-gradient(circle at 8px 0px, rgba(25, 23, 19, 0) 0 4px, transparent 4px),
-    repeating-radial-gradient(circle at 8px 0px, var(--paper-shade) 0 4px, transparent 4px 16px);
-  background-size: 16px 9px;
-  background-repeat: repeat-x;
-  pointer-events: none;
-}
-
-.receipt-stamp {
-  position: absolute;
-  top: 38%;
-  left: 50%;
-  transform: translate(-50%, -50%) rotate(-12deg);
-  font-family: var(--serif-display);
-  font-size: clamp(3rem, 9vw, 4.6rem);
-  font-weight: 600;
-  letter-spacing: 0.18em;
-  text-transform: uppercase;
-  color: var(--oxblood);
-  opacity: 0.55;
-  border: 4px double var(--oxblood);
-  padding: 2px 26px;
-  pointer-events: none;
-  white-space: nowrap;
-}
-
-.receipt-head {
-  display: flex;
-  justify-content: space-between;
-  align-items: baseline;
-  gap: 16px;
-}
-.receipt-wordmark { font-family: var(--serif-display); font-size: 1.3rem; letter-spacing: 0.04em; }
-.receipt-wordmark em { font-style: italic; }
-.receipt-serial {
-  font-size: 11px;
-  letter-spacing: 0.14em;
-  text-transform: uppercase;
-  color: var(--oxblood);
-  white-space: nowrap;
-}
-.receipt-dateline { font-size: 0.92rem; font-style: italic; color: var(--ink-2); margin: 8px 0 12px; }
-.receipt .rule-double { margin-bottom: 4px; }
-.receipt-note { font-style: italic; margin: 14px 0 0; }
-.receipt-fine {
-  font-size: 0.78rem;
-  color: var(--ink-2);
-  line-height: 1.5;
-  margin: 18px 0 0;
-  border-top: 1px solid var(--rule-soft);
-  padding-top: 10px;
-}
-.receipt-actions { display: flex; justify-content: center; margin-top: 16px; }
-
-/* ---------- print: the receipt alone, on white ---------- */
+/* ---------- print: the particulars, on white ---------- */
 
 @media print {
   body { background: #fff; }
   .site-header,
   .site-footer,
   .nav,
-  .basket-plate,
-  .drawer,
   .no-print,
-  .past-receipts {
+  .filmstrip,
+  .map-search {
     display: none !important;
   }
-  .checkout { padding: 0; }
-  .receipt-wrap { max-width: none; }
-  .receipt { border: 1px solid #999; }
+  .map { display: none !important; }
 }
 
 /* ---------- mobile: the bottom sheet ---------- */
@@ -1390,14 +1033,6 @@ body:has(.checkout) .site-header {
   .nav a { font-size: 9.5px; letter-spacing: 0.09em; }
   .wordmark { font-size: 1.05rem; }
 
-  /* keep the basket clear of the collapsed sheet */
-  .basket-plate {
-    bottom: calc(47px + 18px + env(safe-area-inset-bottom, 0px));
-    right: 14px;
-    padding: 9px 13px;
-  }
-  .dock[data-open="true"] ~ .basket-plate { bottom: calc(70vh + 12px); }
-
   .dock {
     top: auto;
     left: 0;
@@ -1410,7 +1045,6 @@ body:has(.checkout) .site-header {
     border-bottom: 0;
   }
   .dock:not([data-open="true"]) .dock-body { display: none; }
-  .dock[data-open="true"] { height: 70vh; height: 70dvh; }
 
   .dock-handle {
     display: flex;
@@ -1436,9 +1070,6 @@ body:has(.checkout) .site-header {
     text-transform: uppercase;
     color: var(--ink-2);
   }
-
-  .basket-plate { right: 12px; bottom: 12px; padding: 8px 12px; }
-  .dock[data-open="true"] ~ * .basket-plate { display: none; }
 
   .checkout { padding-top: 90px; }
   .receipt { padding: 24px 18px 20px; }
@@ -1500,8 +1131,6 @@ body:has(.checkout) .site-header {
   border-right: 1px solid var(--paper);
 }
 .list { scrollbar-gutter: stable; }
-/* the register keeps running off the bottom edge of the sheet, as a printed list does */
-.dock-body { position: relative; }
 
 @media (max-width: 700px) {
   .list { max-height: none; }
@@ -1515,36 +1144,6 @@ body:has(.checkout) .site-header {
   margin: 10px 0 0;
 }
 .pay-line em { color: var(--ink-2); }
-
-.receipt-notice {
-  max-width: 560px;
-  margin: 24px auto 0;
-  padding: 10px 14px;
-  border: 1px solid var(--rule);
-  font-size: 0.9rem;
-  color: var(--ink-2);
-  text-align: center;
-}
-
-/* demand ledger */
-.demand-sums { margin: 26px 0 8px; }
-.demand-sums > div { border-bottom: 1px solid var(--rule-soft); }
-.demand-sums dt { text-transform: none; letter-spacing: 0.02em; }
-.demand-table { margin-top: 12px; }
-.demand-table th {
-  font-size: 10px;
-  letter-spacing: 0.14em;
-  text-transform: uppercase;
-  color: var(--ink-2);
-  text-align: left;
-  padding: 0 0 6px 16px;
-  border-bottom: 1px solid var(--rule);
-  font-weight: 500;
-  white-space: nowrap;
-}
-.demand-table th:first-child { padding-left: 0; }
-.demand-table td { padding: 8px 0; border-bottom: 1px solid var(--rule-soft); vertical-align: top; }
-.demand-table td + td, .demand-table th + th { text-align: right; white-space: nowrap; }
 
 /* ---------- photographs ---------- */
 
@@ -1777,9 +1376,6 @@ body:has(.map-home) .site-footer { display: none; }
   cursor: pointer;
 }
 
-/* keep the basket clear of the strip */
-body:has(.map-home) .basket-plate { bottom: calc(var(--strip-h, 180px) + 16px); }
-
 /* the card that opens on a pin */
 .popup { display: grid; grid-template-columns: 96px minmax(0, 1fr); gap: 10px; text-decoration: none; color: var(--ink); }
 .popup-photo { width: 96px; height: 72px; object-fit: cover; filter: grayscale(0.7) sepia(0.14); border: 1px solid var(--rule); }
@@ -1801,7 +1397,6 @@ body:has(.map-home) .basket-plate { bottom: calc(var(--strip-h, 180px) + 16px); 
     padding: 10px;
   }
   .map-card-photo .photo { width: 84px; height: 64px; }
-  body:has(.map-home) .basket-plate { bottom: calc(var(--strip-h, 160px) + 12px); }
 }
 
 /* the strip's one line of type */
@@ -1888,7 +1483,7 @@ body:has(.map-home) .nav a[href="/#atlas"] { display: none; }
   .masthead { padding: 6px 14px; }
 }
 
-/* a phone: one header row, larger nav, and no basket under the card */
+/* a phone: one header row, larger nav */
 @media (max-width: 700px) {
   .masthead { padding: 7px 12px; gap: 10px; flex-wrap: wrap; row-gap: 2px; }
   .nav { flex: 1 1 auto; justify-content: flex-end; gap: 12px; padding: 0; min-width: 0; }
@@ -1901,9 +1496,8 @@ body:has(.map-home) .nav a[href="/#atlas"] { display: none; }
   .nav a { font-size: 10px; }
 }
 @media (max-width: 720px) {
-  /* the tile credit moves up, clear of the basket plate */
+  /* the tile credit moves up, clear of the support card */
   .atlas.map-home .leaflet-bottom.leaflet-right { bottom: calc(var(--strip-h, 160px) + 62px); }
-  body:has(.map-card) .basket-plate { display: none; }
   .map-card-close { padding: 10px 12px; }
 }
 @media (pointer: coarse) {
@@ -1911,3 +1505,125 @@ body:has(.map-home) .nav a[href="/#atlas"] { display: none; }
   .seal { min-width: 32px; min-height: 32px; }
   .map-search-toggle { padding: 11px 14px; }
 }
+
+/* ---------- the support link (the only action there is) ---------- */
+
+.support-link {
+  display: inline-block;
+  padding: 3px 10px;
+  border: 1px solid var(--ink);
+  border-bottom: 2px solid var(--gold);
+  background: var(--paper);
+  box-shadow: inset 1px 1px 0 rgba(255, 255, 255, 0.7), inset -1px -1px 0 rgba(25, 23, 19, 0.12);
+  font-size: 10px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--ink);
+  text-decoration: none;
+  white-space: nowrap;
+}
+.support-link:hover { background: var(--ink); color: var(--paper); border-bottom-color: var(--gold); }
+.support-link.wide { padding: 8px 16px; font-size: 11px; }
+
+/* ---------- the pledge book in the margin ---------- */
+
+.panel-kicker {
+  font-size: 10px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--ink-2);
+  margin-bottom: 4px;
+}
+.pledge-state { margin: 0 0 18px; }
+.pledge-total { font-size: 0.95rem; line-height: 1.5; color: var(--ink-2); }
+.pledge-total strong { color: var(--ink); font-family: var(--serif-display); font-size: 1.25rem; font-weight: 600; }
+.pledge-bar {
+  position: relative;
+  height: 6px;
+  margin: 10px 0 6px;
+  background: var(--paper-shade);
+  border: 1px solid var(--rule);
+}
+.pledge-bar i {
+  position: absolute;
+  inset: 0 auto 0 0;
+  background: linear-gradient(90deg, #a2874c 0%, var(--gold) 100%);
+}
+.pledge-bar[data-complete="true"] i { background: linear-gradient(90deg, #7b5f2e 0%, var(--oxblood) 100%); }
+.pledge-left { font-size: 10px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--ink-2); }
+.recent-head {
+  font-size: 10px;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--ink-2);
+  border-bottom: 1px solid var(--rule);
+  padding-bottom: 4px;
+  margin-bottom: 6px;
+}
+
+/* ---------- the pledge book, as a page ---------- */
+
+.book-totals {
+  display: flex;
+  gap: 44px;
+  margin: 22px 0 0;
+  padding: 0;
+}
+.book-totals dt {
+  font-size: 10px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--ink-2);
+  margin-bottom: 2px;
+}
+.book-totals dd {
+  margin: 0;
+  font-family: var(--serif-display);
+  font-size: 2rem;
+  line-height: 1;
+  font-variant-numeric: oldstyle-nums;
+}
+.book-empty { max-width: 34rem; }
+.book-empty .book-cta { margin-top: 18px; }
+.book-list { list-style: none; margin: 0; padding: 0; }
+.book-row {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  grid-template-areas: "main figure" "bar bar" "add add";
+  gap: 4px 18px;
+  padding: 16px 0 14px;
+  border-bottom: 1px solid var(--rule);
+}
+.book-main { grid-area: main; }
+.book-name {
+  font-family: var(--serif-display);
+  font-size: 1.3rem;
+  color: var(--ink);
+  text-decoration: none;
+}
+.book-name:hover { text-decoration: underline; }
+.book-where { font-size: 0.85rem; font-style: italic; color: var(--ink-2); }
+.book-figure { grid-area: figure; text-align: right; }
+.book-amount { font-family: var(--serif-display); font-size: 1.35rem; font-variant-numeric: oldstyle-nums; }
+.book-meta { font-size: 10px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--ink-2); }
+.book-bar {
+  grid-area: bar;
+  position: relative;
+  height: 4px;
+  margin: 10px 0 8px;
+  background: var(--paper-shade);
+  border: 1px solid var(--rule);
+}
+.book-bar i { position: absolute; inset: 0 auto 0 0; background: var(--gold); }
+.book-add {
+  grid-area: add;
+  justify-self: start;
+  font-size: 10px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--oxblood);
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+}
+.book-add:hover { border-bottom-color: var(--oxblood); }
+.book-fine { margin-top: 28px; font-size: 0.85rem; color: var(--ink-2); line-height: 1.6; }

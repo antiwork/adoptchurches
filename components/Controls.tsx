@@ -1,9 +1,11 @@
 "use client";
 
-// The wax seal (collect) and the basket control, shared by the register
-// rows, the entry plate, and the particulars sheet.
+// The wax seal (collect) and the support link, shared by the register rows,
+// the entry plate, and the particulars sheet. There is no basket: the only
+// action is a pledge, and a pledge is not a purchase.
 
-import { toggleBasket, toggleCollected, useBasket, useCollected } from "@/lib/store";
+import Link from "next/link";
+import { toggleCollected, useCollected } from "@/lib/store";
 
 export function CollectSeal({ id, name, large = false }: { id: string; name: string; large?: boolean }) {
   const collected = useCollected();
@@ -15,8 +17,8 @@ export function CollectSeal({ id, name, large = false }: { id: string; name: str
       data-collect={id}
       data-on={on}
       aria-pressed={on}
-      aria-label={on ? `Remove ${name} from your collection` : `Add ${name} to your collection`}
-      title={on ? "Collected. Press to release." : "Collect this building."}
+      aria-label={on ? `Remove ${name} from your list` : `Keep ${name} on your list`}
+      title={on ? "Kept. Press to release." : "Keep this building."}
       onClick={(e) => {
         e.preventDefault();
         e.stopPropagation();
@@ -28,7 +30,7 @@ export function CollectSeal({ id, name, large = false }: { id: string; name: str
   );
 }
 
-export function BasketToggle({
+export function SupportLink({
   id,
   name,
   wide = false,
@@ -37,23 +39,14 @@ export function BasketToggle({
   name: string;
   wide?: boolean;
 }) {
-  const basket = useBasket();
-  const on = basket.some((l) => l.id === id);
   return (
-    <button
-      type="button"
-      className={`basket-add${wide ? " wide" : ""}`}
-      data-basket={id}
-      data-on={on}
-      aria-pressed={on}
-      aria-label={on ? `Remove ${name} from the basket` : `Add ${name} to the basket`}
-      onClick={(e) => {
-        e.preventDefault();
-        e.stopPropagation();
-        toggleBasket(id);
-      }}
+    <Link
+      href={`/church/${id}#support`}
+      className={`support-link${wide ? " wide" : ""}`}
+      aria-label={`Put your support behind ${name}`}
+      onClick={(e) => e.stopPropagation()}
     >
-      {on ? (wide ? "In the basket · remove" : "In basket") : wide ? "Add to basket" : "Basket"}
-    </button>
+      {wide ? "Pledge your support" : "Support"}
+    </Link>
   );
 }

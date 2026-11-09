@@ -3,10 +3,15 @@
 import { useEffect, useState } from "react";
 import { money } from "@/lib/data";
 
-const PRESETS = [500, 1_000, 5_000, 25_000];
+const PRESETS = [100, 500, 1_000, 5_000];
 
 type Agg = { count: number; totalCents: number; recent: { name: string; amountCents: number; at: string }[] };
 
+/**
+ * The pledge book: the only action on the site, and deliberately not a
+ * transaction. A name, an amount and a reason, recorded so the next reader can
+ * see a group forming. No card, no order, nothing charged.
+ */
 export default function PledgePanel({
   listingId,
   priceUsd,
@@ -17,7 +22,7 @@ export default function PledgePanel({
   priceLabelText?: string;
 }) {
   const [agg, setAgg] = useState<Agg>({ count: 0, totalCents: 0, recent: [] });
-  const [amount, setAmount] = useState<number>(1_000);
+  const [amount, setAmount] = useState<number>(500);
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [note, setNote] = useState("");
@@ -39,6 +44,7 @@ export default function PledgePanel({
 
   const goal = priceUsd * 100;
   const hasGoal = goal > 0;
+  const pct = hasGoal ? Math.min(100, Math.round((agg.totalCents / goal) * 100)) : 0;
 
   async function submit(e: React.FormEvent) {
     e.preventDefault();
@@ -67,39 +73,55 @@ export default function PledgePanel({
     }
   }
 
+  const priceNote = priceLabelText ? ` The guide price is ${priceLabelText.toLowerCase()}.` : "";
+
   return (
-    <aside className="panel" id="pledge">
-      <h3>The pledge book</h3>
+    <aside className="panel" id="support">
+      <div className="panel-kicker">The pledge book</div>
+      <h3>Pledge your support</h3>
       <hr className="panel-rule" />
-      <div className="goal">
-        {!hasGoal
-          ? agg.count === 0
-            ? "No asking price is published. A pledge records that a group is forming." +
-              (priceLabelText ? ` ${priceLabelText}.` : "")
-            : `${agg.count} ${agg.count === 1 ? "pledge" : "pledges"} entered, amounting to ${money(agg.totalCents)}.` +
-              (priceLabelText ? ` Guide price ${priceLabelText.toLowerCase()}.` : "")
-          : agg.count === 0
-            ? `No pledge has yet been entered. The asking price is ${money(goal)}${
-                priceLabelText && !priceLabelText.startsWith("$") ? ` (${priceLabelText})` : ""
-              }.`
-            : `${agg.count} ${agg.count === 1 ? "pledge" : "pledges"} entered, amounting to ${money(
-                agg.totalCents,
-              )} of the ${money(goal)} asked. ${money(Math.max(0, goal - agg.totalCents))} remains.`}
+
+      <div className="pledge-state">
+        {agg.count === 0 ? (
+          <div className="pledge-total">
+            <strong>No pledge yet.</strong>
+            {hasGoal
+              ? priceNote
+              : " A pledge is a name and an amount, recorded so that a group can form."}
+          </div>
+        ) : (
+          <div className="pledge-total">
+            <strong>{money(agg.totalCents)}</strong> pledged by {agg.count}{" "}
+            {agg.count === 1 ? "person" : "people"}
+            {hasGoal ? `, against ${priceLabelText ?? money(goal)} asked.` : "."}
+          </div>
+        )}
+
+        {hasGoal && (
+          <>
+            <div className="pledge-bar" data-complete={pct >= 100} aria-hidden="true">
+              <i style={{ width: `${Math.max(pct, agg.count ? 2 : 0)}%` }} />
+            </div>
+            <div className="pledge-left">
+              {pct}% of the guide price
+            </div>
+          </>
+        )}
       </div>
 
       {status === "done" ? (
         <div className="msg ok">
           <p style={{ marginBottom: 10 }}>
-            Your pledge is entered in the book. Word will be sent to {email || "you"} when the
-            pledges against this building approach its price.
+            Your name is in the pledge book. Word will be sent to {email || "you"} as the support
+            against this building grows.
           </p>
           <button className="btn" onClick={() => setStatus("idle")}>
-            Enter another pledge
+            Add another pledge
           </button>
         </div>
       ) : (
         <form onSubmit={submit}>
-          <label htmlFor="amt">Amount (USD)</label>
+          <label htmlFor="amt">What would you put behind it? (USD)</label>
           <div className="amounts">
             {PRESETS.map((p) => (
               <button
@@ -109,7 +131,7 @@ export default function PledgePanel({
                 onClick={() => setAmount(p)}
                 aria-pressed={amount === p}
               >
-                {p < 1000 ? `$${p}` : `$${(p / 1000).toLocaleString("en-US")},000`}
+                {p >= 1000 ? `$${p.toLocaleString("en-US")}` : `$${p}`}
               </button>
             ))}
           </div>
@@ -147,14 +169,15 @@ export default function PledgePanel({
           </button>
           {error && <div className="msg err">{error}</div>}
           <div className="fine">
-            A pledge records intent, not money. No card is taken, nothing is charged, and no
-            securities are offered or sold.
+            A pledge is a promise of support, not a payment. No card is taken, nothing is charged,
+            and no securities are offered or sold.
           </div>
         </form>
       )}
 
       {agg.recent.length > 0 && (
         <div className="recent">
+          <div className="recent-head">In the book so far</div>
           {agg.recent.map((r, i) => (
             <div key={i}>
               <span>{r.name}</span>

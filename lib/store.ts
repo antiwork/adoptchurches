@@ -1,20 +1,17 @@
 "use client";
 
-// Client-side state for the collection, the basket and past receipts.
-// Everything lives in localStorage; a custom event keeps every component
-// on the page in agreement. The server is told about collections and baskets
-// as anonymous counters, so the register knows what is drawing interest.
+// What a reader keeps for themselves: the buildings they have collected.
+// Nothing here is a purchase. There is no basket, no cart and no order form —
+// the register records interest and pledges, and money never moves through it.
 
 import { useSyncExternalStore } from "react";
 
 export const COLLECTED_KEY = "adoptchurches:collected";
-export const BASKET_KEY = "adoptchurches:basket";
-export const RECEIPTS_KEY = "adoptchurches:receipts";
 
 const CHANGE_EVENT = "adoptchurches:store";
 const SESSION_KEY = "adoptchurches:session";
 
-/** A stable, anonymous id so demand can be counted without cookies or accounts. */
+/** A stable, anonymous id so interest can be counted without cookies or accounts. */
 function sessionId(): string {
   if (typeof window === "undefined") return "";
   let id = window.localStorage.getItem(SESSION_KEY);
@@ -26,10 +23,10 @@ function sessionId(): string {
 }
 
 /**
- * Tell the register that something was collected or set aside. Fire and forget:
+ * Tell the register that a building was collected or looked at. Fire and forget:
  * a failed beacon must never interrupt the page.
  */
-export function trackEvent(kind: "collect" | "uncollect" | "basket" | "remove" | "view", listingId: string) {
+export function trackEvent(kind: "collect" | "uncollect" | "view", listingId: string) {
   if (typeof window === "undefined") return;
   try {
     void fetch("/api/events", {
@@ -42,21 +39,6 @@ export function trackEvent(kind: "collect" | "uncollect" | "basket" | "remove" |
     // nothing to do
   }
 }
-
-export type BasketLine = { id: string; qty: number };
-
-export type Receipt = {
-  serial: string;
-  at: string; // ISO timestamp
-  name: string;
-  email: string;
-  town?: string;
-  note?: string;
-  lines: { id: string; name: string; where: string; priceUsd: number | null; priceLabel: string }[];
-  subtotalUsd: number;
-  reserveUsd: number;
-  totalUsd: number;
-};
 
 function read<T>(key: string, fallback: T): T {
   if (typeof window === "undefined") return fallback;
@@ -113,92 +95,4 @@ export function toggleCollected(id: string) {
   const next = had ? cur.filter((x) => x !== id) : [...cur, id];
   write(COLLECTED_KEY, next);
   trackEvent(had ? "uncollect" : "collect", id);
-}
-
-// ---- basket ----
-
-let basketCache: BasketLine[] = [];
-let basketRaw: string | null = null;
-
-function getBasketSnapshot(): BasketLine[] {
-  const raw = typeof window === "undefined" ? null : window.localStorage.getItem(BASKET_KEY);
-  if (raw !== basketRaw) {
-    basketRaw = raw;
-    basketCache = read<BasketLine[]>(BASKET_KEY, []);
-  }
-  return basketCache;
-}
-
-export function useBasket(): BasketLine[] {
-  return useSyncExternalStore(subscribe, getBasketSnapshot, () => EMPTY);
-}
-
-export function addToBasket(id: string) {
-  const cur = read<BasketLine[]>(BASKET_KEY, []);
-  if (cur.some((l) => l.id === id)) return;
-  write(BASKET_KEY, [...cur, { id, qty: 1 }]);
-  trackEvent("basket", id);
-}
-
-export function removeFromBasket(id: string) {
-  const cur = read<BasketLine[]>(BASKET_KEY, []);
-  write(BASKET_KEY, cur.filter((l) => l.id !== id));
-  trackEvent("remove", id);
-}
-
-export function toggleBasket(id: string) {
-  const cur = read<BasketLine[]>(BASKET_KEY, []);
-  const had = cur.some((l) => l.id === id);
-  if (had) {
-    write(BASKET_KEY, cur.filter((l) => l.id !== id));
-  } else {
-    write(BASKET_KEY, [...cur, { id, qty: 1 }]);
-  }
-  trackEvent(had ? "remove" : "basket", id);
-}
-
-export function emptyBasket() {
-  write(BASKET_KEY, []);
-}
-
-// ---- receipts ----
-
-let receiptsCache: Receipt[] = [];
-let receiptsRaw: string | null = null;
-
-function getReceiptsSnapshot(): Receipt[] {
-  const raw = typeof window === "undefined" ? null : window.localStorage.getItem(RECEIPTS_KEY);
-  if (raw !== receiptsRaw) {
-    receiptsRaw = raw;
-    receiptsCache = read<Receipt[]>(RECEIPTS_KEY, []);
-  }
-  return receiptsCache;
-}
-
-export function useReceipts(): Receipt[] {
-  return useSyncExternalStore(subscribe, getReceiptsSnapshot, () => EMPTY);
-}
-
-export function saveReceipt(r: Receipt) {
-  const cur = read<Receipt[]>(RECEIPTS_KEY, []);
-  write(RECEIPTS_KEY, [r, ...cur]);
-}
-
-// A serial in the manner of a ledger: letters from a hash of the ids,
-// figures from the clock. Stable for a given order and moment.
-export function makeSerial(ids: string[], at: Date): string {
-  const basis = ids.slice().sort().join("|");
-  let h = 5381;
-  for (let i = 0; i < basis.length; i++) {
-    h = ((h << 5) + h + basis.charCodeAt(i)) >>> 0;
-  }
-  const letters = "ABCDEFGHJKLMNPQRSTVWXYZ";
-  const a = letters[h % letters.length];
-  const b = letters[Math.floor(h / 23) % letters.length];
-  const num = (h % 9000) + 1000;
-  const day =
-    at.getUTCFullYear().toString().slice(2) +
-    String(at.getUTCMonth() + 1).padStart(2, "0") +
-    String(at.getUTCDate()).padStart(2, "0");
-  return `No. ${a}${b} ${num}-${day}`;
 }

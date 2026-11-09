@@ -5,7 +5,7 @@ import Link from "next/link";
 import type { Listing } from "@/lib/types";
 import { displayName, priceLabel, whereLabel } from "@/lib/data";
 import { COLLECTED_KEY } from "@/lib/store";
-import { BasketToggle, CollectSeal } from "@/components/Controls";
+import { CollectSeal, SupportLink } from "@/components/Controls";
 import { TILE_ATTRIBUTION, TILE_MAX_ZOOM, TILE_URL } from "@/lib/tiles";
 import ListingPhoto from "@/components/ListingPhoto";
 
@@ -180,7 +180,7 @@ export default function Atlas({ listings }: { listings: Listing[] }) {
                <div class="popup-name">${escapeHtml(displayName(l))}</div>
                <div class="popup-meta">${escapeHtml(whereLabel(l))}</div>
                <div class="popup-price">${escapeHtml(priceLabel(l))}</div>
-               ${isCollected ? '<div class="popup-collected">In your collection</div>' : ""}
+               ${isCollected ? '<div class="popup-collected">Kept on your list</div>' : ""}
              </div>
            </a>`;
         },
@@ -390,7 +390,7 @@ export default function Atlas({ listings }: { listings: Listing[] }) {
             <div className="map-card-price">{priceLabel(selectedListing)}</div>
             <div className="map-card-actions">
               <CollectSeal id={selectedListing.id} name={displayName(selectedListing)} />
-              <BasketToggle id={selectedListing.id} name={displayName(selectedListing)} />
+              <SupportLink id={selectedListing.id} name={displayName(selectedListing)} />
             </div>
           </div>
           <button

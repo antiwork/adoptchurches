@@ -5,7 +5,7 @@ import { getListing } from "@/lib/data";
 
 export const dynamic = "force-dynamic";
 
-const KINDS: EventKind[] = ["collect", "uncollect", "basket", "remove", "view"];
+const KINDS: EventKind[] = ["collect", "uncollect", "view"];
 
 export async function POST(request: Request) {
   if (!hasDb()) return NextResponse.json({ ok: false, reason: "no database" }, { status: 503 });
