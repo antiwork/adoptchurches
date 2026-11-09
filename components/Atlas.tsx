@@ -50,8 +50,10 @@ export default function Atlas({ listings }: { listings: Listing[] }) {
       const L = (await import("leaflet")).default;
       if (cancelled || !mapEl.current) return;
       const map = L.map(mapEl.current, {
-        center: [39.5, -98.35],
-        zoom: 4,
+        // the whole register in one frame: the eastern states, England, and France
+        center: [46, -22],
+        zoom: 3,
+        minZoom: 3,
         maxZoom: 19,
         scrollWheelZoom: true,
         zoomControl: false,
@@ -245,6 +247,10 @@ export default function Atlas({ listings }: { listings: Listing[] }) {
           </button>
         </div>
       )}
+
+      <div className="strip-head">
+        The register · {rows.length.toLocaleString("en-US")} buildings
+      </div>
 
       <div className="filmstrip" ref={stripRef} role="list">
         {rows.map((l) => (

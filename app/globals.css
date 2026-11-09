@@ -1787,3 +1787,24 @@ body:has(.map-home) .basket-plate { bottom: 176px; }
   .map-card-photo .photo { width: 84px; height: 64px; }
   body:has(.map-home) .basket-plate { bottom: 166px; }
 }
+
+/* the strip's one line of type */
+.strip-head {
+  position: fixed;
+  left: 26px;
+  bottom: 214px;
+  z-index: 1260;
+  font-size: 9.5px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--ink-2);
+  pointer-events: none;
+}
+
+body:has(.map-home) .nav a[href="/#atlas"] { display: none; }
+
+@media (max-width: 720px) {
+  .strip-head { display: none; }
+  .film-name { font-size: 0.92rem; }
+  .film-price { font-size: 12px; }
+}
