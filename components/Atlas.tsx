@@ -81,6 +81,11 @@ export default function Atlas({ listings }: { listings: Listing[] }) {
       L.control.zoom({ position: "bottomleft" }).addTo(map);
       layerRef.current = L.layerGroup().addTo(map);
       mapRef.current = { map, L };
+      // the container settles after the strip is measured, so tell Leaflet
+      const settle = () => map.invalidateSize();
+      setTimeout(settle, 0);
+      setTimeout(settle, 250);
+      window.addEventListener("resize", settle);
       setMapReady(true);
     })();
     return () => {
