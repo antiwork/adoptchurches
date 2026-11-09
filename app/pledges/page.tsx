@@ -36,22 +36,25 @@ export default async function PledgeBook() {
         who means to save a building can see they are not the first.
       </p>
 
-      <dl className="book-totals">
-        <div>
-          <dt>Pledged</dt>
-          <dd>{money(totals.totalCents)}</dd>
-        </div>
-        <div>
-          <dt>Pledges</dt>
-          <dd>{totals.pledges}</dd>
-        </div>
-        <div>
-          <dt>People</dt>
-          <dd>{totals.backers}</dd>
-        </div>
-      </dl>
-
-      <hr className="section-rule" />
+      {totals.pledges > 0 && (
+        <>
+          <dl className="book-totals">
+            <div>
+              <dt>Pledged</dt>
+              <dd>{money(totals.totalCents)}</dd>
+            </div>
+            <div>
+              <dt>Pledges</dt>
+              <dd>{totals.pledges}</dd>
+            </div>
+            <div>
+              <dt>People</dt>
+              <dd>{totals.backers}</dd>
+            </div>
+          </dl>
+          <hr className="section-rule" />
+        </>
+      )}
 
       {rows.length === 0 ? (
         <div className="book-empty">
