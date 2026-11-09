@@ -76,7 +76,17 @@ export default function Atlas({ listings }: { listings: Listing[] }) {
         worldCopyJump: true,
       });
       const tiles = L.tileLayer(TILE_URL, { attribution: TILE_ATTRIBUTION, maxZoom: TILE_MAX_ZOOM });
-      tiles.on("tileerror", () => setTilesOut(true));
+      // one slow or missing tile is not an outage; a run of them with nothing drawn is
+      let loaded = 0;
+      let failed = 0;
+      tiles.on("tileload", () => {
+        loaded += 1;
+        if (loaded === 1) setTilesOut(false);
+      });
+      tiles.on("tileerror", () => {
+        failed += 1;
+        if (!loaded && failed > 6) setTilesOut(true);
+      });
       tiles.addTo(map);
       L.control.zoom({ position: "bottomleft" }).addTo(map);
       layerRef.current = L.layerGroup().addTo(map);
