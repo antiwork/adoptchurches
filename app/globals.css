@@ -263,9 +263,22 @@ p { margin: 0 0 1em; }
 .btn:hover { background: var(--ink); color: var(--paper); }
 .btn:disabled { opacity: 0.45; cursor: default; background: transparent; color: var(--ink); }
 
+/* the primary action: white on black, set in the same small caps */
 .btn.brass {
+  background: var(--ink);
+  color: var(--paper);
   border-color: var(--ink);
   border-bottom: 2px solid var(--gold);
+}
+.btn.brass:hover {
+  background: #2b2721;
+  color: var(--paper);
+  border-bottom-color: #b89a54;
+}
+.btn.brass:disabled {
+  background: var(--ink);
+  color: var(--paper);
+  opacity: 0.5;
 }
 
 /* ---------- map plate ---------- */
@@ -1246,18 +1259,19 @@ body:has(.checkout) .site-header {
   margin-top: 24px;
   padding: 12px 18px;
   border: 1px solid var(--ink);
-  border-bottom: 3px solid var(--oxblood);
+  border-bottom: 3px solid var(--gold);
   border-radius: 0;
-  background: var(--paper);
-  box-shadow: inset 1px 1px 0 rgba(255, 255, 255, 0.7), inset -1px -1px 0 rgba(25, 23, 19, 0.1);
+  background: var(--ink);
+  box-shadow: none;
   font: inherit;
   font-size: 12px;
   letter-spacing: 0.14em;
   text-transform: uppercase;
-  color: var(--ink);
+  color: var(--paper);
   cursor: pointer;
 }
-.seal-button:hover { background: var(--paper-shade); }
+.seal-button:hover { background: #2b2721; color: var(--paper); border-bottom-color: #b89a54; }
+.seal-button:disabled { opacity: 0.6; cursor: default; }
 .seal-button-wax {
   width: 20px;
   height: 20px;
