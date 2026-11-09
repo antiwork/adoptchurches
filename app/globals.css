@@ -1816,9 +1816,12 @@ body:has(.map-home) .nav a[href="/#atlas"] { display: none; }
 /* map controls and the tile credit live above the strip, not under it */
 .atlas.map-home .leaflet-bottom { bottom: var(--strip-h, 180px); }
 .atlas.map-home .leaflet-control-attribution {
-  background: rgba(243, 239, 230, 0.86);
+  background: rgba(243, 239, 230, 0.9);
   font-family: var(--serif-text);
   font-size: 10px;
+  line-height: 1.35;
+  max-width: min(62vw, 420px);
+  white-space: normal;
   margin: 0 6px 4px 0;
 }
 .atlas.map-home .leaflet-control-zoom a {
@@ -1873,10 +1876,15 @@ body:has(.map-home) .nav a[href="/#atlas"] { display: none; }
 
 /* a phone: one header row, larger nav, and no basket under the card */
 @media (max-width: 700px) {
-  .masthead { padding: 7px 12px; gap: 10px; flex-wrap: nowrap; }
-  .nav { flex: 0 0 auto; gap: 12px; padding: 0; }
-  .nav a { font-size: 10.5px; letter-spacing: 0.07em; }
+  .masthead { padding: 7px 12px; gap: 10px; flex-wrap: wrap; row-gap: 2px; }
+  .nav { flex: 1 1 auto; justify-content: flex-end; gap: 12px; padding: 0; min-width: 0; }
+  .nav a { font-size: 10px; letter-spacing: 0.06em; white-space: nowrap; }
   .wordmark { font-size: 1rem; }
+}
+@media (max-width: 430px) {
+  /* below a small phone the links take their own line rather than being clipped */
+  .nav { flex: 1 1 100%; justify-content: flex-start; gap: 14px; padding-bottom: 2px; }
+  .nav a { font-size: 10px; }
 }
 @media (max-width: 720px) {
   /* the tile credit moves up, clear of the basket plate */
