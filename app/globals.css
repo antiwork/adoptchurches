@@ -1879,6 +1879,8 @@ body:has(.map-home) .nav a[href="/#atlas"] { display: none; }
   .wordmark { font-size: 1rem; }
 }
 @media (max-width: 720px) {
+  /* the tile credit moves up, clear of the basket plate */
+  .atlas.map-home .leaflet-bottom.leaflet-right { bottom: calc(var(--strip-h, 160px) + 54px); }
   body:has(.map-card) .basket-plate { display: none; }
   .map-card-close { padding: 10px 12px; }
 }

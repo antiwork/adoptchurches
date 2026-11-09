@@ -111,7 +111,8 @@ export default function Atlas({ listings }: { listings: Listing[] }) {
 
     const zoom = map.getZoom();
     mapEl.current?.setAttribute("data-zoom", String(zoom));
-    const CELL = zoom <= 4 ? 96 : 64;
+    // on a narrow screen a cluster needs more room to sit clear of its neighbour
+    const CELL = zoom <= 4 ? (window.innerWidth < 720 ? 124 : 96) : 64;
     const clusters = new Map<string, { lat: number; lng: number; items: typeof rows }>();
     const singles: typeof rows = [];
 
