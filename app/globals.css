@@ -1664,8 +1664,8 @@ body:has(.map-home) .site-footer { display: none; }
   overflow-y: hidden;
   scroll-snap-type: x proximity;
   -webkit-overflow-scrolling: touch;
-  padding: 26px 26px 18px;
-  background: linear-gradient(to top, var(--paper) 70%, rgba(243, 239, 230, 0));
+  padding: 12px 26px 16px;
+  background: linear-gradient(to top, var(--paper) 78%, rgba(243, 239, 230, 0));
   border-top: 1px solid rgba(25, 23, 19, 0.08);
   scrollbar-width: thin;
 }
@@ -1685,9 +1685,11 @@ body:has(.map-home) .site-footer { display: none; }
 }
 .film .photo {
   width: 240px;
+  height: auto;
   aspect-ratio: 3 / 2;
   border: 1px solid var(--rule);
 }
+.film { font: inherit; }
 .film .photo-blank-mark { font-size: 1rem; }
 .film-caption {
   display: flex;
@@ -1720,7 +1722,7 @@ body:has(.map-home) .site-footer { display: none; }
 .map-card {
   position: fixed;
   left: 22px;
-  bottom: 226px;
+  bottom: calc(var(--strip-h, 180px) + 14px);
   z-index: 1300;
   width: 336px;
   display: grid;
@@ -1762,7 +1764,7 @@ body:has(.map-home) .site-footer { display: none; }
 }
 
 /* keep the basket clear of the strip */
-body:has(.map-home) .basket-plate { bottom: 176px; }
+body:has(.map-home) .basket-plate { bottom: calc(var(--strip-h, 180px) + 16px); }
 
 /* the card that opens on a pin */
 .popup { display: grid; grid-template-columns: 96px minmax(0, 1fr); gap: 10px; text-decoration: none; color: var(--ink); }
@@ -1780,19 +1782,19 @@ body:has(.map-home) .basket-plate { bottom: 176px; }
     left: 10px;
     right: 10px;
     width: auto;
-    bottom: 196px;
+    bottom: calc(var(--strip-h, 160px) + 10px);
     grid-template-columns: 84px minmax(0, 1fr);
     padding: 10px;
   }
   .map-card-photo .photo { width: 84px; height: 64px; }
-  body:has(.map-home) .basket-plate { bottom: 166px; }
+  body:has(.map-home) .basket-plate { bottom: calc(var(--strip-h, 160px) + 12px); }
 }
 
 /* the strip's one line of type */
 .strip-head {
   position: fixed;
   left: 26px;
-  bottom: 214px;
+  bottom: calc(var(--strip-h, 180px) + 8px);
   z-index: 1260;
   font-size: 9.5px;
   letter-spacing: 0.18em;
@@ -1807,4 +1809,81 @@ body:has(.map-home) .nav a[href="/#atlas"] { display: none; }
   .strip-head { display: none; }
   .film-name { font-size: 0.92rem; }
   .film-price { font-size: 12px; }
+}
+
+/* ---------- finishing what the audit found ---------- */
+
+/* map controls and the tile credit live above the strip, not under it */
+.atlas.map-home .leaflet-bottom { bottom: var(--strip-h, 180px); }
+.atlas.map-home .leaflet-control-attribution {
+  background: rgba(243, 239, 230, 0.86);
+  font-family: var(--serif-text);
+  font-size: 10px;
+  margin: 0 6px 4px 0;
+}
+.atlas.map-home .leaflet-control-zoom a {
+  font-family: var(--serif-text);
+  color: var(--ink);
+  background: var(--paper);
+  border-color: var(--rule);
+}
+
+/* a pin is a 9px diamond inside a 40px target */
+.pin-wrap {
+  width: 40px;
+  height: 40px;
+  display: grid;
+  place-items: center;
+}
+.cluster { margin: 4px; }
+
+/* the popup gets room for its text, and starts above the header */
+.leaflet-popup-content { margin: 10px 12px; }
+.popup { grid-template-columns: 76px minmax(0, 1fr); }
+.popup-photo { width: 76px; height: 57px; }
+.leaflet-popup-close-button { font-family: var(--serif-text) !important; font-size: 16px !important; }
+
+/* when the tiles cannot be had, say so once */
+.tile-note {
+  position: fixed;
+  left: 50%;
+  top: calc(50% - var(--strip-h, 180px) / 2);
+  transform: translate(-50%, -50%);
+  z-index: 1200;
+  padding: 8px 14px;
+  background: rgba(243, 239, 230, 0.94);
+  border: 1px solid var(--rule);
+  font-size: 11px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--ink-2);
+  pointer-events: none;
+}
+
+/* landscape phones: the strip gives its height back to the map */
+@media (max-height: 520px) and (orientation: landscape) {
+  .filmstrip { padding: 6px 14px 8px; gap: 10px; }
+  .film { width: 112px; }
+  .film .photo { width: 112px; }
+  .film-caption { display: none; }
+  .strip-head { display: none; }
+  .site-header { padding: 0; }
+  .masthead { padding: 6px 14px; }
+}
+
+/* a phone: one header row, larger nav, and no basket under the card */
+@media (max-width: 700px) {
+  .masthead { padding: 7px 12px; gap: 10px; flex-wrap: nowrap; }
+  .nav { flex: 0 0 auto; gap: 12px; padding: 0; }
+  .nav a { font-size: 10.5px; letter-spacing: 0.07em; }
+  .wordmark { font-size: 1rem; }
+}
+@media (max-width: 720px) {
+  body:has(.map-card) .basket-plate { display: none; }
+  .map-card-close { padding: 10px 12px; }
+}
+@media (pointer: coarse) {
+  .atlas.map-home .leaflet-control-zoom a { width: 44px; height: 44px; line-height: 44px; }
+  .seal { min-width: 32px; min-height: 32px; }
+  .map-search-toggle { padding: 11px 14px; }
 }
