@@ -1880,7 +1880,7 @@ body:has(.map-home) .nav a[href="/#atlas"] { display: none; }
 }
 @media (max-width: 720px) {
   /* the tile credit moves up, clear of the basket plate */
-  .atlas.map-home .leaflet-bottom.leaflet-right { bottom: calc(var(--strip-h, 160px) + 54px); }
+  .atlas.map-home .leaflet-bottom.leaflet-right { bottom: calc(var(--strip-h, 160px) + 62px); }
   body:has(.map-card) .basket-plate { display: none; }
   .map-card-close { padding: 10px 12px; }
 }
