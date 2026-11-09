@@ -64,7 +64,9 @@ export default function ListingPhoto({
           onError={() => setFailed(true)}
         />
       )}
-      {size === "hero" && credit ? <span className="photo-credit">Photograph: {credit}</span> : null}
+      {size === "hero" && credit && !failed ? (
+        <span className="photo-credit">Photograph: {credit}</span>
+      ) : null}
     </span>
   );
 }

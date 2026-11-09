@@ -56,7 +56,11 @@ async function fetchText(target) {
 
 async function fetchBytes(target) {
   const res = await fetch(target, {
-    headers: { "User-Agent": UA, Accept: "image/avif,image/webp,image/*,*/*;q=0.8", Referer: "https://www.crexi.com/" },
+    headers: {
+      "User-Agent": UA,
+      Accept: "image/avif,image/webp,image/*,*/*;q=0.8",
+      Referer: /patrice-besse/.test(target) ? "https://patrice-besse.com/" : "https://www.crexi.com/",
+    },
     redirect: "follow",
     signal: AbortSignal.timeout(30_000),
   });
@@ -78,7 +82,12 @@ async function crexiPhoto(listing) {
   });
   if (!res.ok) throw new Error(`crexi api ${res.status}`);
   const asset = await res.json();
-  const thumb = asset.thumbnailUrl;
+  const thumb =
+    asset.thumbnailUrl ??
+    asset.galleryImageUrl ??
+    asset.images?.[0]?.imageUrl ??
+    asset.images?.[0]?.url ??
+    null;
   if (!thumb) throw new Error("no thumbnail");
   // ask Crexi's image CDN for a wider crop than the card default
   const wide = thumb.replace(/width=\d+/, "width=1400").replace(/height=\d+/, "height=933");
