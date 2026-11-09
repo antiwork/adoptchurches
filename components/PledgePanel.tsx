@@ -78,7 +78,7 @@ export default function PledgePanel({
   return (
     <aside className="panel" id="support">
       <div className="panel-kicker">The pledge book</div>
-      <h3>Pledge your support</h3>
+      <h3>Put your support behind it</h3>
       <hr className="panel-rule" />
 
       <div className="pledge-state">
